@@ -1,0 +1,537 @@
+fileFormatVersion: 2
+guid: e5ad3312ef503ca4ba5bd6390b1addb7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Corners
+    100002: Corners 1
+    100004: Corners 2
+    100006: Corners 3
+    100008: //RootNode
+    100010: MidWallBottom
+    100012: MidWallBottom 1
+    100014: MidWallBottom 2
+    100016: MidWallBottom 3
+    100018: MidWallBottom1
+    100020: MidWallBottom1 1
+    100022: MidWallBottom1 2
+    100024: MidWallBottom1 3
+    100026: MidWallMid
+    100028: MidWallMid 1
+    100030: MidWallMid 2
+    100032: MidWallMid 3
+    100034: MidWallMid10
+    100036: MidWallMid10 1
+    100038: MidWallMid10 2
+    100040: MidWallMid10 3
+    100042: MidWallMid11
+    100044: MidWallMid11 1
+    100046: MidWallMid11 2
+    100048: MidWallMid11 3
+    100050: MidWallMid12
+    100052: MidWallMid12 1
+    100054: MidWallMid12 2
+    100056: MidWallMid12 3
+    100058: MidWallMid13
+    100060: MidWallMid13 1
+    100062: MidWallMid13 2
+    100064: MidWallMid13 3
+    100066: MidWallMid14
+    100068: MidWallMid14 1
+    100070: MidWallMid14 2
+    100072: MidWallMid14 3
+    100074: MidWallMid15
+    100076: MidWallMid15 1
+    100078: MidWallMid15 2
+    100080: MidWallMid15 3
+    100082: MidWallMid16
+    100084: MidWallMid16 1
+    100086: MidWallMid16 2
+    100088: MidWallMid16 3
+    100090: MidWallMid17
+    100092: MidWallMid17 1
+    100094: MidWallMid17 2
+    100096: MidWallMid17 3
+    100098: MidWallMid9
+    100100: MidWallMid9 1
+    100102: MidWallMid9 2
+    100104: MidWallMid9 3
+    100106: pCube13
+    100108: pCube15
+    100110: pCube16
+    100112: pCube21
+    100114: pCube24
+    100116: pCube26
+    100118: pCube28
+    100120: pCube30
+    100122: pCube32
+    100124: pCube34
+    100126: pCube36
+    100128: pCube37
+    100130: pCube38
+    100132: pCube39
+    100134: pCube40
+    100136: pCube41
+    100138: pCube42
+    100140: pCube43
+    100142: pCube44
+    100144: SideWall1
+    100146: SideWall1 1
+    100148: SideWall1 2
+    100150: SideWall1 3
+    100152: SideWall2
+    100154: SideWall2 1
+    100156: SideWall2 2
+    100158: SideWall2 3
+    100160: TopMidSecctions
+    100162: TopMidSecctions 1
+    100164: TopMidSecctions 2
+    100166: TopMidSecctions 3
+    100168: Tower1
+    100170: Tower2
+    100172: Tower3
+    100174: Tower4
+    100176: Walkway2
+    100178: Walkway3
+    100180: Walkway4
+    100182: Walkway5
+    400000: Corners
+    400002: Corners 1
+    400004: Corners 2
+    400006: Corners 3
+    400008: //RootNode
+    400010: MidWallBottom
+    400012: MidWallBottom 1
+    400014: MidWallBottom 2
+    400016: MidWallBottom 3
+    400018: MidWallBottom1
+    400020: MidWallBottom1 1
+    400022: MidWallBottom1 2
+    400024: MidWallBottom1 3
+    400026: MidWallMid
+    400028: MidWallMid 1
+    400030: MidWallMid 2
+    400032: MidWallMid 3
+    400034: MidWallMid10
+    400036: MidWallMid10 1
+    400038: MidWallMid10 2
+    400040: MidWallMid10 3
+    400042: MidWallMid11
+    400044: MidWallMid11 1
+    400046: MidWallMid11 2
+    400048: MidWallMid11 3
+    400050: MidWallMid12
+    400052: MidWallMid12 1
+    400054: MidWallMid12 2
+    400056: MidWallMid12 3
+    400058: MidWallMid13
+    400060: MidWallMid13 1
+    400062: MidWallMid13 2
+    400064: MidWallMid13 3
+    400066: MidWallMid14
+    400068: MidWallMid14 1
+    400070: MidWallMid14 2
+    400072: MidWallMid14 3
+    400074: MidWallMid15
+    400076: MidWallMid15 1
+    400078: MidWallMid15 2
+    400080: MidWallMid15 3
+    400082: MidWallMid16
+    400084: MidWallMid16 1
+    400086: MidWallMid16 2
+    400088: MidWallMid16 3
+    400090: MidWallMid17
+    400092: MidWallMid17 1
+    400094: MidWallMid17 2
+    400096: MidWallMid17 3
+    400098: MidWallMid9
+    400100: MidWallMid9 1
+    400102: MidWallMid9 2
+    400104: MidWallMid9 3
+    400106: pCube13
+    400108: pCube15
+    400110: pCube16
+    400112: pCube21
+    400114: pCube24
+    400116: pCube26
+    400118: pCube28
+    400120: pCube30
+    400122: pCube32
+    400124: pCube34
+    400126: pCube36
+    400128: pCube37
+    400130: pCube38
+    400132: pCube39
+    400134: pCube40
+    400136: pCube41
+    400138: pCube42
+    400140: pCube43
+    400142: pCube44
+    400144: SideWall1
+    400146: SideWall1 1
+    400148: SideWall1 2
+    400150: SideWall1 3
+    400152: SideWall2
+    400154: SideWall2 1
+    400156: SideWall2 2
+    400158: SideWall2 3
+    400160: TopMidSecctions
+    400162: TopMidSecctions 1
+    400164: TopMidSecctions 2
+    400166: TopMidSecctions 3
+    400168: Tower1
+    400170: Tower2
+    400172: Tower3
+    400174: Tower4
+    400176: Walkway2
+    400178: Walkway3
+    400180: Walkway4
+    400182: Walkway5
+    2100000: lambert1
+    2300000: Corners
+    2300002: Corners 1
+    2300004: Corners 2
+    2300006: Corners 3
+    2300008: MidWallBottom
+    2300010: MidWallBottom 1
+    2300012: MidWallBottom 2
+    2300014: MidWallBottom 3
+    2300016: MidWallBottom1
+    2300018: MidWallBottom1 1
+    2300020: MidWallBottom1 2
+    2300022: MidWallBottom1 3
+    2300024: MidWallMid
+    2300026: MidWallMid 1
+    2300028: MidWallMid 2
+    2300030: MidWallMid 3
+    2300032: MidWallMid10
+    2300034: MidWallMid10 1
+    2300036: MidWallMid10 2
+    2300038: MidWallMid10 3
+    2300040: MidWallMid11
+    2300042: MidWallMid11 1
+    2300044: MidWallMid11 2
+    2300046: MidWallMid11 3
+    2300048: MidWallMid12
+    2300050: MidWallMid12 1
+    2300052: MidWallMid12 2
+    2300054: MidWallMid12 3
+    2300056: MidWallMid13
+    2300058: MidWallMid13 1
+    2300060: MidWallMid13 2
+    2300062: MidWallMid13 3
+    2300064: MidWallMid14
+    2300066: MidWallMid14 1
+    2300068: MidWallMid14 2
+    2300070: MidWallMid14 3
+    2300072: MidWallMid15
+    2300074: MidWallMid15 1
+    2300076: MidWallMid15 2
+    2300078: MidWallMid15 3
+    2300080: MidWallMid16
+    2300082: MidWallMid16 1
+    2300084: MidWallMid16 2
+    2300086: MidWallMid16 3
+    2300088: MidWallMid17
+    2300090: MidWallMid17 1
+    2300092: MidWallMid17 2
+    2300094: MidWallMid17 3
+    2300096: MidWallMid9
+    2300098: MidWallMid9 1
+    2300100: MidWallMid9 2
+    2300102: MidWallMid9 3
+    2300104: pCube13
+    2300106: pCube15
+    2300108: pCube16
+    2300110: pCube21
+    2300112: pCube24
+    2300114: pCube26
+    2300116: pCube28
+    2300118: pCube30
+    2300120: pCube32
+    2300122: pCube34
+    2300124: pCube36
+    2300126: pCube37
+    2300128: pCube38
+    2300130: pCube39
+    2300132: pCube40
+    2300134: pCube41
+    2300136: pCube42
+    2300138: pCube43
+    2300140: pCube44
+    2300142: SideWall1
+    2300144: SideWall1 1
+    2300146: SideWall1 2
+    2300148: SideWall1 3
+    2300150: SideWall2
+    2300152: SideWall2 1
+    2300154: SideWall2 2
+    2300156: SideWall2 3
+    2300158: TopMidSecctions
+    2300160: TopMidSecctions 1
+    2300162: TopMidSecctions 2
+    2300164: TopMidSecctions 3
+    2300166: Walkway2
+    2300168: Walkway3
+    2300170: Walkway4
+    2300172: Walkway5
+    3300000: Corners
+    3300002: Corners 1
+    3300004: Corners 2
+    3300006: Corners 3
+    3300008: MidWallBottom
+    3300010: MidWallBottom 1
+    3300012: MidWallBottom 2
+    3300014: MidWallBottom 3
+    3300016: MidWallBottom1
+    3300018: MidWallBottom1 1
+    3300020: MidWallBottom1 2
+    3300022: MidWallBottom1 3
+    3300024: MidWallMid
+    3300026: MidWallMid 1
+    3300028: MidWallMid 2
+    3300030: MidWallMid 3
+    3300032: MidWallMid10
+    3300034: MidWallMid10 1
+    3300036: MidWallMid10 2
+    3300038: MidWallMid10 3
+    3300040: MidWallMid11
+    3300042: MidWallMid11 1
+    3300044: MidWallMid11 2
+    3300046: MidWallMid11 3
+    3300048: MidWallMid12
+    3300050: MidWallMid12 1
+    3300052: MidWallMid12 2
+    3300054: MidWallMid12 3
+    3300056: MidWallMid13
+    3300058: MidWallMid13 1
+    3300060: MidWallMid13 2
+    3300062: MidWallMid13 3
+    3300064: MidWallMid14
+    3300066: MidWallMid14 1
+    3300068: MidWallMid14 2
+    3300070: MidWallMid14 3
+    3300072: MidWallMid15
+    3300074: MidWallMid15 1
+    3300076: MidWallMid15 2
+    3300078: MidWallMid15 3
+    3300080: MidWallMid16
+    3300082: MidWallMid16 1
+    3300084: MidWallMid16 2
+    3300086: MidWallMid16 3
+    3300088: MidWallMid17
+    3300090: MidWallMid17 1
+    3300092: MidWallMid17 2
+    3300094: MidWallMid17 3
+    3300096: MidWallMid9
+    3300098: MidWallMid9 1
+    3300100: MidWallMid9 2
+    3300102: MidWallMid9 3
+    3300104: pCube13
+    3300106: pCube15
+    3300108: pCube16
+    3300110: pCube21
+    3300112: pCube24
+    3300114: pCube26
+    3300116: pCube28
+    3300118: pCube30
+    3300120: pCube32
+    3300122: pCube34
+    3300124: pCube36
+    3300126: pCube37
+    3300128: pCube38
+    3300130: pCube39
+    3300132: pCube40
+    3300134: pCube41
+    3300136: pCube42
+    3300138: pCube43
+    3300140: pCube44
+    3300142: SideWall1
+    3300144: SideWall1 1
+    3300146: SideWall1 2
+    3300148: SideWall1 3
+    3300150: SideWall2
+    3300152: SideWall2 1
+    3300154: SideWall2 2
+    3300156: SideWall2 3
+    3300158: TopMidSecctions
+    3300160: TopMidSecctions 1
+    3300162: TopMidSecctions 2
+    3300164: TopMidSecctions 3
+    3300166: Walkway2
+    3300168: Walkway3
+    3300170: Walkway4
+    3300172: Walkway5
+    4300000: Corners
+    4300002: TopMidSecctions
+    4300004: SideWall1
+    4300006: SideWall2
+    4300008: MidWallBottom
+    4300010: MidWallMid
+    4300012: MidWallBottom1
+    4300014: MidWallMid9
+    4300016: MidWallMid10
+    4300018: MidWallMid11
+    4300020: MidWallMid12
+    4300022: MidWallMid13
+    4300024: MidWallMid14
+    4300026: MidWallMid15
+    4300028: MidWallMid16
+    4300030: MidWallMid17
+    4300032: Corners
+    4300034: TopMidSecctions
+    4300036: SideWall1
+    4300038: SideWall2
+    4300040: MidWallBottom
+    4300042: MidWallMid
+    4300044: MidWallBottom1
+    4300046: MidWallMid9
+    4300048: MidWallMid10
+    4300050: MidWallMid11
+    4300052: MidWallMid12
+    4300054: MidWallMid13
+    4300056: MidWallMid14
+    4300058: MidWallMid15
+    4300060: MidWallMid16
+    4300062: MidWallMid17
+    4300064: Corners
+    4300066: TopMidSecctions
+    4300068: SideWall1
+    4300070: SideWall2
+    4300072: MidWallBottom
+    4300074: MidWallMid
+    4300076: MidWallBottom1
+    4300078: MidWallMid9
+    4300080: MidWallMid10
+    4300082: MidWallMid11
+    4300084: MidWallMid12
+    4300086: MidWallMid13
+    4300088: MidWallMid14
+    4300090: MidWallMid15
+    4300092: MidWallMid16
+    4300094: MidWallMid17
+    4300096: Corners
+    4300098: TopMidSecctions
+    4300100: SideWall1
+    4300102: SideWall2
+    4300104: MidWallBottom
+    4300106: MidWallMid
+    4300108: MidWallBottom1
+    4300110: MidWallMid9
+    4300112: MidWallMid10
+    4300114: MidWallMid11
+    4300116: MidWallMid12
+    4300118: MidWallMid13
+    4300120: MidWallMid14
+    4300122: MidWallMid15
+    4300124: MidWallMid16
+    4300126: MidWallMid17
+    4300128: Walkway2
+    4300130: Walkway3
+    4300132: Walkway4
+    4300134: Walkway5
+    4300136: pCube13
+    4300138: pCube15
+    4300140: pCube16
+    4300142: pCube21
+    4300144: pCube24
+    4300146: pCube26
+    4300148: pCube28
+    4300150: pCube30
+    4300152: pCube32
+    4300154: pCube34
+    4300156: pCube36
+    4300158: pCube37
+    4300160: pCube38
+    4300162: pCube39
+    4300164: pCube40
+    4300166: pCube41
+    4300168: pCube42
+    4300170: pCube43
+    4300172: pCube44
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
