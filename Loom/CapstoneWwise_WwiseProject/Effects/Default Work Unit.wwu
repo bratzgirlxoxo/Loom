@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7D374E4-883E-4DCE-903F-192DE202D22A}" SchemaVersion="89">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{A7D374E4-883E-4DCE-903F-192DE202D22A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Parametric_EQ" ID="{C3B209CA-3959-4B56-A0D8-550E1DC6C4FD}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+						<Property Name="FilterTypeBand2" Type="int32" Value="0"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="20"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="20"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="20"/>
+						<Property Name="GainBand1" Type="Real32" Value="-7.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="-24"/>
+						<Property Name="GainBand3" Type="Real32" Value="-1.5"/>
+						<Property Name="OutputLevel" Type="Real32" Value="2"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="45"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="50.3"/>
+						<Property Name="QFactorBand3" Type="Real32" Value="85.9"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Reverb_Highs" ID="{8F57A901-EE73-45CF-AF4C-08AA1D35BAE6}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="ERPattern" Type="int32" Value="17"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="BellDelay" ID="{CA2A5517-CE71-4605-B730-EA53749939E2}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="1"/>
+						<Property Name="Feedback" Type="Real32" Value="55.5"/>
+						<Property Name="WetDryMix" Type="Real32" Value="100"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

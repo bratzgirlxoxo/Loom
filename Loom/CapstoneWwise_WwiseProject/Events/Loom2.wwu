@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" SchemaVersion="89" RootDocumentID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}">
+	<Events>
+		<WorkUnit Name="Loom2" ID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" OwnerID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Loom2_Play_Walk_Event" ID="{6E0DC739-4BA0-43AB-AB6D-6F19A3C281EC}">
+					<ChildrenList>
+						<Action Name="" ID="{5370BB5B-5994-458B-94B9-3994BC2ADB10}" ShortID="364568152">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loom2_Walking" ID="{1B9770FE-BEF1-49DE-ADCF-CB024E649BAF}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Loom2_Stop_Walk_Event" ID="{FBEC9EAD-6629-435A-8136-97AE34FAC9E8}">
+					<ChildrenList>
+						<Action Name="" ID="{123D3F11-357F-4094-8AA9-4321B875D8F6}" ShortID="846968968">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loom2_Walking" ID="{1B9770FE-BEF1-49DE-ADCF-CB024E649BAF}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Loom2_Play_Bass_Texture_Event" ID="{C22939E3-2EFB-4F4B-9270-96ACCE35EB88}">
+					<ChildrenList>
+						<Action Name="" ID="{7157521E-36BA-446A-93CF-A8F7CE1DA8EF}" ShortID="933059163">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom2_bass_texture" ID="{857D6CF4-50A5-46D2-A067-DE7965864B4A}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

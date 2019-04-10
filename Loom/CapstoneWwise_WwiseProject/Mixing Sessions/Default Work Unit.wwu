@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7A40510E-5CD3-466B-A8F0-779B2A07AFD9}" SchemaVersion="89">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{7A40510E-5CD3-466B-A8F0-779B2A07AFD9}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Environment Mixer" ID="{CBC79C58-5B5C-4459-8A57-220F077745FE}">
+					<ObjectList>
+						<ObjectRef Name="Candle_Event_Sound" ID="{34090DCF-19F7-4349-9B14-4B6E04E3D6C5}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+						<ObjectRef Name="match_strike" ID="{2B1ED265-9FB5-445F-AA4D-7B1487A90576}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+						<ObjectRef Name="Walking" ID="{BC9F64C4-F9A3-4CF9-AAA2-C2714BE50C7D}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+						<ObjectRef Name="Ocean" ID="{B5380959-17BF-4BE8-9F43-A164107B480B}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

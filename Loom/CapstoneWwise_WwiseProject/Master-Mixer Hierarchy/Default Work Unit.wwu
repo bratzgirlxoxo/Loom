@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}" SchemaVersion="89">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{94B118B9-B8A5-4869-B524-DE5FA9BB0A28}" WorkUnitID="{057B8784-AAD4-40C3-B4FD-5C134F07AA11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Player" ID="{269FEE4B-2DDB-48E8-8BD2-DCB3746A01AC}">
+							<ChildrenList>
+								<AuxBus Name="JumpReverb" ID="{4FF4E228-3CD6-47DB-BBFA-334125FAA467}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Reverb_Highs" ID="{8F57A901-EE73-45CF-AF4C-08AA1D35BAE6}" WorkUnitID="{A7D374E4-883E-4DCE-903F-192DE202D22A}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Loom1" ID="{05FE8BC9-1F3C-483C-87F5-2B606DBBDCE1}">
+							<ChildrenList>
+								<Bus Name="Environment" ID="{ABFCFBD7-BDF4-42A4-9863-36500772F31F}">
+									<ChildrenList>
+										<AuxBus Name="Loom1_WalkDecay" ID="{7BC2A44A-1770-4584-B448-4F2B7E2C3162}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Loom1_CandleVerb" ID="{B330579F-D63B-4E38-9B46-C21AECD38ED6}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Loom2" ID="{63825B78-5A17-40F4-A528-A59D4741F267}">
+							<ChildrenList>
+								<AuxBus Name="Loom2_WalkDecay" ID="{7513E503-4500-4273-BF43-BA6A1DE49FB4}">
+									<PropertyList>
+										<Property Name="BypassEffect1" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="Loom2_BellDelay" ID="{2C237830-3463-4D9F-A39B-55E513EA9A69}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<ObjectRef Name="BellDelay" ID="{CA2A5517-CE71-4605-B730-EA53749939E2}" WorkUnitID="{A7D374E4-883E-4DCE-903F-192DE202D22A}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Transition" ID="{EC838A6E-D505-441D-B375-C46C9CA880E8}">
+							<ChildrenList>
+								<AuxBus Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

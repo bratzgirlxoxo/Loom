@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Loom1" ID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" PersistMode="Reference"/>
+				<WorkUnit Name="Loom2" ID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" PersistMode="Reference"/>
+				<WorkUnit Name="Environment" ID="{D454797A-7B7E-423C-BEBF-50D618AD1887}" PersistMode="Reference"/>
+				<Event Name="Play_OceanSplash_Event" ID="{AD6AF879-00AF-4E9E-92F2-6A16165D6000}">
+					<ChildrenList>
+						<Action Name="" ID="{EFE24ED8-F10C-4A7B-9EBF-6751EDEDDC36}" ShortID="1066087185">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OceanSplash" ID="{36F179FE-B9C2-47BC-BC03-A019BC2D47AD}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pillar_Audio_Event" ID="{F3B7BEF3-DFD1-4491-8F23-869BFB37CB98}">
+					<ChildrenList>
+						<Action Name="" ID="{90763DB1-8B23-43FB-B0FC-F4D982968ACC}" ShortID="562110174">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pillar Audio" ID="{EBB7B9B3-DA33-4724-9AD8-8D6C9F6CD834}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Transition_Walking_Event" ID="{F969690C-9D06-4465-9254-5CD4AE6D4E31}">
+					<ChildrenList>
+						<Action Name="" ID="{FB4C5EED-15D9-4BB6-B55D-B53A01E38940}" ShortID="430744437">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Transition Walking" ID="{F53C2CBC-7993-495C-A0B0-A07BCA324C1B}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Transition_Walking_Event" ID="{1F143ACD-02C9-491D-8D8A-CBF848A2725C}">
+					<ChildrenList>
+						<Action Name="" ID="{87209B73-B3D2-447D-B67C-E3365C24B6EE}" ShortID="924601049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Transition Walking" ID="{F53C2CBC-7993-495C-A0B0-A07BCA324C1B}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Loom2_Play_Bell_Event" ID="{777BDBEB-A243-4549-8EA5-9CD2AF3FD0F8}">
+					<ChildrenList>
+						<Action Name="" ID="{EF14620C-031B-4F99-AA68-076F890C21AE}" ShortID="59972271">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bells" ID="{DB4C1BE8-E5BC-4FBE-BDE8-A53063F2B1C8}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
