@@ -1917,7 +1917,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -1927,7 +1927,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 100000
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -7289,7 +7289,7 @@ MonoBehaviour:
   fireflies: []
   emergeTime: 4
   numLights: 3
-  lights: 
+  lights: 010101
   path:
   - {fileID: 1071229033}
   - {fileID: 1255300193}
@@ -7836,6 +7836,10 @@ PrefabInstance:
       propertyPath: far clip plane
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: field of view
+      value: 103
+      objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: MinDistance
       value: 1.4286804
@@ -8205,6 +8209,7 @@ GameObject:
   - component: {fileID: 630422616}
   - component: {fileID: 630422618}
   - component: {fileID: 630422617}
+  - component: {fileID: 630422619}
   m_Layer: 0
   m_Name: ObjEmitter1
   m_TagString: Untagged
@@ -8361,7 +8366,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -8371,7 +8376,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 100000
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -12892,6 +12897,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &630422619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630422615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2dab83fb104ee42a2d470c8a3df2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchFrequency: 3
+  player: {fileID: 1618714903}
+  distanceThreshold: 20
+  PlayBellEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d422915d6b8a58a48b644aef1d339e85,
+      type: 2}
 --- !u!1 &653495448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1318062587, guid: 169ece776bfe8ca47860253619be6cbf,
@@ -17398,7 +17423,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d6ebc304957b9f448be3bf21d6a0e378,
       type: 2}
-  UpdateInterval: 0.05
+  UpdateInterval: 0.01
   ColliderInParent: 0
 --- !u!1 &989363580
 GameObject:
@@ -17454,7 +17479,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3d42cadff367144dda019bbcbac0c2fc,
       type: 2}
-  UpdateInterval: 0.05
+  UpdateInterval: 0.01
   ColliderInParent: 0
 --- !u!65 &989363583
 BoxCollider:
@@ -18232,7 +18257,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -18242,7 +18267,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 100000
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -28093,7 +28118,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -28103,7 +28128,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 100000
       minScalar: 5
       maxCurve:
         serializedVersion: 2
