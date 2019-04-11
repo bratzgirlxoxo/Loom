@@ -1761,6 +1761,7 @@ GameObject:
   - component: {fileID: 184373081}
   - component: {fileID: 184373083}
   - component: {fileID: 184373082}
+  - component: {fileID: 184373084}
   m_Layer: 0
   m_Name: ObjEmitter3
   m_TagString: Untagged
@@ -6448,6 +6449,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &184373084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184373080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2dab83fb104ee42a2d470c8a3df2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchFrequency: 3
+  player: {fileID: 1618714903}
+  distanceThreshold: 1
+  PlayBellEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d422915d6b8a58a48b644aef1d339e85,
+      type: 2}
 --- !u!1 &185186171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: da315861678751f449659c1f2c8ca6c5,
@@ -7838,7 +7859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: field of view
-      value: 103
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: MinDistance
@@ -8210,6 +8231,7 @@ GameObject:
   - component: {fileID: 630422618}
   - component: {fileID: 630422617}
   - component: {fileID: 630422619}
+  - component: {fileID: 630422620}
   m_Layer: 0
   m_Name: ObjEmitter1
   m_TagString: Untagged
@@ -12911,12 +12933,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchFrequency: 3
   player: {fileID: 1618714903}
-  distanceThreshold: 20
+  distanceThreshold: 1
   PlayBellEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d422915d6b8a58a48b644aef1d339e85,
       type: 2}
+--- !u!135 &630422620
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630422615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 534.8684
+  m_Center: {x: 9.3828125, y: 55.895752, z: -53.0791}
 --- !u!1 &653495448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1318062587, guid: 169ece776bfe8ca47860253619be6cbf,
@@ -13246,7 +13281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 428749beef3cc7343845164c2643c5df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -40
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 428749beef3cc7343845164c2643c5df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18101,6 +18136,7 @@ GameObject:
   - component: {fileID: 1239074043}
   - component: {fileID: 1239074045}
   - component: {fileID: 1239074044}
+  - component: {fileID: 1239074046}
   m_Layer: 0
   m_Name: ObjEmitter2
   m_TagString: Untagged
@@ -22788,6 +22824,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1239074046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239074042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2dab83fb104ee42a2d470c8a3df2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchFrequency: 3
+  player: {fileID: 1618714903}
+  distanceThreshold: 1
+  PlayBellEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d422915d6b8a58a48b644aef1d339e85,
+      type: 2}
 --- !u!1 &1241443384
 GameObject:
   m_ObjectHideFlags: 0
@@ -27962,6 +28018,7 @@ GameObject:
   - component: {fileID: 1512238336}
   - component: {fileID: 1512238338}
   - component: {fileID: 1512238337}
+  - component: {fileID: 1512238339}
   m_Layer: 0
   m_Name: ObjEmitter4
   m_TagString: Untagged
@@ -32649,6 +32706,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1512238339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512238335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2dab83fb104ee42a2d470c8a3df2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchFrequency: 3
+  player: {fileID: 1618714903}
+  distanceThreshold: 1
+  PlayBellEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d422915d6b8a58a48b644aef1d339e85,
+      type: 2}
 --- !u!1 &1513591483
 GameObject:
   m_ObjectHideFlags: 0
