@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1318062588}
   - component: {fileID: 1318062589}
-  - component: {fileID: 1318062590}
+  - component: {fileID: 299744389386011377}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -70,7 +70,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1318062590
+--- !u!114 &299744389386011377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1318062587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f41b5052dba20c4e80e396aa5fa47e9, type: 3}
+  m_Script: {fileID: 11500000, guid: f23513cb81156f3498f979576d316717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeScale: 1.5
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7928399748266983293}
   - component: {fileID: 7839834027809684533}
   - component: {fileID: 99880477918337925}
-  - component: {fileID: 4717214111952605169}
+  - component: {fileID: 966691553166108132}
   m_Layer: 0
   m_Name: Flame
   m_TagString: Untagged
@@ -177,7 +177,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4717214111952605169
+--- !u!114 &966691553166108132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,9 +186,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 816740697910565332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b964bb27e5df704ba32640aef087859, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f5e1d2d58b9acb4a864277223e89968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutCam: {fileID: 0}
+  fpsController: {fileID: 0}
 --- !u!1 &1671365913843809041
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,10 +201,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1899917898}
   - component: {fileID: 7698856781676475175}
-  - component: {fileID: 8670739014200756377}
   - component: {fileID: 2207618243890930846}
   - component: {fileID: 6794660082449681680}
   - component: {fileID: 8973300716222745850}
+  - component: {fileID: 1747730833346331773}
   m_Layer: 0
   m_Name: TestCandle
   m_TagString: Untagged
@@ -242,29 +244,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &8670739014200756377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671365913843809041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c2a3e1326e3914d9ff3a7c38b54e2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLit: 0
-  canLight: 0
-  myLight: {fileID: 1318062587}
-  nextLoomTrigger: {fileID: 0}
-  objAnim: {fileID: 0}
-  idx: 0
-  Candle_Strike_Event:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7bf191fa8cbeb154e8d4fbc0e28ae32b,
-      type: 2}
 --- !u!65 &2207618243890930846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -333,6 +312,33 @@ MonoBehaviour:
   multiPositionArray: []
   MultiPositionType: 1
   multiPositionTypeLabel: 0
+--- !u!114 &1747730833346331773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671365913843809041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65547c822bc883e4f8bef767d090f34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  canLight: 0
+  myLight: {fileID: 1318062587}
+  nextLoomTrigger: {fileID: 0}
+  objAnim: {fileID: 0}
+  idx: 0
+  Candle_Strike_Event:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7bf191fa8cbeb154e8d4fbc0e28ae32b,
+      type: 2}
+  endPosPub: {x: 0, y: 0, z: 0}
+  willMove: 0
+  oscillateScale: 0
+  oscillateSpeed: 0
 --- !u!1 &7471615497680438067
 GameObject:
   m_ObjectHideFlags: 0
