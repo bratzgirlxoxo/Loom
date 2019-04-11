@@ -29,7 +29,7 @@
 				<Event Id="2993600909" Name="Loom1_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="110069035" Name="Loom1_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="2311484592" Name="Loom2_Play_Bass_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event" MaxAttenuation="100.000000"/>
-				<Event Id="3348270690" Name="Loom2_Play_Bell_Event" ObjectPath="\Events\Default Work Unit\Loom2_Play_Bell_Event"/>
+				<Event Id="3348270690" Name="Loom2_Play_Bell_Event" ObjectPath="\Events\Default Work Unit\Loom2_Play_Bell_Event" MaxAttenuation="20.000000"/>
 				<Event Id="2785362746" Name="Loom2_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="2693566612" Name="Loom2_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="2984240761" Name="Play_Ocean_Event" ObjectPath="\Events\Default Work Unit\Environment\Play_Ocean_Event"/>
