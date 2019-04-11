@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/CapstoneWwise/CapstoneWwise/CapstoneWwise_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/CapstoneWwise/CapstoneWwise/CapstoneWwise_WwiseProject/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/CapstoneWwise/CapstoneWwise/CapstoneWwise_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/Loom/Loom/CapstoneWwise_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/Loom/Loom/CapstoneWwise_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/Loom/Loom/CapstoneWwise_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/CapstoneWwise/CapstoneWwise/CapstoneWwise_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/patrick/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Git/Loom/Loom/CapstoneWwise_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -29,6 +29,7 @@
 				<Event Id="2993600909" Name="Loom1_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="110069035" Name="Loom1_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="2311484592" Name="Loom2_Play_Bass_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event" MaxAttenuation="100.000000"/>
+				<Event Id="3348270690" Name="Loom2_Play_Bell_Event" ObjectPath="\Events\Default Work Unit\Loom2_Play_Bell_Event"/>
 				<Event Id="2785362746" Name="Loom2_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="2693566612" Name="Loom2_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="2984240761" Name="Play_Ocean_Event" ObjectPath="\Events\Default Work Unit\Environment\Play_Ocean_Event"/>
@@ -65,6 +66,10 @@
 				<File Id="95046207" Language="SFX">
 					<ShortName>loom2_bass_texture.wav</ShortName>
 					<Path>SFX/loom2_bass_texture_8956FC97.wem</Path>
+				</File>
+				<File Id="103764183" Language="SFX">
+					<ShortName>Bells\loom2_bell_7.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_7_9516CD08.wem</Path>
 				</File>
 				<File Id="105431202" Language="SFX">
 					<ShortName>OceanSplash\splash4.wav</ShortName>
@@ -114,6 +119,10 @@
 					<ShortName>Transition Walking\Transition_Walk_10.wav</ShortName>
 					<Path>SFX/Transition Walking/Transition_Walk_10_7A0878E4.wem</Path>
 				</File>
+				<File Id="293923305" Language="SFX">
+					<ShortName>Bells\loom2_bell_6.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_6_F7CDE994.wem</Path>
+				</File>
 				<File Id="298233022" Language="SFX">
 					<ShortName>pillar_4.wav</ShortName>
 					<Path>SFX/pillar_4_62BFDFDE.wem</Path>
@@ -121,6 +130,10 @@
 				<File Id="298977393" Language="SFX">
 					<ShortName>Transition Walking\Transition_Walk_7.wav</ShortName>
 					<Path>SFX/Transition Walking/Transition_Walk_7_F37D24CF.wem</Path>
+				</File>
+				<File Id="321688546" Language="SFX">
+					<ShortName>Bells\loom2_bell_4.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_4_CEA97EE1.wem</Path>
 				</File>
 				<File Id="327883855" Language="SFX">
 					<ShortName>match_strike.wav</ShortName>
@@ -194,6 +207,18 @@
 					<ShortName>walk_sustain_3.1.wav</ShortName>
 					<Path>SFX/walk_sustain_3.1_8956FC97.wem</Path>
 				</File>
+				<File Id="718542971" Language="SFX">
+					<ShortName>Bells\loom2_bell_9.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_9_FE512C72.wem</Path>
+				</File>
+				<File Id="732193301" Language="SFX">
+					<ShortName>Bells\loom2_bell_3.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_3_3F8DF848.wem</Path>
+				</File>
+				<File Id="753291653" Language="SFX">
+					<ShortName>Bells\loom2_bell_1.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_1_0F176AF8.wem</Path>
+				</File>
 				<File Id="772492100" Language="SFX">
 					<ShortName>walk_sustain_2.1.wav</ShortName>
 					<Path>SFX/walk_sustain_2.1_9DA763E8.wem</Path>
@@ -238,6 +263,10 @@
 					<ShortName>OceanSplash\splash1.wav</ShortName>
 					<Path>SFX/OceanSplash/splash1_56D34C19.wem</Path>
 				</File>
+				<File Id="957634866" Language="SFX">
+					<ShortName>Bells\loom2_bell_2.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_2_EAEF712D.wem</Path>
+				</File>
 				<File Id="971283359" Language="SFX">
 					<ShortName>walk_end_5.1.wav</ShortName>
 					<Path>SFX/walk_end_5.1_56D34C19.wem</Path>
@@ -257,6 +286,10 @@
 				<File Id="1042483751" Language="SFX">
 					<ShortName>walk_start_3.1.wav</ShortName>
 					<Path>SFX/walk_start_3.1_56D34C19.wem</Path>
+				</File>
+				<File Id="1043956754" Language="SFX">
+					<ShortName>Bells\loom2_bell_5.wav</ShortName>
+					<Path>SFX/Bells/loom2_bell_5_8F260B6C.wem</Path>
 				</File>
 				<File Id="1058971860" Language="SFX">
 					<ShortName>loom2_walk8.wav</ShortName>
