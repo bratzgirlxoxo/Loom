@@ -75,6 +75,18 @@ ModelImporter:
     100138: RoofSideSlit2
     100140: RoofSideSlit3
     100142: RoofSideSlit4
+    100144: Dirt
+    100146: Dirt 1
+    100148: Dirt 2
+    100150: Dirt 3
+    100152: Dirt 4
+    100154: Dirt 5
+    100156: Pot1
+    100158: Pot2
+    100160: Pot3
+    100162: Pot4
+    100164: Pot5
+    100166: Pot6
     400000: BottomRamp
     400002: BottomWalkway
     400004: Ceiling1
@@ -147,6 +159,18 @@ ModelImporter:
     400138: RoofSideSlit2
     400140: RoofSideSlit3
     400142: RoofSideSlit4
+    400144: Dirt
+    400146: Dirt 1
+    400148: Dirt 2
+    400150: Dirt 3
+    400152: Dirt 4
+    400154: Dirt 5
+    400156: Pot1
+    400158: Pot2
+    400160: Pot3
+    400162: Pot4
+    400164: Pot5
+    400166: Pot6
     2100000: lambert1
     2300000: BottomRamp
     2300002: BottomWalkway
@@ -217,6 +241,18 @@ ModelImporter:
     2300132: RoofSideSlit2
     2300134: RoofSideSlit3
     2300136: RoofSideSlit4
+    2300138: Dirt
+    2300140: Dirt 1
+    2300142: Dirt 2
+    2300144: Dirt 3
+    2300146: Dirt 4
+    2300148: Dirt 5
+    2300150: Pot1
+    2300152: Pot2
+    2300154: Pot3
+    2300156: Pot4
+    2300158: Pot5
+    2300160: Pot6
     3300000: BottomRamp
     3300002: BottomWalkway
     3300004: Ceiling1
@@ -286,6 +322,18 @@ ModelImporter:
     3300132: RoofSideSlit2
     3300134: RoofSideSlit3
     3300136: RoofSideSlit4
+    3300138: Dirt
+    3300140: Dirt 1
+    3300142: Dirt 2
+    3300144: Dirt 3
+    3300146: Dirt 4
+    3300148: Dirt 5
+    3300150: Pot1
+    3300152: Pot2
+    3300154: Pot3
+    3300156: Pot4
+    3300158: Pot5
+    3300160: Pot6
     4300000: RampPlatform3
     4300002: RampPlatform2
     4300004: Ramp2
@@ -355,6 +403,18 @@ ModelImporter:
     4300132: RoofRampSide4
     4300134: RoofRampSide5
     4300136: Ceiling2
+    4300138: Pot1
+    4300140: Dirt
+    4300142: Pot2
+    4300144: Dirt
+    4300146: Pot3
+    4300148: Dirt
+    4300150: Pot4
+    4300152: Dirt
+    4300154: Pot5
+    4300156: Dirt
+    4300158: Pot6
+    4300160: Dirt
   externalObjects: {}
   materials:
     importMaterials: 1
