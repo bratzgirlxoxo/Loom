@@ -37,13 +37,15 @@ public class TutorialGhost : MonoBehaviour
 
     void Update()
     {
-        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 6f)
+        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 9f)
         {
-            stageIdx++;
+            
             rBody.AddForce((transform.up - transform.forward)*jumpStrength, ForceMode.Impulse);
+            
+            stageIdx++;
         }
 
-        if (stageIdx == 2 && Vector3.Distance(transform.position, player.position) < 3f)
+        if (stageIdx == 2 && Vector3.Distance(transform.position, player.position) < 2.5f)
         {
             transform.position = stage2Pos;
             stageIdx++;
@@ -77,6 +79,8 @@ public class TutorialGhost : MonoBehaviour
 
         stageIdx++;
     }
+    
+    
 
     
     IEnumerator JumpTutorial3()
