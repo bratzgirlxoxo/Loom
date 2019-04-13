@@ -2,15 +2,18 @@
 {
     Properties
     {
-        _MainColor ("Main Color", Color) = (1, 1, 1, 1)
+        [HDR] _MainColor ("Main Color", Color) = (1, 1, 1, 1)
         _WorldMaxHeight ("Max World Height", Float) = 1
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Transparent" "Queue"="Transparent"}
 
         Pass
         {
+            Zwrite Off
+            Blend SrcAlpha OneMinusSrcAlpha 
+        
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -47,7 +50,7 @@
             fixed4 frag (v2f i) : SV_Target
             {
                 float brightnessVal = remap(i.worldPos.y, 0.0, _WorldMaxHeight, 0.1, 1.0);
-                float4 col = float4(_MainColor.rgb * brightnessVal, 1.0);
+                float4 col = float4(_MainColor.rgb * brightnessVal, brightnessVal);
                 return col;
             }
             ENDCG
