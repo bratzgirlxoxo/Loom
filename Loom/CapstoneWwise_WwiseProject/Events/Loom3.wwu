@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" SchemaVersion="89" RootDocumentID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}">
+	<Events>
+		<WorkUnit Name="Loom3" ID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" OwnerID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Loom3_Stop_MainWalk_Event" ID="{3128DD16-64C2-406A-AD0B-E7B39975E143}">
+					<ChildrenList>
+						<Action Name="" ID="{FA559971-A13B-4E81-BE32-45592AA8C684}" ShortID="925737995">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main" ID="{F0BEEFA7-3D89-4D09-9CED-8ABD4CBFAADF}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Loom3_Play_MainWalk_Event" ID="{6902F71A-060B-4336-9CC3-1CC342EBC670}">
+					<ChildrenList>
+						<Action Name="" ID="{490E3333-D504-43AF-A2F1-F780C56FBDC8}" ShortID="940600053">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main" ID="{F0BEEFA7-3D89-4D09-9CED-8ABD4CBFAADF}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

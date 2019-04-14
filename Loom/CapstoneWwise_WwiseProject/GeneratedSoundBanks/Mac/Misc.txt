@@ -1,0 +1,33 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2025220688	Play_Pillar_Audio_Event			\Default Work Unit\Misc\Play_Pillar_Audio_Event	
+	2977236588	Play_OceanSplash_Event			\Default Work Unit\Misc\Play_OceanSplash_Event	
+	2984240761	Play_Ocean_Event			\Default Work Unit\Environment\Play_Ocean_Event	
+	3274795716	Stop_Transition_Walking_Event			\Default Work Unit\Misc\Stop_Transition_Walking_Event	
+	3321450650	Play_Transition_Walking_Event			\Default Work Unit\Misc\Play_Transition_Walking_Event	
+
+Effect plug-ins	ID	Name	Type				Notes
+	484890516	Church_Small_Wood	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8962880	Transition_Walk_9	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_9_62FAD542.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_9		672592
+	85982036	Transition_Walk_8	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_8_2D619F91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_8		826940
+	93764567	pillar_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Pillar Audio\pillar_3_64C57320.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Pillar Audio\pillar_3		3545632
+	105431202	splash4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\OceanSplash\splash4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\OceanSplash\splash4		578880
+	115469084	Transition_Walk_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_4_075E7F2D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_4		441064
+	118869749	pillar_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Pillar Audio\pillar_2_048F6488.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Pillar Audio\pillar_2		3536424
+	141803887	Transition_Walk_6	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_6_A583CE3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_6		1014364
+	155211066	Ocean1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Ocean1_74C37703.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ocean\Ocean1		26139900
+	276512877	Transition_Walk_10	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_10_90BAAC10.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_10		661564
+	298233022	pillar_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\pillar_4_62BFDFDE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Pillar Audio\pillar_4		3527212
+	298977393	Transition_Walk_7	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_7_BFCB0E6A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_7		705664
+	344561399	Transition_Walk_5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_5_E6304CA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_5		485164
+	627351554	Transition_Walk_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_1_71F27762.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_1		617464
+	673249859	pillar_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Pillar Audio\pillar_1_7F07C0A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Pillar Audio\pillar_1		3545632
+	830106241	splash2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\OceanSplash\splash2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\OceanSplash\splash2		331504
+	874215973	Transition_Walk_11	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_11_50F76ECA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_11		793864
+	881134447	Transition_Walk_12	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_12_8591EF2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_12		1462780
+	911225625	splash3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\OceanSplash\splash3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\OceanSplash\splash3		324616
+	915031029	Transition_Walk_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_3_6962FA86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_3		661564
+	955357402	splash1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\OceanSplash\splash1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\OceanSplash\splash1		529264
+	1009680488	Transition_Walk_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_2_58D1D5D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_2		639516
+

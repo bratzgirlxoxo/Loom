@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2311484592	Loom2_Play_Bass_Texture_Event			\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event	
+	2693566612	Loom2_Stop_Walk_Event			\Default Work Unit\Loom2\Loom2_Stop_Walk_Event	
+	2785362746	Loom2_Play_Walk_Event			\Default Work Unit\Loom2\Loom2_Play_Walk_Event	
+	3348270690	Loom2_Play_Bell_Event			\Default Work Unit\Loom2\Loom2_Play_Bell_Event	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	5905008	loom2_walk1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk1		2419264
+	95046207	loom2_bass_texture	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_bass_texture_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\loom2_bass_texture		19353664
+	103764183	loom2_bell_7	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_7_9516CD08.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_7		725356
+	142565857	loom2_walk7	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk7_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk7		1890064
+	293923305	loom2_bell_6	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_6_F7CDE994.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_6		569428
+	321688546	loom2_bell_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_4_0D6C1194.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_4		652116
+	362286137	loom2_walk3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk3		1512064
+	444208063	loom2_walk6	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk6_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk6		2268064
+	474095687	loom2_walk2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk2		1663268
+	580597318	loom2_walk4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk4		1738864
+	718542971	loom2_bell_8	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_9_FE512C72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_8		1027752
+	732193301	loom2_bell_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_3_3F8DF848.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_3		661564
+	753291653	loom2_bell_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_1_774B766D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_1		982864
+	957634866	loom2_bell_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_2_EAEF712D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_2		623768
+	990941897	loom2_walk5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk5		1587664
+	1043956754	loom2_bell_5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\Bells\loom2_bell_5_A2D106E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_5		557616
+	1058971860	loom2_walk8	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Windows\SFX\loom2_walk8_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk8		3005168
+
