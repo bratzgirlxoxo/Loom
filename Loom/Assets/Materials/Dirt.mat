@@ -62,9 +62,9 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DeformScale: 0.001
+    - _DeformScale: 2
     - _DetailNormalMapScale: 1
-    - _DirtScale: 1
+    - _DirtScale: 0
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -73,8 +73,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ScrollSpeed1: 0
-    - _ScrollSpeed2: 0
+    - _ScrollSpeed1: 0.25
+    - _ScrollSpeed2: 0.25
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

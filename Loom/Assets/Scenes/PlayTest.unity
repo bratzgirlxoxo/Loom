@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.1463599, g: 0.15106797, b: 0.21698111, a: 0.53333336}
   m_FogMode: 3
-  m_FogDensity: 0.02
+  m_FogDensity: 0.015
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.009211468, g: 0.034442887, b: 0.084905684, a: 1}
@@ -12579,7 +12579,7 @@ PrefabInstance:
     - target: {fileID: 6891766368867671714, guid: c64b3d650da86452e883467763c00998,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.53
+      value: 37.85
       objectReference: {fileID: 0}
     - target: {fileID: 6891766368867671714, guid: c64b3d650da86452e883467763c00998,
         type: 3}
@@ -12690,7 +12690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460995614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.5006, y: 29.754335, z: -27.070805}
+  m_LocalPosition: {x: -38.5006, y: 30.1, z: -27.070805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 873979614}
@@ -13185,7 +13185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: field of view
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: field of view
@@ -13194,6 +13194,11 @@ PrefabInstance:
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: MinDistance
       value: 1.4286804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211816273581116793, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: depthTextureMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -44727,11 +44732,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3350897535700046185, guid: baa17cfaa9bf54b48be224be596788ca,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7085355337308807973, guid: baa17cfaa9bf54b48be224be596788ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44777,5 +44777,10 @@ PrefabInstance:
       propertyPath: fpsController
       value: 
       objectReference: {fileID: 1949004185}
+    - target: {fileID: 3350897535700046185, guid: baa17cfaa9bf54b48be224be596788ca,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa17cfaa9bf54b48be224be596788ca, type: 3}
