@@ -62,9 +62,9 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DeformScale: 2
+    - _DeformScale: 0.001
     - _DetailNormalMapScale: 1
-    - _DirtScale: 0
+    - _DirtScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
