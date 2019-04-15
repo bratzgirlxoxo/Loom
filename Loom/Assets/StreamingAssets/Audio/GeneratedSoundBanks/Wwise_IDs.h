@@ -24,6 +24,12 @@ namespace AK
         static const AkUniqueID LOOM2_PLAY_BELL_EVENT = 3348270690U;
         static const AkUniqueID LOOM2_PLAY_WALK_EVENT = 2785362746U;
         static const AkUniqueID LOOM2_STOP_WALK_EVENT = 2693566612U;
+        static const AkUniqueID LOOM3_PLAY_ENDWALK_EVENT = 752228486U;
+        static const AkUniqueID LOOM3_PLAY_INTROWALK_EVENT = 1320833443U;
+        static const AkUniqueID LOOM3_PLAY_MAINWALK_EVENT = 1678075168U;
+        static const AkUniqueID LOOM3_STOP_ENDWALK_EVENT = 78383388U;
+        static const AkUniqueID LOOM3_STOP_INTROWALK_EVENT = 1793405145U;
+        static const AkUniqueID LOOM3_STOP_MAINWALK_EVENT = 1155784786U;
         static const AkUniqueID PLAY_OCEAN_EVENT = 2984240761U;
         static const AkUniqueID PLAY_OCEANSPLASH_EVENT = 2977236588U;
         static const AkUniqueID PLAY_PILLAR_AUDIO_EVENT = 2025220688U;

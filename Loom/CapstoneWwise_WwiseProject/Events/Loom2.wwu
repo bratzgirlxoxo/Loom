@@ -45,6 +45,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Loom2_Play_Bell_Event" ID="{777BDBEB-A243-4549-8EA5-9CD2AF3FD0F8}">
+					<ChildrenList>
+						<Action Name="" ID="{EF14620C-031B-4F99-AA68-076F890C21AE}" ShortID="59972271">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bells" ID="{DB4C1BE8-E5BC-4FBE-BDE8-A53063F2B1C8}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1363,6 +1363,11 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1794,7 +1799,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2092,6 +2097,569 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Loom3" ID="{21EE3080-97E6-41D7-99B2-0FDEE48FEDBB}" ShortID="955223538">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Environment" ID="{9855202A-84EF-41DA-B395-5DEAEC91D8CE}" ShortID="731723259">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Loom1_WalkDecay" ID="{7BC2A44A-1770-4584-B448-4F2B7E2C3162}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Folder Name="Walking" ID="{EC7B655C-B314-48F3-8BCC-2CA9847932FB}" ShortID="66543933">
+									<ChildrenList>
+										<RandomSequenceContainer Name="End" ID="{7BFB3545-5625-4454-9A19-08B8AE213A8F}" ShortID="398117914">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="loom3_endWalking_1" ID="{B05BD721-E716-4ED1-A14C-1A8E9F7A60A6}" ShortID="58283478">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_1" ID="{20AD7691-B61A-48D6-9E3B-6A1289C5C54A}" ShortID="228876318">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.316136114160263"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.04226125137212"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_1" ID="{20AD7691-B61A-48D6-9E3B-6A1289C5C54A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_endWalking_2" ID="{FE5C9104-D8DC-4EE2-9D4D-E8D3A68F0106}" ShortID="462698137">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_2" ID="{4B97B5E4-683C-433C-9208-87E18A173DD2}" ShortID="539774903">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.531010949568265"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.938530980632282"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_2" ID="{4B97B5E4-683C-433C-9208-87E18A173DD2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_endWalking_3" ID="{078F8434-F8E8-4861-9F91-7D9EB08EF413}" ShortID="504112490">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_3" ID="{20747A1E-0980-46D2-80B4-228A804A4DEA}" ShortID="75155974">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.950878155872668"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.35428100987925"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_3" ID="{20747A1E-0980-46D2-80B4-228A804A4DEA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_endWalking_4" ID="{B6388A7F-02E0-4AC1-832C-A5F2C0F1A967}" ShortID="403801323">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_4" ID="{0E616E0D-EC82-472F-85DA-D8BEC25E0B51}" ShortID="333812879">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.572586403020777"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.834798867955525"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_4" ID="{0E616E0D-EC82-472F-85DA-D8BEC25E0B51}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_endWalking_5" ID="{25C98F65-DDF2-40D5-8A2E-259575E31144}" ShortID="404720204">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_5" ID="{250E3C03-3B16-4E75-9719-5204BEBA9C7E}" ShortID="354906197">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.527167947310648"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.793084522502744"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_5" ID="{250E3C03-3B16-4E75-9719-5204BEBA9C7E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_endWalking_6" ID="{0D8D9F4F-1BC1-4D5B-92D0-89973BF5F5CB}" ShortID="918531092">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_6" ID="{ED240544-2A18-4DBA-BBC1-4E21E645A871}" ShortID="273675297">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.40340409855856"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.489127469502254"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_6.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_6" ID="{ED240544-2A18-4DBA-BBC1-4E21E645A871}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_endWalking_7" ID="{540BCA23-CF95-4F58-90D4-19CC33A060ED}" ShortID="83330385">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_endWalking_7" ID="{2830DC4E-8A57-41F1-BBE8-89CD3CD413CD}" ShortID="304929929">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.538111367488818"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.901174458806574"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\End\loom3_endWalking_7.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_endWalking_7" ID="{2830DC4E-8A57-41F1-BBE8-89CD3CD413CD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Intro" ID="{F6577D20-BBBA-489D-A4CA-A922E0F227CB}" ShortID="868009819">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Pillar_Attenuation" ID="{303C8739-6DDC-42A9-8B40-B4211E935E3B}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+													<ObjectRef Name="Aliasing" ID="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="loom3_introWalking_1" ID="{7D33DC21-D235-4B8C-8176-EADFF5583BE3}" ShortID="341946258">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_introWalking_1" ID="{1F73B967-5029-4DDB-A88A-174920C61948}" ShortID="237585359">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.20375994085889"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.599959825862287"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Intro\loom3_introWalking_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_introWalking_1" ID="{1F73B967-5029-4DDB-A88A-174920C61948}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_introWalking_2" ID="{F031CD67-F3CA-4CED-9C81-EDAF5ACE856A}" ShortID="685552864">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_introWalking_2" ID="{46543CA3-5A02-4D37-BE51-59F99C0A2F79}" ShortID="948031798">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.649012074643249"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.950878155872669"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Intro\loom3_introWalking_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_introWalking_2" ID="{46543CA3-5A02-4D37-BE51-59F99C0A2F79}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_introWalking_3" ID="{02220062-5B56-41B9-87E8-8F6F22D770AB}" ShortID="507560868">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_introWalking_3" ID="{2E3FB4FA-FB7B-4B2A-91A2-4ED039EB5F34}" ShortID="737595458">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.382615500645922"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.981065386271597"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Intro\loom3_introWalking_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_introWalking_3" ID="{2E3FB4FA-FB7B-4B2A-91A2-4ED039EB5F34}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_introWalking_4" ID="{B33B9EEB-5E8E-4270-BF40-D82AA7D89417}" ShortID="1066220452">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_introWalking_4" ID="{2B8F39C0-AB1B-492C-9639-58A37FD554FB}" ShortID="602519232">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.212473148791167"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.391397905667938"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Intro\loom3_introWalking_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_introWalking_4" ID="{2B8F39C0-AB1B-492C-9639-58A37FD554FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_introWalking_5" ID="{EBB1F08E-9889-42A2-BD6C-7E55CDA89EB0}" ShortID="211265469">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_introWalking_5" ID="{F45CE322-099E-46BD-8A23-AC8309622B95}" ShortID="84254497">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.458682591953723"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.897846775739201"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Intro\loom3_introWalking_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_introWalking_5" ID="{F45CE322-099E-46BD-8A23-AC8309622B95}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_introWalking_6" ID="{14B25E56-DD78-4382-8DDC-4E00DB26E91D}" ShortID="306332048">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_introWalking_6" ID="{017A24E4-AF7B-4123-A695-D5FA2E3EDFCE}" ShortID="328576575">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.181068273632175"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.514801954444419"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Intro\loom3_introWalking_6.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_introWalking_6" ID="{017A24E4-AF7B-4123-A695-D5FA2E3EDFCE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="loom3_introWalking_1" ID="{7D33DC21-D235-4B8C-8176-EADFF5583BE3}"/>
+												<ItemRef Name="loom3_introWalking_2" ID="{F031CD67-F3CA-4CED-9C81-EDAF5ACE856A}"/>
+												<ItemRef Name="loom3_introWalking_3" ID="{02220062-5B56-41B9-87E8-8F6F22D770AB}"/>
+												<ItemRef Name="loom3_introWalking_4" ID="{B33B9EEB-5E8E-4270-BF40-D82AA7D89417}"/>
+												<ItemRef Name="loom3_introWalking_5" ID="{EBB1F08E-9889-42A2-BD6C-7E55CDA89EB0}"/>
+												<ItemRef Name="loom3_introWalking_6" ID="{14B25E56-DD78-4382-8DDC-4E00DB26E91D}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Main" ID="{F0BEEFA7-3D89-4D09-9CED-8ABD4CBFAADF}" ShortID="15284687">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Walking Attenuation" ID="{845BCFB9-55C1-4968-91E9-2B14A21D7B91}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="loom3_mainWalking_1" ID="{B892FED0-0C41-417B-8446-69BC5CEF8CCE}" ShortID="969545130">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_mainWalking_1" ID="{37C3FC4C-AED1-44FC-AB91-1941EA8F79D0}" ShortID="789106496">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.981065585399912"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.11484725613626"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Main\loom3_mainWalking_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_mainWalking_1" ID="{37C3FC4C-AED1-44FC-AB91-1941EA8F79D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_mainWalking_2" ID="{3AA5E698-39F2-4214-BB86-2BF45889632A}" ShortID="955851059">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_mainWalking_2" ID="{72013742-BC2E-4F89-BC98-3A231C2301B4}" ShortID="283803199">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.426043370147181"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.738475174921779"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.302964174326884"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Main\loom3_mainWalking_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_mainWalking_2" ID="{72013742-BC2E-4F89-BC98-3A231C2301B4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_mainWalking_3" ID="{BE51436A-2EC1-452E-8255-D4EE721E9EA5}" ShortID="438541199">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_mainWalking_3" ID="{8D03837D-0A17-41B4-A56E-66B8C3B2D3CD}" ShortID="227049778">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.192096597145993"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.184412733260154"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.05488474204171"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Main\loom3_mainWalking_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_mainWalking_3" ID="{8D03837D-0A17-41B4-A56E-66B8C3B2D3CD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_mainWalking_4" ID="{0512B924-1F9A-44E2-B703-3BC16AF97CA9}" ShortID="1029138701">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_mainWalking_4" ID="{4492B05D-2B17-4F20-8F6D-6870E8481605}" ShortID="755751054">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.129665539102578"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.446625745797771"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.24315558642045E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Main\loom3_mainWalking_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_mainWalking_4" ID="{4492B05D-2B17-4F20-8F6D-6870E8481605}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_mainWalking_5" ID="{BA1C5A74-DE26-4039-B0E9-C51792677484}" ShortID="433223030">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_mainWalking_5" ID="{EB9B1584-4A07-4ECB-948D-94F8D7F1A933}" ShortID="872253919">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.379391214956528"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.336032218961496"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.48765608548578"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Main\loom3_mainWalking_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_mainWalking_5" ID="{EB9B1584-4A07-4ECB-948D-94F8D7F1A933}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom3_mainWalking_6" ID="{A4A03437-C641-44E3-89D7-AE634D83BFB4}" ShortID="253156087">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom3_mainWalking_5" ID="{1EF01171-9626-4AD7-A111-80EF4BF69CB3}" ShortID="777737101">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.379391214956528"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.336032218961496"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.45513683848951"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Walking\Main\loom3_mainWalking_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom3_mainWalking_5" ID="{1EF01171-9626-4AD7-A111-80EF4BF69CB3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="loom3_mainWalking_1" ID="{B892FED0-0C41-417B-8446-69BC5CEF8CCE}"/>
+												<ItemRef Name="loom3_mainWalking_2" ID="{3AA5E698-39F2-4214-BB86-2BF45889632A}"/>
+												<ItemRef Name="loom3_mainWalking_3" ID="{BE51436A-2EC1-452E-8255-D4EE721E9EA5}"/>
+												<ItemRef Name="loom3_mainWalking_4" ID="{0512B924-1F9A-44E2-B703-3BC16AF97CA9}"/>
+												<ItemRef Name="loom3_mainWalking_5" ID="{BA1C5A74-DE26-4039-B0E9-C51792677484}"/>
+												<ItemRef Name="loom3_mainWalking_6" ID="{A4A03437-C641-44E3-89D7-AE634D83BFB4}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
