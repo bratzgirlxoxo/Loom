@@ -40,7 +40,7 @@ public class LoomTrigger : MonoBehaviour
         lights = new bool[numLights];
         cutSceneReady = true;
         pillar1.SetActive(false);
-        loom.SetActive(false);
+        //loom.SetActive(false);
     }
 
     // Update is called once per frame

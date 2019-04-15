@@ -5,7 +5,7 @@ using UnityEngine;
 public class uiCandle : MonoBehaviour
 {
 
-    public Transform[] candles;
+    public Transform candle;
 
     public float yOffset;
 
@@ -19,9 +19,9 @@ public class uiCandle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(candles[0].position.x, candles[0].position.y + yOffset, candles[0].position.z);
+        transform.localPosition = new Vector3(transform.localPosition.x, candle.localPosition.y + yOffset, transform.localPosition.z);
         GetComponent<MeshRenderer>().enabled = false;
-        startPos = transform.position;
+        startPos = transform.localPosition;
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class uiCandle : MonoBehaviour
         transform.Rotate(0f, rotationSpeed, 0f);
         Vector3 newPos = startPos;
         newPos.y += bounceDistance * Mathf.Sin(Time.time * bounceSpeed);
-        transform.position = newPos;
+        transform.localPosition = newPos;
 
         if (Input.GetKeyDown(KeyCode.E) && inRange)
         {

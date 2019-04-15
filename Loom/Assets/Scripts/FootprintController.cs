@@ -9,25 +9,26 @@ public class FootprintController : MonoBehaviour
     public float rayDist;
     public Material particleMat;
 
-    private ParticleSystem partSystem;
+    private ParticleSystem footParticles;
+    public ParticleSystem rippleParticles;
     
     // Start is called before the first frame update
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
         GameObject printController = new GameObject("printController");
-        partSystem = printController.AddComponent<ParticleSystem>();
+        footParticles = printController.AddComponent<ParticleSystem>();
         printController.GetComponent<ParticleSystemRenderer>().material = particleMat;
         printController.GetComponent<ParticleSystemRenderer>().alignment = ParticleSystemRenderSpace.World;
-        ParticleSystem.EmissionModule emitMod = partSystem.emission;
+        ParticleSystem.EmissionModule emitMod = footParticles.emission;
         emitMod.rateOverTime = 0f;
-        ParticleSystem.MainModule mainMod = partSystem.main;
+        ParticleSystem.MainModule mainMod = footParticles.main;
         mainMod.startLifetime = 1000000;
         mainMod.maxParticles = 100000;
         mainMod.startSpeed = 0f;
         mainMod.startRotation3D = true;
         mainMod.startRotationX = -Mathf.PI/2;
-        partSystem.Play();
+        footParticles.Play();
         StartCoroutine(MakeFootPrints());
     }
 
@@ -59,7 +60,7 @@ public class FootprintController : MonoBehaviour
         myParams.position = pos;
         //myParams.rotation3D = Vector3.up;
         myParams.startSize = Random.Range(0.5f, 1f);
-        partSystem.Emit(myParams, 1);
+        footParticles.Emit(myParams, 1);
         
         Debug.Log("Emitting");
     }
