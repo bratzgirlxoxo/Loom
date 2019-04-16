@@ -48,7 +48,7 @@ LightmapSettings:
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
-    m_IndirectOutputScale: 1
+    m_IndirectOutputScale: 1.3
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
@@ -71,12 +71,12 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 2
-    m_BakeBackend: 1
+    m_MixedBakeMode: 0
+    m_BakeBackend: 2
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 750
-    m_PVRBounces: 1
+    m_PVRBounces: 3
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
@@ -91,7 +91,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000000, guid: 276062b6eede6cb4fbba200490aaa1a6,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -13434,7 +13434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3408e894071cb5840b5429cf2dbe3e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pillar1: {fileID: 1006197778}
+  pillar1: {fileID: 1513591483}
   loom: {fileID: 1006197778}
   fireflies: []
   emergeTime: 0
@@ -13657,7 +13657,7 @@ PrefabInstance:
     - target: {fileID: 5261431558998295810, guid: e1c57a1bc5162478389b8b9009f76fc2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5261431558998295810, guid: e1c57a1bc5162478389b8b9009f76fc2,
         type: 3}
@@ -13667,7 +13667,7 @@ PrefabInstance:
     - target: {fileID: 5261431558998295810, guid: e1c57a1bc5162478389b8b9009f76fc2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5261431558998295810, guid: e1c57a1bc5162478389b8b9009f76fc2,
         type: 3}
@@ -13682,7 +13682,7 @@ PrefabInstance:
     - target: {fileID: 5261431558998295810, guid: e1c57a1bc5162478389b8b9009f76fc2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5261431558998295810, guid: e1c57a1bc5162478389b8b9009f76fc2,
         type: 3}
@@ -29279,7 +29279,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
