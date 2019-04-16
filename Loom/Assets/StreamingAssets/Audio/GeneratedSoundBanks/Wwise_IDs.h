@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FIREBALL_PLAY_EVENT = 1636804058U;
+        static const AkUniqueID FIREBALL_STOP_EVENT = 387080348U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_AMBIENCE_EVENT = 1774379222U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_STRIKE_EVENT = 3957531880U;
         static const AkUniqueID LOOM1_PLAY_JUMP_LAND_EVENT = 2108556256U;
@@ -30,11 +32,11 @@ namespace AK
         static const AkUniqueID LOOM3_STOP_ENDWALK_EVENT = 78383388U;
         static const AkUniqueID LOOM3_STOP_INTROWALK_EVENT = 1793405145U;
         static const AkUniqueID LOOM3_STOP_MAINWALK_EVENT = 1155784786U;
-        static const AkUniqueID PLAY_OCEAN_EVENT = 2984240761U;
-        static const AkUniqueID PLAY_OCEANSPLASH_EVENT = 2977236588U;
-        static const AkUniqueID PLAY_PILLAR_AUDIO_EVENT = 2025220688U;
-        static const AkUniqueID PLAY_TRANSITION_WALKING_EVENT = 3321450650U;
-        static const AkUniqueID STOP_TRANSITION_WALKING_EVENT = 3274795716U;
+        static const AkUniqueID OCEAN_PLAY_EVENT = 3294845851U;
+        static const AkUniqueID OCEANSPLASH_PLAY_EVENT = 3564306560U;
+        static const AkUniqueID PILLAR_PLAY_EVENT = 416863711U;
+        static const AkUniqueID TRANSITION1_PLAY_WALKING_EVENT = 964056455U;
+        static const AkUniqueID TRANSITION1_STOP_WALKING_EVENT = 3138170969U;
     } // namespace EVENTS
 
     namespace BANKS
@@ -46,6 +48,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID ENVIRONMENT = 1229948536U;
+        static const AkUniqueID FIREBALL = 3841200954U;
         static const AkUniqueID LOOM1 = 7184431U;
         static const AkUniqueID LOOM2 = 7184428U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
@@ -55,6 +58,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID FIREBALLAUX = 4290880864U;
         static const AkUniqueID JUMPREVERB = 3302700529U;
         static const AkUniqueID LOOM1_CANDLEVERB = 475597662U;
         static const AkUniqueID LOOM1_WALKDECAY = 511694909U;

@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Environment" ID="{D454797A-7B7E-423C-BEBF-50D618AD1887}" OwnerID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Play_Ocean_Event" ID="{32044981-8FB7-4FE4-B487-5E2275374E17}">
+				<Event Name="Ocean_Play_Event" ID="{32044981-8FB7-4FE4-B487-5E2275374E17}">
 					<ChildrenList>
 						<Action Name="" ID="{0DCA8EAF-5BEA-4541-AE7F-3E75714E97BE}" ShortID="394376801">
 							<PropertyList>

@@ -64,6 +64,54 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fireball_Play_Event" ID="{5B179B1B-BBC3-4F1A-B9B6-CC5A006F725B}">
+					<ChildrenList>
+						<Action Name="" ID="{D0E5445A-724A-49FF-83ED-113029A41BC3}" ShortID="932284828">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fireball1" ID="{E94DEA07-3116-4CB7-9931-56D00F776510}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C64D285F-D657-4F30-BD68-9C84C74FB02A}" ShortID="712559987">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fireball2" ID="{B99FEE1A-0D38-4E4A-B74D-9E772910F65C}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fireball_Stop_Event" ID="{52AF11DE-2AE6-4116-A5A9-943927379A81}">
+					<ChildrenList>
+						<Action Name="" ID="{9B5A75DC-5E93-4103-96C4-ECA6DD33C3D0}" ShortID="379142912">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fireball1" ID="{E94DEA07-3116-4CB7-9931-56D00F776510}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F655F4F7-E596-4EC2-B711-8741A8AB4BA3}" ShortID="664110159">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fireball2" ID="{B99FEE1A-0D38-4E4A-B74D-9E772910F65C}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

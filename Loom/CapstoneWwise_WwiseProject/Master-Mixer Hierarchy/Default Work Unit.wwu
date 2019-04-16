@@ -76,6 +76,26 @@
 								<AuxBus Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}"/>
 							</ChildrenList>
 						</Bus>
+						<Bus Name="Fireball" ID="{1E352956-75CE-459C-8FCD-8209AD2794C6}">
+							<ChildrenList>
+								<AuxBus Name="FireballAux" ID="{D9258ACB-D2B5-4085-AF00-4A488C215072}">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="FireballAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<ObjectRef Name="BellDelay" ID="{CA2A5517-CE71-4605-B730-EA53749939E2}" WorkUnitID="{A7D374E4-883E-4DCE-903F-192DE202D22A}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
