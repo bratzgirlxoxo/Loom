@@ -12158,6 +12158,11 @@ MonoBehaviour:
   - 3.2
   ghostFriend: {fileID: 1314021088}
   playerCam: {fileID: 1571070767}
+  fireballPlay:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9a273c69eb995ff48894e16c2672eb4d,
+      type: 2}
 --- !u!20 &207871027
 Camera:
   m_ObjectHideFlags: 0
