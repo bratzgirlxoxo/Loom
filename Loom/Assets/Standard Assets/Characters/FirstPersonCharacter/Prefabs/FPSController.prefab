@@ -303,19 +303,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e67520c226e9c44b0eb5459df8dc4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 65f0a47baddbf3e41b481b42f36d3653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jump_Up_Event:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9c59f20a592507e488020a615ede5f74,
-      type: 2}
-  Jump_Land_Event:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dfc3621f6beee544781500f3516c72d8,
-      type: 2}
+  rayDist: 0
+  particleMat: {fileID: 0}
+  rippleParticles: {fileID: 0}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,10 +319,12 @@ GameObject:
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 2000000}
+  - component: {fileID: 5211816273581116793}
   - component: {fileID: 12474086}
   - component: {fileID: 507313839}
   - component: {fileID: 507313840}
   - component: {fileID: 507313844}
+  - component: {fileID: 1767904710046830061}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -393,6 +388,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &5211816273581116793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d224aed7479854180cee90c4e81910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  depthTextureMode: 1
 --- !u!124 &12474086
 Behaviour:
   m_ObjectHideFlags: 0
@@ -454,10 +462,24 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 49da6100ad40a2d4d83b6c4d280ef782,
+      type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1767904710046830061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbd3d9533bd84f4ca87c1c5d2458b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalsShader: {fileID: 4800000, guid: 9bca3cc3a192cbc4ba59f4fe23ec0368, type: 3}
