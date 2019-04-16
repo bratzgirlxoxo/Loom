@@ -5,6 +5,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1229948536	Environment			\Default Work Unit\Master Audio Bus\Loom1\Environment	
 	1865857008	Transition			\Default Work Unit\Master Audio Bus\Transition	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3841200954	Fireball			\Default Work Unit\Master Audio Bus\Fireball	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	475597662	Loom1_CandleVerb			\Default Work Unit\Master Audio Bus\Loom1\Environment\Loom1_CandleVerb	
@@ -13,11 +14,13 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2814466889	Loom2_BellDelay			\Default Work Unit\Master Audio Bus\Loom2\Loom2_BellDelay	
 	3240738094	Loom2_WalkDecay			\Default Work Unit\Master Audio Bus\Loom2\Loom2_WalkDecay	
 	3302700529	JumpReverb			\Default Work Unit\Master Audio Bus\Player\JumpReverb	
+	4290880864	FireballAux			\Default Work Unit\Master Audio Bus\Fireball\FireballAux	
 
 Effect plug-ins	ID	Name	Type				Notes
 	1590660382	Nearly_Forever	Wwise Delay			
 	2257464207	Reverb_Highs	Wwise RoomVerb			
 	3164629247	Holy	Wwise RoomVerb			
+	3407225994	Phone_Booth	Wwise RoomVerb			
 	3584947395	BellDelay	Wwise Delay			
 
 Audio Devices	ID	Name	Type				Notes

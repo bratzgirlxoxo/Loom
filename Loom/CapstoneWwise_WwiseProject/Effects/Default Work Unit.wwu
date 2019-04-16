@@ -27,9 +27,9 @@
 				</Effect>
 				<Effect Name="BellDelay" ID="{CA2A5517-CE71-4605-B730-EA53749939E2}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 					<PropertyList>
-						<Property Name="DelayTime" Type="Real32" Value="1"/>
-						<Property Name="Feedback" Type="Real32" Value="55.5"/>
-						<Property Name="WetDryMix" Type="Real32" Value="100"/>
+						<Property Name="DelayTime" Type="Real32" Value="0.341"/>
+						<Property Name="Feedback" Type="Real32" Value="31"/>
+						<Property Name="WetDryMix" Type="Real32" Value="36.5"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>
