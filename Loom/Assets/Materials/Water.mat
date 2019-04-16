@@ -92,5 +92,5 @@ Material:
     - _DepthGradientShallow: {r: 0.008410451, g: 0.44519386, b: 0.5943396, a: 0.725}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HorizonColor: {r: 0.023529412, g: 0.039215688, b: 0.1882353, a: 1}
-    - _PlayerPos: {r: -68.30139, g: 38.225666, b: 28.670454, a: 1}
+    - _PlayerPos: {r: 81.36263, g: 11.29855, b: -128.11151, a: 1}
     - _SurfaceNoiseScroll: {r: 0.03, g: 0.03, b: 0, a: 0}
