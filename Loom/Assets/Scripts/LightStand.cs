@@ -7,6 +7,7 @@ public class LightStand : MonoBehaviour
 
     public bool isLit;
     public bool canLight;
+    public bool loom3;
 
     public GameObject myLight;
     public LoomTrigger nextLoomTrigger;
@@ -26,6 +27,8 @@ public class LightStand : MonoBehaviour
     public float oscillateScale;
     public float oscillateSpeed;
 
+    public GameObject door;
+
 
     void Start()
     {
@@ -43,7 +46,7 @@ public class LightStand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isLit && canLight && Input.GetKeyDown(KeyCode.E))
+        if (!loom3 && !isLit && canLight && Input.GetKeyDown(KeyCode.E))
         {
             myLight.SetActive(true);
             Candle_Strike_Event.Post(gameObject);
@@ -51,6 +54,11 @@ public class LightStand : MonoBehaviour
             nextLoomTrigger.lights[idx] = true;
             StartCoroutine(objAnim.startAnimation());
             StartCoroutine(SettleDown(transform.localPosition));
+        } else if (loom3 && !isLit && canLight && Input.GetKeyDown(KeyCode.E))
+        {
+            myLight.SetActive(true);
+            StartCoroutine(SettleDown(transform.localPosition));
+            Destroy(door);
         }
 
         if (!isLit)

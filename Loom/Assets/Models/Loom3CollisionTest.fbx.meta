@@ -87,6 +87,29 @@ ModelImporter:
     100162: Pot4
     100164: Pot5
     100166: Pot6
+    100168: Bridge
+    100170: DOOR
+    100172: FrontWall3
+    100174: FrontWallLarge
+    100176: HighShortWall6
+    100178: HighShortWall7
+    100180: LowShortWall6
+    100182: LowShortWall7
+    100184: MedShortWall6
+    100186: MedShortWall7
+    100188: OuterPath
+    100190: RoofClosedWall2
+    100192: RoofOpenWall
+    100194: RoofRamp
+    100196: RoofRoomWallSlitted
+    100198: SideWallClosed
+    100200: SideWallEntry
+    100202: SlantedWall
+    100204: WindowOutting10
+    100206: WindowOutting11
+    100208: WindowOutting7
+    100210: WindowOutting8
+    100212: WindowOutting9
     400000: BottomRamp
     400002: BottomWalkway
     400004: Ceiling1
@@ -171,6 +194,29 @@ ModelImporter:
     400162: Pot4
     400164: Pot5
     400166: Pot6
+    400168: Bridge
+    400170: DOOR
+    400172: FrontWall3
+    400174: FrontWallLarge
+    400176: HighShortWall6
+    400178: HighShortWall7
+    400180: LowShortWall6
+    400182: LowShortWall7
+    400184: MedShortWall6
+    400186: MedShortWall7
+    400188: OuterPath
+    400190: RoofClosedWall2
+    400192: RoofOpenWall
+    400194: RoofRamp
+    400196: RoofRoomWallSlitted
+    400198: SideWallClosed
+    400200: SideWallEntry
+    400202: SlantedWall
+    400204: WindowOutting10
+    400206: WindowOutting11
+    400208: WindowOutting7
+    400210: WindowOutting8
+    400212: WindowOutting9
     2100000: lambert1
     2300000: BottomRamp
     2300002: BottomWalkway
@@ -253,6 +299,24 @@ ModelImporter:
     2300156: Pot4
     2300158: Pot5
     2300160: Pot6
+    2300162: Bridge
+    2300164: DOOR
+    2300166: FrontWallLarge
+    2300168: LowShortWall6
+    2300170: MedShortWall6
+    2300172: OuterPath
+    2300174: RoofClosedWall2
+    2300176: RoofOpenWall
+    2300178: RoofRamp
+    2300180: RoofRoomWallSlitted
+    2300182: SideWallClosed
+    2300184: SideWallEntry
+    2300186: SlantedWall
+    2300188: WindowOutting10
+    2300190: WindowOutting11
+    2300192: WindowOutting7
+    2300194: WindowOutting8
+    2300196: WindowOutting9
     3300000: BottomRamp
     3300002: BottomWalkway
     3300004: Ceiling1
@@ -334,6 +398,24 @@ ModelImporter:
     3300156: Pot4
     3300158: Pot5
     3300160: Pot6
+    3300162: Bridge
+    3300164: DOOR
+    3300166: FrontWallLarge
+    3300168: LowShortWall6
+    3300170: MedShortWall6
+    3300172: OuterPath
+    3300174: RoofClosedWall2
+    3300176: RoofOpenWall
+    3300178: RoofRamp
+    3300180: RoofRoomWallSlitted
+    3300182: SideWallClosed
+    3300184: SideWallEntry
+    3300186: SlantedWall
+    3300188: WindowOutting10
+    3300190: WindowOutting11
+    3300192: WindowOutting7
+    3300194: WindowOutting8
+    3300196: WindowOutting9
     4300000: RampPlatform3
     4300002: RampPlatform2
     4300004: Ramp2
@@ -415,6 +497,24 @@ ModelImporter:
     4300156: Dirt
     4300158: Pot6
     4300160: Dirt
+    4300162: RoofRoomWallSlitted
+    4300164: SlantedWall
+    4300166: OuterPath
+    4300168: Bridge
+    4300170: MedShortWall6
+    4300172: LowShortWall6
+    4300174: RoofRamp
+    4300176: RoofOpenWall
+    4300178: RoofClosedWall2
+    4300180: FrontWallLarge
+    4300182: SideWallClosed
+    4300184: SideWallEntry
+    4300186: WindowOutting7
+    4300188: WindowOutting8
+    4300190: WindowOutting9
+    4300192: WindowOutting10
+    4300194: DOOR
+    4300196: WindowOutting11
   externalObjects: {}
   materials:
     importMaterials: 1
