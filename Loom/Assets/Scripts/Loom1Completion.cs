@@ -17,6 +17,8 @@ public class Loom1Completion : MonoBehaviour
     public GameObject playerCam;
     private Camera thisCam;
 
+    public AK.Wwise.Event fireballPlay;
+
     void Start()
     {
         thisCam = GetComponent<Camera>();
@@ -45,6 +47,7 @@ public class Loom1Completion : MonoBehaviour
             CameraCut(cutPositions[i]);
             if (i == cutPositions.Length - 1)
             {
+                fireballPlay.Post(ghostFriend.gameObject);
                 ghostFriend.GetComponent<ParticleSystem>().Play();
                 ghostFriend.StartCoroutine(ghostFriend.JumpTutorial());
             }
