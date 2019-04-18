@@ -318,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLit: 0
   canLight: 0
+  loom3: 0
   myLight: {fileID: 0}
   nextLoomTrigger: {fileID: 0}
   objAnim: {fileID: 0}
@@ -331,6 +332,7 @@ MonoBehaviour:
   willMove: 0
   oscillateScale: 0
   oscillateSpeed: 0
+  door: {fileID: 0}
 --- !u!65 &6319995667418000366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -342,7 +344,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7, y: 1, z: 7}
+  m_Size: {x: 7, y: 3, z: 7}
   m_Center: {x: 0.5, y: 0, z: -2}
 --- !u!1 &9173938280493557686
 GameObject:

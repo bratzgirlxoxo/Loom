@@ -10,14 +10,15 @@ public class ParticleBells : MonoBehaviour
     public float switchFrequencyMax;
 
     private float switchFrequency;
-
     private ParticleSystem myPartSystem;
-
     private float t;
-
     private Vector2 particlePosition;
 
     public Transform player;
+    public GameObject fireBall;
+    public Color transparentColor;
+
+    private ParticleSystem fireballParticles;
 
     public float distanceThreshold;
 
@@ -26,6 +27,10 @@ public class ParticleBells : MonoBehaviour
     private bool playing;
 
     private GameObject soundObject;
+
+    public bool end;
+    
+    
     
     // Start is called before the first frame update
     void Start()
@@ -35,19 +40,22 @@ public class ParticleBells : MonoBehaviour
         allParts = new ParticleSystem.Particle[myPartSystem.main.maxParticles];
         myPartSystem.GetParticles(allParts);
         ParticleSystem.Particle chosenParticle = allParts[Random.Range(0, allParts.Length)];
-        particlePosition = new Vector2(chosenParticle.position.x, chosenParticle.position.z);
+        
+        particlePosition = chosenParticle.position;
         Debug.Log("New Particle Position: " + particlePosition);
         soundObject = new GameObject("BellSoundObject");
         soundObject.transform.parent = transform;
         soundObject.transform.localPosition = particlePosition;
-        
 
+        fireBall.transform.localPosition = particlePosition;
+        fireballParticles = fireBall.GetComponent<ParticleSystem>();
+        fireBall.transform.localScale *= 3.5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!playing)
+        if (!playing && !end)
         {
             StartCoroutine(PlaySound());
         }
@@ -55,18 +63,42 @@ public class ParticleBells : MonoBehaviour
     }
 
     IEnumerator PlaySound()
-    {
+    {   
         playing = true;
         switchFrequency = Random.Range(switchFrequencyMin, switchFrequencyMax);
+        
+        fireballParticles.Play();
+        StartCoroutine(ParticleFadeIn());
+        
         myPartSystem.GetParticles(allParts);
         ParticleSystem.Particle chosenParticle = allParts[Random.Range(0, allParts.Length)];
-        particlePosition = new Vector2(chosenParticle.position.x, chosenParticle.position.z);
+        
+        Color32 startCol = chosenParticle.GetCurrentColor(myPartSystem);
+        chosenParticle.startColor = transparentColor;
+
+        particlePosition = chosenParticle.position;
         Debug.Log("New Particle Position: " + particlePosition);
         soundObject.transform.localPosition = particlePosition;
+        fireBall.transform.localPosition = particlePosition;
         PlayBellEvent.Post(soundObject);
         yield return new WaitForSeconds(switchFrequency);
+
+        chosenParticle.startColor = startCol;
+        
+        fireballParticles.Stop();
         playing = false;
     }
-    
-    
+
+
+    IEnumerator ParticleFadeIn()
+    {
+        float t = 0;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / 2f;
+            fireballParticles.gameObject.transform.localScale =
+                Vector3.Lerp(Vector3.zero, new Vector3(3.5f, 3.5f, 3.5f), t);
+            yield return null;
+        }
+    }   
 }
