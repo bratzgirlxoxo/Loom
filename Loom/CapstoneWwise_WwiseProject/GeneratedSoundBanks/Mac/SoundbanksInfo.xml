@@ -21,7 +21,7 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1636804058" Name="Fireball_Play_Event" ObjectPath="\Events\Default Work Unit\Fireball_Play_Event"/>
+				<Event Id="1636804058" Name="Fireball_Play_Event" ObjectPath="\Events\Default Work Unit\Fireball_Play_Event" MaxAttenuation="15.000000"/>
 				<Event Id="387080348" Name="Fireball_Stop_Event" ObjectPath="\Events\Default Work Unit\Fireball_Stop_Event" MaxAttenuation="0.000000"/>
 				<Event Id="1774379222" Name="Loom1_Play_Candle_Ambience_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3957531880" Name="Loom1_Play_Candle_Strike_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event" MaxAttenuation="20.000000"/>
@@ -32,6 +32,8 @@
 				<Event Id="110069035" Name="Loom1_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="2311484592" Name="Loom2_Play_Bass_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event" MaxAttenuation="100.000000"/>
 				<Event Id="3348270690" Name="Loom2_Play_Bell_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bell_Event" MaxAttenuation="20.000000"/>
+				<Event Id="3726429074" Name="Loom2_Play_Candle_Event_Sound" ObjectPath="\Events\Default Work Unit\Loom2_Play_Candle_Event_Sound"/>
+				<Event Id="2038758158" Name="Loom2_Play_Rise_Event" ObjectPath="\Events\Default Work Unit\Loom2_Play_Rise_Event" MaxAttenuation="50.000000"/>
 				<Event Id="2785362746" Name="Loom2_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="2693566612" Name="Loom2_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="752228486" Name="Loom3_Play_EndWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3_Play_EndWalk_Event"/>
@@ -54,6 +56,10 @@
 				<File Id="8962880" Language="SFX">
 					<ShortName>Transition Walking\Transition_Walk_9.wav</ShortName>
 					<Path>SFX/Transition Walking/Transition_Walk_9_CBC6AAC7.wem</Path>
+				</File>
+				<File Id="22008258" Language="SFX">
+					<ShortName>loom2_rise.wav</ShortName>
+					<Path>SFX/loom2_rise_E6139989.wem</Path>
 				</File>
 				<File Id="75155974" Language="SFX">
 					<ShortName>Walking\End\loom3_endWalking_3.wav</ShortName>
@@ -211,6 +217,10 @@
 					<ShortName>loom2_walk2.wav</ShortName>
 					<Path>SFX/loom2_walk2_56D34C19.wem</Path>
 				</File>
+				<File Id="484004797" Language="SFX">
+					<ShortName>loom2_candle4.wav</ShortName>
+					<Path>SFX/loom2_candle4_B9CB250C.wem</Path>
+				</File>
 				<File Id="519963523" Language="SFX">
 					<ShortName>loom1_walk1.wav</ShortName>
 					<Path>SFX/loom1_walk1_083F1028.wem</Path>
@@ -243,6 +253,10 @@
 					<ShortName>Pillar Audio\pillar_1.wav</ShortName>
 					<Path>SFX/Pillar Audio/pillar_1_7F07C0A4.wem</Path>
 				</File>
+				<File Id="691416370" Language="SFX">
+					<ShortName>loom2_candle2.wav</ShortName>
+					<Path>SFX/loom2_candle2_DAA91EBD.wem</Path>
+				</File>
 				<File Id="699750576" Language="SFX">
 					<ShortName>candle_ambience_5.wav</ShortName>
 					<Path>SFX/candle_ambience_5_8956FC97.wem</Path>
@@ -273,7 +287,7 @@
 				</File>
 				<File Id="781920895" Language="SFX">
 					<ShortName>fireball2.wav</ShortName>
-					<Path>SFX/fireball2_2261850B.wem</Path>
+					<Path>SFX/fireball2_92483A7B.wem</Path>
 				</File>
 				<File Id="789106496" Language="SFX">
 					<ShortName>Walking\Main\loom3_mainWalking_1.wav</ShortName>
@@ -286,6 +300,14 @@
 				<File Id="845031213" Language="SFX">
 					<ShortName>candle_ambience_3.wav</ShortName>
 					<Path>SFX/candle_ambience_3_8956FC97.wem</Path>
+				</File>
+				<File Id="856180680" Language="SFX">
+					<ShortName>loom2_candle1.wav</ShortName>
+					<Path>SFX/loom2_candle1_D5820AE6.wem</Path>
+				</File>
+				<File Id="856926111" Language="SFX">
+					<ShortName>loom2_candle3.wav</ShortName>
+					<Path>SFX/loom2_candle3_373C00E9.wem</Path>
 				</File>
 				<File Id="863999361" Language="SFX">
 					<ShortName>loom1_walk11.wav</ShortName>
@@ -321,7 +343,7 @@
 				</File>
 				<File Id="930187994" Language="SFX">
 					<ShortName>fireball1.wav</ShortName>
-					<Path>SFX/fireball1_0D8AE1EE.wem</Path>
+					<Path>SFX/fireball1_6B8EC47D.wem</Path>
 				</File>
 				<File Id="948031798" Language="SFX">
 					<ShortName>Walking\Intro\loom3_introWalking_2.wav</ShortName>

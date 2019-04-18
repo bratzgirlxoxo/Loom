@@ -123,11 +123,11 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Environment" ID="{ABFCFBD7-BDF4-42A4-9863-36500772F31F}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+									<ObjectRef Name="Loom1_Environment" ID="{ABFCFBD7-BDF4-42A4-9863-36500772F31F}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="Candle" ID="{12952DB6-8982-4B04-8D6C-C37B71578A07}" ShortID="852734760">
+								<ActorMixer Name="Loom1_Candle" ID="{12952DB6-8982-4B04-8D6C-C37B71578A07}" ShortID="852734760">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -150,14 +150,14 @@
 											<ObjectRef Name="Aliasing" ID="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Environment" ID="{ABFCFBD7-BDF4-42A4-9863-36500772F31F}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+											<ObjectRef Name="Loom1_Environment" ID="{ABFCFBD7-BDF4-42A4-9863-36500772F31F}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="Loom1_CandleVerb" ID="{B330579F-D63B-4E38-9B46-C21AECD38ED6}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Candle_Event_Sound" ID="{34090DCF-19F7-4349-9B14-4B6E04E3D6C5}" ShortID="116872932">
+										<RandomSequenceContainer Name="Loom1_Candle_Event_Sound" ID="{34090DCF-19F7-4349-9B14-4B6E04E3D6C5}" ShortID="116872932">
 											<PropertyList>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -1461,6 +1461,171 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<ActorMixer Name="Loom2_Candle" ID="{4832A2DD-A227-4528-9029-E0607EC64772}" ShortID="806683625">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Loom2_Candle_Event_Sound" ID="{E09E57E1-CCFC-4EC8-8C4D-78BDB10EC963}" ShortID="595171745">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+													<ObjectRef Name="Aliasing" ID="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Loom1_CandleVerb" ID="{B330579F-D63B-4E38-9B46-C21AECD38ED6}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="loom2_candle1" ID="{9EAE03C2-9A2A-413A-95C1-931EB5BA5E14}" ShortID="910353777">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom2_candle1" ID="{237AC468-99BB-4F46-AD1F-8B33AC69ED8E}" ShortID="856180680">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.530973451327434"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="5.61314791403287"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>loom2_candle1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom2_candle1" ID="{237AC468-99BB-4F46-AD1F-8B33AC69ED8E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom2_candle2" ID="{3E51B50A-4D70-4950-88E8-14ACA3EF2511}" ShortID="1064502719">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom2_candle2" ID="{ACBF039D-4816-4589-BCC1-D60CAD809AC0}" ShortID="691416370">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.424778761061947"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.56637168141593"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>loom2_candle2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom2_candle2" ID="{ACBF039D-4816-4589-BCC1-D60CAD809AC0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom2_candle3" ID="{BBE1B814-F2F0-4B25-916A-8D8706CB0039}" ShortID="1016803221">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom2_candle3" ID="{5ACAA760-BF55-4F54-B714-91B4266B1E3C}" ShortID="856926111">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.485461441213654"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.9456384323641"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>loom2_candle3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom2_candle3" ID="{5ACAA760-BF55-4F54-B714-91B4266B1E3C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="loom2_candle4" ID="{733D096C-E2FE-4C3F-8790-AC31D416B4C2}" ShortID="1041151576">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="loom2_candle4" ID="{765B46EB-7878-41A1-A574-39A9AF7E7ACF}" ShortID="484004797">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.470290771175727"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.54993678887484"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>loom2_candle4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="loom2_candle4" ID="{765B46EB-7878-41A1-A574-39A9AF7E7ACF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<Sound Name="loom2_rise" ID="{8ED8C062-B321-4601-954F-40BA9F0B88BC}" ShortID="110786322">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Walking Attenuation" ID="{845BCFB9-55C1-4968-91E9-2B14A21D7B91}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Single_Band_1Khz_Wide" ID="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="loom2_rise" ID="{31202DEA-3F08-495E-B693-F8BD99F202CA}" ShortID="22008258">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="4.75884955752212"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.14601769911504"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.06637168141593"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>loom2_rise.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="loom2_rise" ID="{31202DEA-3F08-495E-B693-F8BD99F202CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -2505,6 +2670,9 @@
 				</ActorMixer>
 				<ActorMixer Name="Fireball" ID="{90921252-50D5-4720-A2C1-DCFC915E77AF}" ShortID="340493745">
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="FireballAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
 						</Reference>

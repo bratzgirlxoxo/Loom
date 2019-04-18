@@ -112,6 +112,92 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Loom2_Play_Candle_Event_Sound" ID="{9E157146-8D9F-49B8-AAC1-99EC00F6BF9F}">
+					<ChildrenList>
+						<Action Name="" ID="{23DDBF91-66B5-4857-8E74-1B30BCC7EA59}" ShortID="864231170">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="match_strike" ID="{2B1ED265-9FB5-445F-AA4D-7B1487A90576}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0A072A5F-B3D5-4354-A02A-2AD1441F92D0}" ShortID="526791591">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loom2_Candle_Event_Sound" ID="{E09E57E1-CCFC-4EC8-8C4D-78BDB10EC963}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{01C9275B-F8B5-4FBB-B6FD-FF29EAA56359}" ShortID="321565912">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E69BFEAF-BBF4-4C6C-87ED-3302BEA03F86}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loom2_Candle_Event_Sound" ID="{E09E57E1-CCFC-4EC8-8C4D-78BDB10EC963}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4E4233DB-CE91-4717-93A4-C673DEE2EB07}" ShortID="419754212">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="2">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B5E8DBEE-16D1-41AA-BE8A-5771FD099D54}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loom2_Candle_Event_Sound" ID="{E09E57E1-CCFC-4EC8-8C4D-78BDB10EC963}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Loom2_Play_Rise_Event" ID="{5A644985-B7F7-440E-818F-D542D12D2FBC}">
+					<ChildrenList>
+						<Action Name="" ID="{624540B2-E88F-44F4-9CA6-59203EEDAA6F}" ShortID="4832605">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom2_rise" ID="{8ED8C062-B321-4601-954F-40BA9F0B88BC}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

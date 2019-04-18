@@ -1,18 +1,19 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	7184428	Loom2			\Default Work Unit\Master Audio Bus\Loom2	
 	7184431	Loom1			\Default Work Unit\Master Audio Bus\Loom1	
+	370618385	Loom1_Environment			\Default Work Unit\Master Audio Bus\Loom1\Loom1_Environment	
+	662122242	Loom2_Environment			\Default Work Unit\Master Audio Bus\Loom2\Loom2_Environment	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
-	1229948536	Environment			\Default Work Unit\Master Audio Bus\Loom1\Environment	
 	1865857008	Transition			\Default Work Unit\Master Audio Bus\Transition	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3841200954	Fireball			\Default Work Unit\Master Audio Bus\Fireball	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	475597662	Loom1_CandleVerb			\Default Work Unit\Master Audio Bus\Loom1\Environment\Loom1_CandleVerb	
-	511694909	Loom1_WalkDecay			\Default Work Unit\Master Audio Bus\Loom1\Environment\Loom1_WalkDecay	
+	475597662	Loom1_CandleVerb			\Default Work Unit\Master Audio Bus\Loom1\Loom1_Environment\Loom1_CandleVerb	
+	511694909	Loom1_WalkDecay			\Default Work Unit\Master Audio Bus\Loom1\Loom1_Environment\Loom1_WalkDecay	
 	911329060	Transition_Aux_Bus			\Default Work Unit\Master Audio Bus\Transition\Transition_Aux_Bus	
-	2814466889	Loom2_BellDelay			\Default Work Unit\Master Audio Bus\Loom2\Loom2_BellDelay	
-	3240738094	Loom2_WalkDecay			\Default Work Unit\Master Audio Bus\Loom2\Loom2_WalkDecay	
+	2814466889	Loom2_BellDelay			\Default Work Unit\Master Audio Bus\Loom2\Loom2_Environment\Loom2_BellDelay	
+	3240738094	Loom2_WalkDecay			\Default Work Unit\Master Audio Bus\Loom2\Loom2_Environment\Loom2_WalkDecay	
 	3302700529	JumpReverb			\Default Work Unit\Master Audio Bus\Player\JumpReverb	
 	4290880864	FireballAux			\Default Work Unit\Master Audio Bus\Fireball\FireballAux	
 
