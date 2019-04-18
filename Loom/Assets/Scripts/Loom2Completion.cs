@@ -17,6 +17,8 @@ public class Loom2Completion : MonoBehaviour
     private bool risen;
     private bool faded;
     
+    public AK.Wwise.Event Loom2RisEvent;
+    
     void Update()
     {
         if (onRoof)
@@ -43,6 +45,7 @@ public class Loom2Completion : MonoBehaviour
 
     IEnumerator riseUP()
     {
+        Loom2RisEvent.Post(transform.gameObject);
         transform.parent = null;
         Vector3 startPosition = particleObjects[0].transform.position;
         Vector3 fireballStart = transform.position;
@@ -87,6 +90,8 @@ public class Loom2Completion : MonoBehaviour
         transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
 
         faded = true;
+        GetComponent<ParticleSystem>().Play();
+        GetComponent<Rigidbody>().useGravity = true;
     }
     
 }

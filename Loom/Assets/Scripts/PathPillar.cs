@@ -58,7 +58,7 @@ public class PathPillar : MonoBehaviour
         if (coll.CompareTag("Player") && readyToEmerge)
         {
             emerging = true;
-            PillarAudioEvent.Post(gameObject);
+            PillarAudioEvent.Post(GameObject.Find("Loom2RiseSound"));
 
         }
     }
