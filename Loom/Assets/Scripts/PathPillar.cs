@@ -27,7 +27,7 @@ public class PathPillar : MonoBehaviour
 
         if (loomPillar)
         {
-            endPos = new Vector3(startPos.x, startPos.y + 40.75f, startPos.z);
+            endPos = new Vector3(startPos.x, startPos.y + Mathf.Abs(startPos.y) + 0.75f, startPos.z);
             PillarAudioEvent.Post(gameObject);
         }
     }

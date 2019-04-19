@@ -25,8 +25,8 @@ public class Loom2Completion : MonoBehaviour
         {
             onRoof = false;
             bells.end = true;
+            GetComponent<ParticleSystem>().Play();
             StartCoroutine(riseUP());
-            Debug.Log("rising up");
         }
         
         
@@ -39,7 +39,6 @@ public class Loom2Completion : MonoBehaviour
         if (faded)
         {
             faded = false;
-            //GetComponent<Rigidbody>().useGravity = true;
         }
     }
 
@@ -47,6 +46,7 @@ public class Loom2Completion : MonoBehaviour
     {
         Loom2RisEvent.Post(transform.gameObject);
         transform.parent = null;
+        transform.position = particleObjects[0].transform.position;
         Vector3 startPosition = particleObjects[0].transform.position;
         Vector3 fireballStart = transform.position;
         endPos = new Vector3(startPosition.x, startPosition.y + 12f, startPosition.z);
@@ -58,7 +58,6 @@ public class Loom2Completion : MonoBehaviour
             for (int i = 0; i < particleObjects.Length; i++)
             {
                 particleObjects[i].transform.position = Vector3.Lerp(startPosition, endPos, t);
-                Debug.Log("rising further");
             }
             transform.position = Vector3.Lerp(fireballStart, endPos, t);
             yield return null;
@@ -91,6 +90,7 @@ public class Loom2Completion : MonoBehaviour
 
         faded = true;
         GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(0.8f);
         GetComponent<Rigidbody>().useGravity = true;
     }
     

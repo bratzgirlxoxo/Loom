@@ -37,11 +37,15 @@ public class Loom1Completion : MonoBehaviour
     IEnumerator CameraCutscene()
     {
         yield return new WaitForSeconds(3.75f);
-        thisCam.enabled = true;
-        playerController.canWalk = false;
-        playerCam.SetActive(false);
+        //thisCam.enabled = true;
+        //playerController.canWalk = false;
+        //playerCam.SetActive(false);
 
+        fireballPlay.Post(ghostFriend.gameObject);
+        ghostFriend.GetComponent<ParticleSystem>().Play();
+        ghostFriend.StartCoroutine(ghostFriend.JumpTutorial());
 
+        /*
         for (int i = 0; i < cutPositions.Length; i++)
         {
             CameraCut(cutPositions[i]);
@@ -53,10 +57,11 @@ public class Loom1Completion : MonoBehaviour
             }
             yield return new WaitForSeconds(cutWaitTimes[i]);
         }
+        */
         
 
-        playerCam.SetActive(true);
-        playerController.canWalk = true;
+        //playerCam.SetActive(true);
+        //playerController.canWalk = true;
     }
 
     // for directly cutting from one camera position to another

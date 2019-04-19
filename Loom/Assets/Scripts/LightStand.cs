@@ -7,10 +7,16 @@ public class LightStand : MonoBehaviour
 
     public bool isLit;
     public bool canLight;
+    
+
+    // specify which loom it is
+    public bool loom1;
+    public bool loom2;
     public bool loom3;
 
     public GameObject myLight;
     public LoomTrigger nextLoomTrigger;
+    public LoomTrigger2 nextLoomTrigger2;
     public TestAnimation objAnim;
 
     public int idx;
@@ -46,19 +52,30 @@ public class LightStand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!loom3 && !isLit && canLight && Input.GetKeyDown(KeyCode.E))
+        if (!isLit && canLight && Input.GetKeyDown(KeyCode.E))
         {
-            myLight.SetActive(true);
-            Candle_Strike_Event.Post(gameObject);
-            isLit = true;
-            nextLoomTrigger.lights[idx] = true;
-            StartCoroutine(objAnim.startAnimation());
+            if (loom1)
+            {
+                myLight.SetActive(true);
+                Candle_Strike_Event.Post(gameObject);
+                isLit = true;
+                nextLoomTrigger.lights[idx] = true;
+                StartCoroutine(objAnim.startAnimation());
+            } else if (loom2)
+            {
+                myLight.SetActive(true);
+                Candle_Strike_Event.Post(gameObject);
+                isLit = true;
+                nextLoomTrigger2.lights[idx] = true;
+                StartCoroutine(objAnim.startAnimation());
+            } else if (loom3)
+            {
+                myLight.SetActive(true);
+                Destroy(door);
+            }
+            
             StartCoroutine(SettleDown(transform.localPosition));
-        } else if (loom3 && !isLit && canLight && Input.GetKeyDown(KeyCode.E))
-        {
-            myLight.SetActive(true);
-            StartCoroutine(SettleDown(transform.localPosition));
-            Destroy(door);
+            
         }
 
         if (!isLit)

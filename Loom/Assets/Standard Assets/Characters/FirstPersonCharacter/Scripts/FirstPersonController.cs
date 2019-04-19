@@ -61,18 +61,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
 
-            /*
-            if (Testing)
-            {
-                m_startPosition = new Vector3(-55,22,25);
-            }
-            else
-            {
-                m_startPosition = new Vector3(-130,2,100);
-            }
-
-            gameObject.transform.position = m_startPosition;
-            */
+            
         }
 
 

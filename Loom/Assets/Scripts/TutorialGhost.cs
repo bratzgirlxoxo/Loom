@@ -37,7 +37,7 @@ public class TutorialGhost : MonoBehaviour
 
     void Update()
     {
-        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 9f)
+        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 10f)
         {
             
             rBody.AddForce((transform.up - transform.forward)*jumpStrength, ForceMode.Impulse);
