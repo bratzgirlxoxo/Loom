@@ -75,7 +75,7 @@ LightmapSettings:
     m_BakeBackend: 2
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
-    m_PVRSampleCount: 750
+    m_PVRSampleCount: 1000
     m_PVRBounces: 3
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
@@ -5205,7 +5205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: da315861678751f449659c1f2c8ca6c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -50
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: da315861678751f449659c1f2c8ca6c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16870,7 +16870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pillar1: {fileID: 1071229027}
-  nextLoom: {fileID: 0}
+  nextLoom: {fileID: 1784664892}
   fireflies:
   - {fileID: 1923134569}
   - {fileID: 1613822521}
@@ -25144,6 +25144,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7317336529109613367, guid: baa17cfaa9bf54b48be224be596788ca,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 1949004185}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa17cfaa9bf54b48be224be596788ca, type: 3}
 --- !u!1 &707321642 stripped
