@@ -14,9 +14,12 @@ public class PathPillar : MonoBehaviour
     private Vector3 endPos;
     private float t;
 
+
     public float emergeTime;
     private bool emerging;
     public bool readyToEmerge;
+
+    public ParticleSystem emergingParticles;
 
     public AK.Wwise.Event PillarAudioEvent;
     
@@ -32,7 +35,6 @@ public class PathPillar : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -50,6 +52,11 @@ public class PathPillar : MonoBehaviour
             {
                 fireflies[i].SetActive(true);
             }
+
+            if (loomPillar)
+            {
+                emergingParticles.Stop();
+            }
         }
     }
     
@@ -60,6 +67,10 @@ public class PathPillar : MonoBehaviour
             emerging = true;
             PillarAudioEvent.Post(GameObject.Find("Loom2RiseSound"));
 
+            if (loomPillar)
+            {
+                emergingParticles.Play();
+            }
         }
     }
 }

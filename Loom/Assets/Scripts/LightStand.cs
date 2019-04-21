@@ -71,7 +71,7 @@ public class LightStand : MonoBehaviour
             } else if (loom3)
             {
                 myLight.SetActive(true);
-                Destroy(door);
+                StartCoroutine(door.GetComponent<Loom3Door>().OpenDoor());
             }
             
             StartCoroutine(SettleDown(transform.localPosition));

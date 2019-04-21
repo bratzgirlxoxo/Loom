@@ -52,9 +52,10 @@
  
             fixed4 frag (v2f i) : SV_Target
             {
+                float4 col = _Color;
                 clip(tex2D(_DissolveGuide, i.uv).x - i.color.r);
                 UNITY_APPLY_FOG(i.fogCoord, col);
-                return _Color;
+                return col;
             }
             ENDCG
         }
