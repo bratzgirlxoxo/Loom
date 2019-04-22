@@ -19,6 +19,10 @@ public class FogController : MonoBehaviour
     void Update()
     {
         float upAmount = Vector3.Dot(playerView.forward, Water.up);
-        RenderSettings.fogDensity = startDensity * (1-Mathf.Pow(Mathf.Abs(upAmount),2));
+        RenderSettings.fogDensity = startDensity * (1-upAmount);
+        if (RenderSettings.fogDensity < 0.005f)
+        {
+            RenderSettings.fogDensity = 0.005f;
+        }
     }
 }

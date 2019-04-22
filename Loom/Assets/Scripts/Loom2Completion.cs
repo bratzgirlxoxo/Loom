@@ -8,9 +8,9 @@ public class Loom2Completion : MonoBehaviour
     public bool onRoof;
     public GameObject[] particleObjects;
     public float riseTime;
-
-
     public ParticleBells bells;
+
+    public TutorialGhost2 fireball2;
 
     private Vector3 endPos;
 
@@ -89,9 +89,7 @@ public class Loom2Completion : MonoBehaviour
         transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
 
         faded = true;
-        GetComponent<ParticleSystem>().Play();
-        yield return new WaitForSeconds(0.8f);
-        GetComponent<Rigidbody>().useGravity = true;
+        StartCoroutine(fireball2.Birth());
     }
     
 }
