@@ -32,7 +32,6 @@ public class ParticleBells : MonoBehaviour
     
     
     
-    // Start is called before the first frame update
     void Start()
     {
         switchFrequency = Random.Range(switchFrequencyMin, switchFrequencyMax);
@@ -42,7 +41,6 @@ public class ParticleBells : MonoBehaviour
         ParticleSystem.Particle chosenParticle = allParts[Random.Range(0, allParts.Length)];
         
         particlePosition = chosenParticle.position;
-        Debug.Log("New Particle Position: " + particlePosition);
         soundObject = new GameObject("BellSoundObject");
         soundObject.transform.parent = transform;
         soundObject.transform.localPosition = particlePosition;
@@ -52,7 +50,6 @@ public class ParticleBells : MonoBehaviour
         fireBall.transform.localScale *= 3.5f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!playing && !end)

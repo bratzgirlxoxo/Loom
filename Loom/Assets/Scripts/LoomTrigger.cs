@@ -7,7 +7,7 @@ public class LoomTrigger : MonoBehaviour
 {
 
     public GameObject pillar1;
-    public GameObject loom;
+    public GameObject nextLoom;
 
     public GameObject[] fireflies;
 
@@ -56,11 +56,13 @@ public class LoomTrigger : MonoBehaviour
             }
         }
 
+        
         if (fullyLit && cutSceneReady)
         {
             cutScene.ready = true;
             cutSceneReady = false;
         }
+        
 
         if (emerging)
         {
@@ -87,7 +89,7 @@ public class LoomTrigger : MonoBehaviour
                 
             }
             pillar1.SetActive(true);
-            loom.SetActive(true);
+            nextLoom.SetActive(true);
 
             for (int i = 0; i < fireflies.Length; i++)
             {

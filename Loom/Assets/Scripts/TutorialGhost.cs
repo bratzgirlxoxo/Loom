@@ -6,7 +6,7 @@ public class TutorialGhost : MonoBehaviour
 {
 
     public Transform player;
-    
+    private Light myLight;
     
     public float jumpStrength;
     public float ledgeWaitTime;
@@ -32,12 +32,15 @@ public class TutorialGhost : MonoBehaviour
         jumpPos = divingBoardTrans.position;
         stage2Pos = stage2PosTrans.position;
         stage3Pos = stage3PosTrans.position;
+        
         rBody = GetComponent<Rigidbody>();
+        myLight = GetComponent<Light>();
+        myLight.enabled = false;
     }
 
     void Update()
     {
-        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 9f)
+        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 10f)
         {
             
             rBody.AddForce((transform.up - transform.forward)*jumpStrength, ForceMode.Impulse);
@@ -69,7 +72,7 @@ public class TutorialGhost : MonoBehaviour
 
     public IEnumerator JumpTutorial()
     {
-
+        myLight.enabled = true;
         while (t <= 1f)
         {
             t += Time.deltaTime / runTime;
@@ -110,7 +113,7 @@ public class TutorialGhost : MonoBehaviour
             transform.localScale = Vector3.Lerp(startScale, Vector3.zero, t);
             yield return null;
         }
-
+        myLight.enabled = false;
         Destroy(transform.gameObject);
     }
     
