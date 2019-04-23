@@ -24,6 +24,8 @@ public class TutorialGhost : MonoBehaviour
     private Vector3 stage3Pos;
     private Rigidbody rBody;
 
+    public ParticleSystem burstParticles;
+
     
     // Start is called before the first frame update
     void Start()
@@ -73,6 +75,9 @@ public class TutorialGhost : MonoBehaviour
     public IEnumerator JumpTutorial()
     {
         myLight.enabled = true;
+        burstParticles.Play();
+        ParticleSystem.EmissionModule emiss = burstParticles.emission;
+        emiss.enabled = true;
         while (t <= 1f)
         {
             t += Time.deltaTime / runTime;
@@ -81,6 +86,8 @@ public class TutorialGhost : MonoBehaviour
         }
 
         stageIdx++;
+        
+        emiss.enabled = false;
     }
     
     

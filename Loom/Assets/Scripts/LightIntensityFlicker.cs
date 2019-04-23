@@ -6,6 +6,10 @@ public class LightIntensityFlicker : MonoBehaviour
 {
     public float timeScale;
 
+    public bool isLit;
+    public Color offColor;
+    public Color onColor;
+
     private Light myLight;
     private float t = 0f;
 
@@ -15,14 +19,20 @@ public class LightIntensityFlicker : MonoBehaviour
     void Start()
     {
         myLight = GetComponent<Light>();
-        flame.SetActive(true);
+        myLight.color = offColor;
+        flame.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime * timeScale;
 
-        myLight.intensity = Mathf.PerlinNoise(t, transform.position.y);
+        if (isLit)
+        {
+            t += Time.deltaTime * timeScale;
+
+            myLight.intensity = Mathf.PerlinNoise(t, transform.position.y);
+        } 
+        
     }
 }

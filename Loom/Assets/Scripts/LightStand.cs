@@ -75,7 +75,10 @@ public class LightStand : MonoBehaviour
             }
             
             StartCoroutine(SettleDown(transform.localPosition));
-            
+            myLight.GetComponent<LightIntensityFlicker>().isLit = true;
+            myLight.GetComponent<LightIntensityFlicker>().flame.SetActive(true);
+            myLight.GetComponent<Light>().color = myLight.GetComponent<LightIntensityFlicker>().onColor;
+
         }
 
         if (!isLit)
