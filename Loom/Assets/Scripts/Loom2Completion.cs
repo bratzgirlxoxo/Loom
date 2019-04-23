@@ -45,7 +45,7 @@ public class Loom2Completion : MonoBehaviour
     IEnumerator riseUP()
     {
         Loom2RisEvent.Post(transform.gameObject);
-        transform.parent = null;
+        transform.parent = bells.transform.parent;
         transform.position = particleObjects[0].transform.position;
         Vector3 startPosition = particleObjects[0].transform.position;
         Vector3 fireballStart = transform.position;

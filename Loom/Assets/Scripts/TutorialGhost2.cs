@@ -27,13 +27,6 @@ public class TutorialGhost2 : MonoBehaviour
         rBody = GetComponent<Rigidbody>();
 
         myLight.enabled = false;
-        
-        positions = new Vector3[positionTransforms.Length + 1];
-        for (int i = 0; i < positions.Length; i++)
-        {
-            positions[i+1] = positionTransforms[i].position;
-        }
-        
     }
 
     public IEnumerator Birth()
@@ -43,6 +36,12 @@ public class TutorialGhost2 : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
         rBody.useGravity = true;
         stageIdx++;
+        
+        positions = new Vector3[positionTransforms.Length + 1];
+        for (int i = 0; i < positions.Length; i++)
+        {
+            positions[i+1] = positionTransforms[i].position;
+        }
     }
 
     IEnumerator LinearLerp(Vector3 start, Vector3 finish, float moveTime)

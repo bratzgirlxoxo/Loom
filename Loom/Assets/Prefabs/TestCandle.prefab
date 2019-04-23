@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1318062588
 Transform:
   m_ObjectHideFlags: 0
@@ -43,7 +43,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.7313963, b: 0.10849059, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.8
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -83,6 +83,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeScale: 1.5
+  isLit: 0
+  offColor: {r: 0.20803669, g: 0.8018868, b: 0.7783946, a: 1}
+  onColor: {r: 1, g: 0.73333335, b: 0.10980392, a: 1}
   flame: {fileID: 816740697910565332}
 --- !u!1 &816740697910565332
 GameObject:
@@ -189,7 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5e1d2d58b9acb4a864277223e89968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutCam: {fileID: 0}
   fpsController: {fileID: 0}
 --- !u!1 &1671365913843809041
 GameObject:
@@ -326,8 +328,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLit: 0
   canLight: 0
+  loom1: 0
+  loom2: 0
+  loom3: 0
   myLight: {fileID: 1318062587}
   nextLoomTrigger: {fileID: 0}
+  nextLoomTrigger2: {fileID: 0}
   objAnim: {fileID: 0}
   idx: 0
   Candle_Strike_Event:
@@ -339,6 +345,7 @@ MonoBehaviour:
   willMove: 0
   oscillateScale: 0
   oscillateSpeed: 0
+  door: {fileID: 0}
 --- !u!1 &7471615497680438067
 GameObject:
   m_ObjectHideFlags: 0
