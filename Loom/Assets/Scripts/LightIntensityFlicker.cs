@@ -14,13 +14,24 @@ public class LightIntensityFlicker : MonoBehaviour
     private float t = 0f;
 
     public GameObject flame;
+
+    public AnimationCurve birthCurve;
     
     // Start is called before the first frame update
     void Start()
     {
         myLight = GetComponent<Light>();
-        myLight.color = offColor;
-        flame.SetActive(false);
+        if (transform.parent.GetComponent<LightStand>().loom3)
+            myLight.color = onColor;
+        else
+        {
+            flame.SetActive(false);
+            myLight.color = offColor;
+        }
+
+        birthCurve.AddKey(0.2f, 4f);
+        birthCurve.keys[1].value = 0;
+
     }
 
     // Update is called once per frame
@@ -34,5 +45,22 @@ public class LightIntensityFlicker : MonoBehaviour
             myLight.intensity = Mathf.PerlinNoise(t, transform.position.y);
         } 
         
+    }
+
+    public IEnumerator DieDown()
+    {
+        if (myLight == null)
+            myLight = GetComponent<Light>();
+        myLight.color = onColor;
+        flame.SetActive(true);
+        float t = 0;
+        float startIntensity = myLight.intensity;
+        while (t < 1f)
+        {
+            t += Time.deltaTime * 2f;
+            myLight.intensity = Mathf.LerpUnclamped(1f, birthCurve.Evaluate(t), t);
+            yield return null;
+        }
+        myLight.enabled = false;
     }
 }
