@@ -22,5 +22,6 @@ public class TestAnimation : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         cabinetAnimator.gameObject.SetActive(true);
         cabinetAnimator.SetBool("constructing", true);
+        Debug.Log("Objects Constructing");
     }
 }
