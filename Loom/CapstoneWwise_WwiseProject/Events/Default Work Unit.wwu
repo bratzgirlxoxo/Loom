@@ -72,7 +72,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="fireball1" ID="{E94DEA07-3116-4CB7-9931-56D00F776510}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+									<ObjectRef Name="Fast" ID="{3D38C0A8-E4BD-4386-A38B-EA4EAB26A8FE}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -82,7 +82,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="fireball2" ID="{B99FEE1A-0D38-4E4A-B74D-9E772910F65C}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+									<ObjectRef Name="Slow" ID="{4E1C43BF-E9F8-44F4-BE62-F90E4EA9AF44}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -96,7 +96,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="fireball1" ID="{E94DEA07-3116-4CB7-9931-56D00F776510}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+									<ObjectRef Name="Fast" ID="{3D38C0A8-E4BD-4386-A38B-EA4EAB26A8FE}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -106,7 +106,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="fireball2" ID="{B99FEE1A-0D38-4E4A-B74D-9E772910F65C}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+									<ObjectRef Name="Slow" ID="{4E1C43BF-E9F8-44F4-BE62-F90E4EA9AF44}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

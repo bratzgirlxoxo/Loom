@@ -19,10 +19,11 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	1590660382	Nearly_Forever	Wwise Delay			
+	1735130781	Aliasing	Wwise Tremolo			
 	2257464207	Reverb_Highs	Wwise RoomVerb			
 	3164629247	Holy	Wwise RoomVerb			
-	3407225994	Phone_Booth	Wwise RoomVerb			
 	3584947395	BellDelay	Wwise Delay			
+	3701691487	Hall_Large_Bright	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
