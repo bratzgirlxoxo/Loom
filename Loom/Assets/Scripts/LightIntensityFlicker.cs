@@ -30,7 +30,8 @@ public class LightIntensityFlicker : MonoBehaviour
         }
 
         birthCurve.AddKey(0.2f, 4f);
-        birthCurve.keys[1].value = 0;
+        if (birthCurve.length > 1) 
+            birthCurve.keys[1].value = 1;
 
     }
 
@@ -61,6 +62,6 @@ public class LightIntensityFlicker : MonoBehaviour
             myLight.intensity = Mathf.LerpUnclamped(1f, birthCurve.Evaluate(t), t);
             yield return null;
         }
-        myLight.enabled = false;
+        isLit = true;
     }
 }

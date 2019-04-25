@@ -6,6 +6,8 @@ public class Loom3Object : MonoBehaviour
 {
 
     public TestAnimation myAnim;
+
+    private bool hasHit;
     
     void Start()
     {

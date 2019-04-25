@@ -9,12 +9,15 @@ public class Loom3Approach : MonoBehaviour
     public ParticleSystem[] fireballs;
 
     public TestAnimation[] myAnims;
+
+    private bool hasHit;
     
 
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.CompareTag("Player"))
+        if (!hasHit && coll.CompareTag("Player"))
         {
+            hasHit = true;
             for (int i = 0; i < lights.Length; i++)
             {
                 GameObject lightObj = lights[i].myLight;
@@ -30,10 +33,10 @@ public class Loom3Approach : MonoBehaviour
 
             for (int i = 0; i < myAnims.Length; i++)
             {
-                myAnims[i].StartCoroutine(myAnims[i].startAnimation());
+                StartCoroutine(myAnims[i].startAnimation());
             }
             
-            Destroy(transform.gameObject);
+            //Destroy(transform.gameObject);
         }
     }
 }
