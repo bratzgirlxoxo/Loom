@@ -30,7 +30,8 @@ public class LightIntensityFlicker : MonoBehaviour
         }
 
         birthCurve.AddKey(0.2f, 4f);
-        birthCurve.keys[1].value = 1;
+        if (birthCurve.length > 1) 
+            birthCurve.keys[1].value = 1;
 
     }
 
