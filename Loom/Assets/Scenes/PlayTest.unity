@@ -5596,7 +5596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: da315861678751f449659c1f2c8ca6c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -60
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: da315861678751f449659c1f2c8ca6c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7000,7 +7000,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b0e09290fc1120439aee417a42f9d47, type: 2}
+  - {fileID: 2100000, guid: bd5262b6eefdd46f59750abd137d7a03, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -7039,7 +7039,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 4300000, guid: b178d091d59f1b440ac8c1b5c3dd9f32, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1670205ebfedb4e8daff9258e38731f2, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -16973,7 +16973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pillar1: {fileID: 1037470364}
-  nextLoom: {fileID: 1006197778}
+  nextLoom: {fileID: 0}
   fireflies:
   - {fileID: 1870815697}
   - {fileID: 1197961634}
@@ -18961,11 +18961,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5cd2410bf25569f49ae4ad9477158254, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5cd2410bf25569f49ae4ad9477158254, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5cd2410bf25569f49ae4ad9477158254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19038,7 +19038,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b0e09290fc1120439aee417a42f9d47, type: 2}
+  - {fileID: 2100000, guid: 336f8f619b4184bbf8f5204cb0933932, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -19077,7 +19077,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 4300000, guid: 6a6c5b38e8295ec4da57d4c529857b3d, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 46c24ff8e9e704b9593090506aa69998, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -43729,7 +43729,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b0e09290fc1120439aee417a42f9d47, type: 2}
+  - {fileID: 2100000, guid: 7d7131999067b438eb920ee81ef1bbb2, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -43768,7 +43768,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 4300000, guid: 0a11fecde6f1e6049b20ef231821e824, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1ecc11026ce6643c18f91b83a0aaee3e, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -58515,7 +58515,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b0e09290fc1120439aee417a42f9d47, type: 2}
+  - {fileID: 2100000, guid: 43a45f973c8f245e8808c15d630edcaf, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -58554,7 +58554,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 4300000, guid: f7f46a299e4fe6347948548634baa330, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 049151d5bdab849b5a1a0808f09eb78d, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -63191,7 +63191,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1523909767
 PrefabInstance:
@@ -78896,7 +78896,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b349727d92a72e54c8834f4270185494, type: 2}
+  - {fileID: 2100000, guid: 0c3e742e5ee8df546b4f37ca4514f40c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
