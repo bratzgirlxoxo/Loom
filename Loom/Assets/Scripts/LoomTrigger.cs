@@ -56,13 +56,13 @@ public class LoomTrigger : MonoBehaviour
             }
         }
 
-        /*        
+             
         if (fullyLit && cutSceneReady)
         {
             cutScene.ready = true;
             cutSceneReady = false;
         }
-        */
+        
         
 
         if (emerging)

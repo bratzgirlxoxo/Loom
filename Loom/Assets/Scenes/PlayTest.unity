@@ -16917,6 +16917,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &273462057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1671365913843809041, guid: 169ece776bfe8ca47860253619be6cbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 686410283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &273462058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273462057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108efcb3e1df1514092b823ca37203ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ready: 0
+  ghostFriend: {fileID: 1314021088}
+  fireballPlay:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9a273c69eb995ff48894e16c2672eb4d,
+      type: 2}
 --- !u!1 &290617396
 GameObject:
   m_ObjectHideFlags: 0
@@ -17387,7 +17412,7 @@ MonoBehaviour:
   - {fileID: 1255300193}
   - {fileID: 323348287}
   - {fileID: 552850237}
-  cutScene: {fileID: 0}
+  cutScene: {fileID: 273462058}
   OceanSplashEvent:
     idInternal: 0
     valueGuidInternal: 
