@@ -1589,7 +1589,7 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
-								<Sound Name="loom2_rise" ID="{8ED8C062-B321-4601-954F-40BA9F0B88BC}" ShortID="110786322">
+								<Sound Name="loom2_particle_rise" ID="{8ED8C062-B321-4601-954F-40BA9F0B88BC}" ShortID="110786322">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -1634,6 +1634,30 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="loom2_rise" ID="{31202DEA-3F08-495E-B693-F8BD99F202CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="loom2_water_rise" ID="{F968FA69-E6D0-4681-8B11-EB576D375D68}" ShortID="878558697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="loom2_water_rise" ID="{4EA49B00-5CCB-44C6-9D71-9C0CE522992A}" ShortID="797749214">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="14.8141592920354"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.09734513274336"/>
+												<Property Name="TrimBegin" Type="Real64" Value="11.0442477876106"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>loom2_water_rise.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="loom2_water_rise" ID="{4EA49B00-5CCB-44C6-9D71-9C0CE522992A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -2604,7 +2628,7 @@
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.129665539102578"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.446625745797771"/>
-																<Property Name="TrimBegin" Type="Real64" Value="6.24315558642045E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0624315558642045"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Walking\Main\loom3_mainWalking_4.wav</AudioFile>
@@ -2682,7 +2706,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
