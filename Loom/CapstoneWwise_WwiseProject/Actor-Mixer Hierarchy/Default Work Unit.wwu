@@ -957,7 +957,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1593,6 +1593,11 @@
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1614,9 +1619,14 @@
 									<ChildrenList>
 										<AudioFileSource Name="loom2_rise" ID="{31202DEA-3F08-495E-B693-F8BD99F202CA}" ShortID="22008258">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="4.75884955752212"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.592755214050494"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="3.14601769911504"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.06637168141593"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.59546059469804"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>loom2_rise.wav</AudioFile>
@@ -2669,6 +2679,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Fireball" ID="{90921252-50D5-4720-A2C1-DCFC915E77AF}" ShortID="340493745">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="FireballAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
@@ -2752,6 +2769,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="fireball_fast_3" ID="{7086EA52-5C64-4E9F-8D36-C37FC2CE500A}" ShortID="798394964">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.237102085620198"/>
+												<Property Name="LoopEnd" Type="Real64" Value="7.66630076838639"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Fast\fireball_fast_3.wav</AudioFile>
 										</AudioFileSource>
@@ -2813,6 +2836,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="fireball_slow_1" ID="{89435C4E-D8BF-4821-91E4-B684DBB4BE4B}" ShortID="663059481">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.166849615806806"/>
+												<Property Name="LoopEnd" Type="Real64" Value="7.84193194291987"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Slow\fireball_slow_1.wav</AudioFile>
 										</AudioFileSource>
@@ -2835,6 +2864,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="fireball_slow_2" ID="{DE2FACA0-A13F-4511-9CCD-719C800A60E6}" ShortID="877542751">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.201975850713502"/>
+												<Property Name="LoopEnd" Type="Real64" Value="7.7980241492865"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Slow\fireball_slow_2.wav</AudioFile>
 										</AudioFileSource>
@@ -2862,6 +2897,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="fireball_slow_3" ID="{50B414DE-D661-4B44-BCE0-A31B71381B27}" ShortID="569415747">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.298572996706915"/>
+												<Property Name="LoopEnd" Type="Real64" Value="7.70142700329308"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Slow\fireball_slow_3.wav</AudioFile>
 										</AudioFileSource>
@@ -2884,6 +2925,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="fireball_slow_4" ID="{86A984FC-CA24-408E-A307-634BDC80D163}" ShortID="412468055">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.166849615806806"/>
+												<Property Name="LoopEnd" Type="Real64" Value="7.82436882546652"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Slow\fireball_slow_4.wav</AudioFile>
 										</AudioFileSource>
