@@ -21,13 +21,22 @@ public class LightIntensityFlicker : MonoBehaviour
     void Start()
     {
         myLight = GetComponent<Light>();
-        if (transform.parent.GetComponent<LightStand>().loom3)
-            myLight.color = onColor;
+        if (transform.parent.GetComponent<LightStand>() != null)
+        {
+            if (transform.parent.GetComponent<LightStand>().loom3)
+                myLight.color = onColor;
+            else
+            {
+                flame.SetActive(false);
+                myLight.color = offColor;
+            }
+        }
         else
         {
+            myLight.color = onColor;
             flame.SetActive(false);
-            myLight.color = offColor;
         }
+       
 
         birthCurve.AddKey(0.2f, 4f);
         if (birthCurve.length > 1) 
