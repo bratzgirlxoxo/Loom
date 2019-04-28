@@ -152,6 +152,7 @@ ModelImporter:
     400144: StairsPlatform3
     400146: WaterOrb
     2100000: lambert1
+    2100002: lambert2
     2300000: Awning
     2300002: AwningPillar1
     2300004: AwningPillar2
@@ -411,7 +412,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

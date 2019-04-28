@@ -7,68 +7,26 @@ public class Loom1Completion : MonoBehaviour
 {
     public bool ready;
 
-    public FirstPersonController playerController;
-
-    public Transform[] cutPositions;
-    public float[] cutWaitTimes;
 
     public TutorialGhost ghostFriend;
-    
-    public GameObject playerCam;
-    private Camera thisCam;
 
     public AK.Wwise.Event fireballPlay;
 
-    void Start()
-    {
-        thisCam = GetComponent<Camera>();
-        thisCam.enabled = false;
-    }
+    private float t;
     
     void Update()
     {
         if (ready)
         {
-            StartCoroutine(CameraCutscene());
-            ready = false;
-        }
-    }
-
-    IEnumerator CameraCutscene()
-    {
-        yield return new WaitForSeconds(3.75f);
-        //thisCam.enabled = true;
-        //playerController.canWalk = false;
-        //playerCam.SetActive(false);
-
-        fireballPlay.Post(ghostFriend.gameObject);
-        ghostFriend.GetComponent<ParticleSystem>().Play();
-        ghostFriend.StartCoroutine(ghostFriend.JumpTutorial());
-
-        /*
-        for (int i = 0; i < cutPositions.Length; i++)
-        {
-            CameraCut(cutPositions[i]);
-            if (i == cutPositions.Length - 1)
+            t += Time.deltaTime;
+            if (t >= 3.25f)
             {
                 fireballPlay.Post(ghostFriend.gameObject);
-                ghostFriend.GetComponent<ParticleSystem>().Play();
+                //ghostFriend.GetComponent<ParticleSystem>().Play();
                 ghostFriend.StartCoroutine(ghostFriend.JumpTutorial());
+                ready = false;
             }
-            yield return new WaitForSeconds(cutWaitTimes[i]);
         }
-        */
-        
-
-        //playerCam.SetActive(true);
-        //playerController.canWalk = true;
-    }
-
-    // for directly cutting from one camera position to another
-    void CameraCut(Transform newPosition)
-    {
-        thisCam.transform.position = newPosition.position;
-        thisCam.transform.forward = newPosition.forward;
     }
 
 }
