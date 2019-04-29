@@ -7,7 +7,7 @@
      private Vector2 startScale;
      private Vector2 targetScale;
 
-     private float TimeScale = 0.5f;
+     public float TimeScale = 0.5f;
      private Coroutine scaleRoutine = null;
 
      private void Start()
@@ -17,27 +17,34 @@
              gameObject.transform.localScale.y);
      }
 
-     private void OnMouseOver()
+     private void OnMouseEnter()
      { 
+         StopAllCoroutines();
+         Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
+             gameObject.transform.localScale.y);
          targetScale = new Vector2(1.5f, 1.5f);
-         scaleRoutine = StartCoroutine(LerpUp());
+         StartCoroutine(TextScaleLerp(currentScale, targetScale));
      }
      
      private void OnMouseExit()
      {
-         StopCoroutine(scaleRoutine);
+         StopAllCoroutines();
+         Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
+             gameObject.transform.localScale.y);
+         StartCoroutine(TextScaleLerp(currentScale, startScale));
+
      }
      
      //this coroutine scale the object up at a certain time scale
-     IEnumerator LerpUp(){
+     IEnumerator TextScaleLerp(Vector2 start, Vector2 goal){
          float progress = 0;
      
          while(progress <= 1){
-             transform.localScale = Vector2.Lerp(startScale, targetScale, progress);
+             transform.localScale = Vector2.Lerp(start, goal, progress);
              progress += Time.deltaTime * TimeScale;
              yield return null;
          }
-         transform.localScale = targetScale;
+         //transform.localScale = targetScale;
      
      } 
  }
