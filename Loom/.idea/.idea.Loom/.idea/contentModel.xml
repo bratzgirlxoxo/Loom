@@ -63,6 +63,7 @@
           <e p="RadialBackground.shader" t="Include" />
           <e p="ReverseSilhouette.shader" t="Include" />
           <e p="Ripples.shader" t="Include" />
+          <e p="Sean's Water.shader" t="Include" />
           <e p="SilhouetteNormals.shader" t="Include" />
           <e p="SkyDomeStars.shader" t="Include" />
           <e p="Stars.shader" t="Include" />
