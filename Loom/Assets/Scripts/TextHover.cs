@@ -9,6 +9,10 @@
 
      private Coroutine scaleRoutine = null;
 
+     public AK.Wwise.Event Melody1Start;
+     public AK.Wwise.Event Melody1Stop;
+     
+
      public float InflateScale;
      public float DeflateScale;
 
@@ -26,6 +30,8 @@
              gameObject.transform.localScale.y);
          targetScale = new Vector2(1.5f, 1.5f);
          StartCoroutine(TextScaleLerp(currentScale, targetScale, InflateScale));
+
+         Melody1Start.Post(gameObject);
      }
      
      private void OnMouseExit()
@@ -34,6 +40,8 @@
          Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
              gameObject.transform.localScale.y);
          StartCoroutine(TextScaleLerp(currentScale, startScale, DeflateScale));
+         
+         Melody1Stop.Post(gameObject);
 
      }
      

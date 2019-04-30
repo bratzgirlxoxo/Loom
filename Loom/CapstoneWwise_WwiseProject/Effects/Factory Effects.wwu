@@ -1352,7 +1352,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="5.7"/>
 										<Property Name="PreDelay" Type="Real32" Value="180"/>
 										<Property Name="Quality" Type="int32" Value="14"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-14"/>
 										<Property Name="RoomSize" Type="Real32" Value="100"/>
 										<Property Name="StereoWidth" Type="Real32" Value="172"/>
 									</PropertyList>
@@ -1759,13 +1759,16 @@
 						<Effect Name="LR_Slap_with_CrossFeed" ID="{30319A92-C5AC-437A-9864-430059762933}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
 								<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
+								<Property Name="EnableFeedback" Type="bool" Value="True"/>
 								<Property Name="FilterFrequency" Type="Real32" Value="261"/>
 								<Property Name="FilterGain" Type="Real32" Value="10.5"/>
-								<Property Name="LeftCrossfeed" Type="Real32" Value="-20"/>
+								<Property Name="LeftCrossfeed" Type="Real32" Value="-6"/>
 								<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
-								<Property Name="RightCrossfeed" Type="Real32" Value="-20"/>
+								<Property Name="LeftFeedback" Type="Real32" Value="-6"/>
+								<Property Name="RightCrossfeed" Type="Real32" Value="-6"/>
 								<Property Name="RightDelayTime" Type="Real32" Value="0.43"/>
-								<Property Name="WetLevel" Type="Real32" Value="-6"/>
+								<Property Name="RightFeedback" Type="Real32" Value="-6"/>
+								<Property Name="WetLevel" Type="Real32" Value="4"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Underwater_Echoes" ID="{3C6B127B-9DAE-4879-A4ED-75DF209310EC}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
@@ -1794,6 +1797,7 @@
 								<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
 								<Property Name="RightCrossfeed" Type="Real32" Value="-8"/>
 								<Property Name="RightDelayTime" Type="Real32" Value="0.43"/>
+								<Property Name="WetLevel" Type="Real32" Value="10"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Personnel_Advisor" ID="{B78063AF-DC4F-4D1D-B4AB-B3487BE02D7F}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">

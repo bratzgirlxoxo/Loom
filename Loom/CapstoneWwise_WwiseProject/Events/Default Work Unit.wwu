@@ -9,6 +9,7 @@
 				<WorkUnit Name="Loom3" ID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" PersistMode="Reference"/>
 				<WorkUnit Name="Misc" ID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" PersistMode="Reference"/>
 				<WorkUnit Name="Fireball" ID="{515F67A7-8700-4995-8B85-87F57AA0146C}" PersistMode="Reference"/>
+				<WorkUnit Name="MainMenu" ID="{9E114218-4C9E-4AD6-98B7-55475394826B}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

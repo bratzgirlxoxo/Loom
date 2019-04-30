@@ -23,6 +23,7 @@
 						<ObjectRef Name="Loom2_Play_Candle_Event_Sound" ID="{9E157146-8D9F-49B8-AAC1-99EC00F6BF9F}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Stop_IntroWalk_Event" ID="{754FECAD-444A-49CA-82BC-818B04D425B7}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Play_Walk_Event" ID="{5F74EE49-9341-4A77-9677-B1A737460DDD}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MainMenu" ID="{9E114218-4C9E-4AD6-98B7-55475394826B}" WorkUnitID="{9E114218-4C9E-4AD6-98B7-55475394826B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Play_Candle_Strike_Event" ID="{4ECD3DAF-1219-4B1C-B7A2-36665932780B}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Stop_Walk_Event" ID="{E314A6A5-67AB-4B1E-95B7-7A3756105A76}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_IntroWalk_Event" ID="{B5FDF93F-8DA6-4D6A-87E1-0397A5F3AD05}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>

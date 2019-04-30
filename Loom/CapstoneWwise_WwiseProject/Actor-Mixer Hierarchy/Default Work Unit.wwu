@@ -2628,7 +2628,7 @@
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.129665539102578"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.446625745797771"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0624315558642045"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.24315558642045E-02"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Walking\Main\loom3_mainWalking_4.wav</AudioFile>
@@ -2964,6 +2964,569 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="MainMenu" ID="{8F048F17-4AF7-449E-9796-40782AA14FD6}" ShortID="345931445">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Organ" ID="{34B294FA-D587-4447-A85D-5D29860E6CA9}" ShortID="799843663">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="MainMenu_Aux2" ID="{FC4CF7E3-3793-4D9E-B71B-3ED8340B6AFA}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="menu_organ_1" ID="{95E1B287-F04A-4FF1-849E-89594E014399}" ShortID="812849766">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_organ_1" ID="{CC82EC06-1513-45E6-8DE3-627FFB9264D5}" ShortID="349423874">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.681448957189902"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.786827661909989"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.323161361141603"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>menu_organ_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_organ_1" ID="{CC82EC06-1513-45E6-8DE3-627FFB9264D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_organ_2" ID="{61DF4BBC-39C6-4004-96B3-B7CDD126FF51}" ShortID="823831217">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_organ_2" ID="{4BCA88FF-C75C-4A79-8654-CC5CEA3DA3BC}" ShortID="669065534">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.709549945115258"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.386388583973655"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.217782656421515"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>menu_organ_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_organ_2" ID="{4BCA88FF-C75C-4A79-8654-CC5CEA3DA3BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_organ_3" ID="{EE97CD11-64C3-4F1A-BD5D-8946901D0B08}" ShortID="958070688">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_organ_3" ID="{2E3E1FFC-B505-427F-9C74-7370622BF8AA}" ShortID="496064248">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.653347969264545"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.386388583973655"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.337211855104281"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>menu_organ_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_organ_3" ID="{2E3E1FFC-B505-427F-9C74-7370622BF8AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_organ_4" ID="{B387F547-EDC0-4515-9F14-FB6F1BC39F5B}" ShortID="816759117">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_organ_4" ID="{4238C3DC-39D7-48B6-833B-1FA58F3F03D8}" ShortID="482582143">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.772777167947311"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.400439077936333"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.281009879253567"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>menu_organ_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_organ_4" ID="{4238C3DC-39D7-48B6-833B-1FA58F3F03D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="menu_organ_1" ID="{95E1B287-F04A-4FF1-849E-89594E014399}"/>
+								<ItemRef Name="menu_organ_2" ID="{61DF4BBC-39C6-4004-96B3-B7CDD126FF51}"/>
+								<ItemRef Name="menu_organ_3" ID="{EE97CD11-64C3-4F1A-BD5D-8946901D0B08}"/>
+								<ItemRef Name="menu_organ_4" ID="{B387F547-EDC0-4515-9F14-FB6F1BC39F5B}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bass" ID="{33FC12DA-3AB9-4BB8-AD50-2A7D315643F7}" ShortID="657986988">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="MainMenu_Aux2" ID="{FC4CF7E3-3793-4D9E-B71B-3ED8340B6AFA}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="menu_bass_1" ID="{9A023B72-CC41-4940-BF03-52644DECDF36}" ShortID="836410793">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_bass_1" ID="{B98DE018-AED3-43AE-BD0A-BBA51288711F}" ShortID="979922452">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.983534577387487"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.46827661909989"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bass\menu_bass_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_bass_1" ID="{B98DE018-AED3-43AE-BD0A-BBA51288711F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_bass_2" ID="{16A1EE14-1D3A-463C-9571-8F9D2CB0DFF9}" ShortID="112918687">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_bass_2" ID="{788F1947-895A-4A88-869A-DEF6A395ED54}" ShortID="332943447">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.82371020856202"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.62535675082327"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bass\menu_bass_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_bass_2" ID="{788F1947-895A-4A88-869A-DEF6A395ED54}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_bass_3" ID="{E017CEAB-6458-44E9-86D9-2069E6514EAA}" ShortID="381656996">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_bass_3" ID="{14291910-1316-4164-A367-1F9176632355}" ShortID="456566573">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.649506037321624"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.70746432491767"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bass\menu_bass_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_bass_3" ID="{14291910-1316-4164-A367-1F9176632355}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_bass_4" ID="{BD17E843-72E5-46B3-8033-7B0F2B3BCF02}" ShortID="346957395">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_bass_4" ID="{014AFD79-6C96-422E-A27F-6CEB232DB6D7}" ShortID="35396188">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.491767288693743"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.30428100987925"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bass\menu_bass_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_bass_4" ID="{014AFD79-6C96-422E-A27F-6CEB232DB6D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="menu_bass_1" ID="{9A023B72-CC41-4940-BF03-52644DECDF36}"/>
+								<ItemRef Name="menu_bass_2" ID="{16A1EE14-1D3A-463C-9571-8F9D2CB0DFF9}"/>
+								<ItemRef Name="menu_bass_3" ID="{E017CEAB-6458-44E9-86D9-2069E6514EAA}"/>
+								<ItemRef Name="menu_bass_4" ID="{BD17E843-72E5-46B3-8033-7B0F2B3BCF02}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Melody1" ID="{1E076BFD-3153-4690-B0F3-D2669149F71D}" ShortID="975457913">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="MainMenu_Aux2" ID="{FC4CF7E3-3793-4D9E-B71B-3ED8340B6AFA}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="menu_melody_1" ID="{11A5495C-21EB-40BC-96D1-3FC3A9DD8817}" ShortID="410652760">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody_1" ID="{82BC6D37-C888-4D5D-87EF-C5E2BA44E11C}" ShortID="547498913">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.258616904500549"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.986827661909989"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody1\menu_melody_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody_1" ID="{82BC6D37-C888-4D5D-87EF-C5E2BA44E11C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody_2" ID="{C18552A8-0E0C-480E-8E32-E5E758CA7B55}" ShortID="255861356">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody_2" ID="{9369AFCC-601F-483B-A0D0-2D19536131BA}" ShortID="889305846">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.35675082327113"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.827661909989023"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody1\menu_melody_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody_2" ID="{9369AFCC-601F-483B-A0D0-2D19536131BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody_3" ID="{2468C0D8-BA8E-4476-BC7D-D9DA48777AEC}" ShortID="522245956">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody_3" ID="{728756E2-2C82-4A75-899F-5C6D9FC00E84}" ShortID="432722605">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.279473106476399"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.893578485181119"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody1\menu_melody_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody_3" ID="{728756E2-2C82-4A75-899F-5C6D9FC00E84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody_4" ID="{A551EEB3-5828-46E4-ADB0-FD4B92FCDA3B}" ShortID="862443292">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody_4" ID="{3256488B-BCD2-4958-831C-234EAF1D41CD}" ShortID="380720517">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.456641053787047"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.29725576289791"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody1\menu_melody_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody_4" ID="{3256488B-BCD2-4958-831C-234EAF1D41CD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody_5" ID="{99DE17DE-6AEA-47E1-96F4-02E156056003}" ShortID="60021092">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody_5" ID="{332DC964-4135-4DDB-BD8F-D4D56E6CFBC3}" ShortID="139181463">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.372338090010977"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.82656421514819"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody1\menu_melody_5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody_5" ID="{332DC964-4135-4DDB-BD8F-D4D56E6CFBC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="menu_melody_1" ID="{11A5495C-21EB-40BC-96D1-3FC3A9DD8817}"/>
+								<ItemRef Name="menu_melody_2" ID="{C18552A8-0E0C-480E-8E32-E5E758CA7B55}"/>
+								<ItemRef Name="menu_melody_3" ID="{2468C0D8-BA8E-4476-BC7D-D9DA48777AEC}"/>
+								<ItemRef Name="menu_melody_4" ID="{A551EEB3-5828-46E4-ADB0-FD4B92FCDA3B}"/>
+								<ItemRef Name="menu_melody_5" ID="{99DE17DE-6AEA-47E1-96F4-02E156056003}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Melody2" ID="{046C4D76-74A4-43CD-BB87-AA50A6C1FC12}" ShortID="890636790">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="MainMenu_Aux2" ID="{FC4CF7E3-3793-4D9E-B71B-3ED8340B6AFA}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="menu_melody2_1" ID="{8BF08B26-1B1B-4580-B365-1DECB612B4B1}" ShortID="698342324">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody2_1" ID="{85390CE4-0626-4F56-8FEA-B3A35894FA37}" ShortID="903619623">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.769045005488474"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.42239297475302"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.299451152579583"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody2\menu_melody2_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody2_1" ID="{85390CE4-0626-4F56-8FEA-B3A35894FA37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody2_2" ID="{141911A9-D79D-4DB2-AD50-27D8CF160299}" ShortID="460673146">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody2_2" ID="{3E356B30-0A97-46BE-A7C4-4847DF3FF083}" ShortID="180187381">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.278265642151482"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.37705817782656"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.21075740944018E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody2\menu_melody2_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody2_2" ID="{3E356B30-0A97-46BE-A7C4-4847DF3FF083}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody2_3" ID="{265392ED-5CE4-49FC-9DE6-3D63A174C3C7}" ShortID="397785636">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody2_3" ID="{602A7314-6004-47EE-96FA-19C07E240EAD}" ShortID="408030316">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.584687156970362"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.44884742041712"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody2\menu_melody2_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody2_3" ID="{602A7314-6004-47EE-96FA-19C07E240EAD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody2_4" ID="{FF16364F-1C25-4EBA-887C-B36F50513D9B}" ShortID="429372972">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody2_4" ID="{F813AB26-17FE-498A-8854-51ADDDFA7D96}" ShortID="609080412">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.0046103183315"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.54313940724479"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.154555433589462"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody2\menu_melody2_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody2_4" ID="{F813AB26-17FE-498A-8854-51ADDDFA7D96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_melody2_5" ID="{EC3EE835-B48A-4AD5-AE8E-68432A54BC67}" ShortID="224762553">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_melody2_5" ID="{DCD0649D-F564-4171-BEED-30D45D67047C}" ShortID="858484452">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.983534577387486"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.38858397365532"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.224807903402854"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Melody2\menu_melody2_5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_melody2_5" ID="{DCD0649D-F564-4171-BEED-30D45D67047C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="menu_melody2_1" ID="{8BF08B26-1B1B-4580-B365-1DECB612B4B1}"/>
+								<ItemRef Name="menu_melody2_2" ID="{141911A9-D79D-4DB2-AD50-27D8CF160299}"/>
+								<ItemRef Name="menu_melody2_3" ID="{265392ED-5CE4-49FC-9DE6-3D63A174C3C7}"/>
+								<ItemRef Name="menu_melody2_4" ID="{FF16364F-1C25-4EBA-887C-B36F50513D9B}"/>
+								<ItemRef Name="menu_melody2_5" ID="{EC3EE835-B48A-4AD5-AE8E-68432A54BC67}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
