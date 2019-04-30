@@ -16,7 +16,6 @@ public class ParticleBells : MonoBehaviour
 
     public Transform player;
     public GameObject fireBall;
-    public Color transparentColor;
 
     private ParticleSystem fireballParticles;
 
@@ -64,14 +63,11 @@ public class ParticleBells : MonoBehaviour
         playing = true;
         switchFrequency = Random.Range(switchFrequencyMin, switchFrequencyMax);
         
-        fireballParticles.Play();
-        StartCoroutine(ParticleFadeIn());
-        
+        fireballParticles.Play();        
         myPartSystem.GetParticles(allParts);
         ParticleSystem.Particle chosenParticle = allParts[Random.Range(0, allParts.Length)];
         
         Color32 startCol = chosenParticle.GetCurrentColor(myPartSystem);
-        chosenParticle.startColor = transparentColor;
 
         particlePosition = chosenParticle.position;
         Debug.Log("New Particle Position: " + particlePosition);
@@ -80,22 +76,8 @@ public class ParticleBells : MonoBehaviour
         PlayBellEvent.Post(soundObject);
         yield return new WaitForSeconds(switchFrequency);
 
-        chosenParticle.startColor = startCol;
         
         fireballParticles.Stop();
         playing = false;
     }
-
-
-    IEnumerator ParticleFadeIn()
-    {
-        float t = 0;
-        while (t < 1f)
-        {
-            t += Time.deltaTime / 2f;
-            fireballParticles.gameObject.transform.localScale =
-                Vector3.Lerp(Vector3.zero, new Vector3(3.5f, 3.5f, 3.5f), t);
-            yield return null;
-        }
-    }   
 }
