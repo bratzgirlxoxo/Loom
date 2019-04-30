@@ -5,34 +5,37 @@ using UnityEngine;
 public class TutorialGhost2 : MonoBehaviour
 {
 
-    private ParticleSystem myParticles;
-    private Light myLight;
+    public Light myLight;
     private Rigidbody rBody;
 
     public Transform[] positionTransforms;
-
     public float[] lerpTimes;
-
     private Vector3[] positions;
+    
+    public AnimationCurve runAnimationCurve;
+    public AnimationCurve swingAnimationCurve;
 
-
+    private MeshRenderer mRend;
 
     private bool moving;
     private int stageIdx = -1;
     
     void Start()
     {
-        myParticles = GetComponent<ParticleSystem>();
-        myLight = GetComponent<Light>();
         rBody = GetComponent<Rigidbody>();
+        mRend = GetComponent<MeshRenderer>();
 
         myLight.enabled = false;
+        mRend.enabled = false;
+        rBody.useGravity = false;
     }
 
-    public IEnumerator Birth()
+    public IEnumerator Birth(Vector3 startPos)
     {
-        myParticles.Play();
+        transform.position = startPos;
         myLight.enabled = true;
+        mRend.enabled = true;
+        myLight.transform.GetComponent<LightIntensityFlicker>().flame.SetActive(true);
         yield return new WaitForSeconds(0.8f);
         rBody.useGravity = true;
         stageIdx++;
@@ -50,7 +53,15 @@ public class TutorialGhost2 : MonoBehaviour
         while (t < 1)
         {
             t += Time.deltaTime / moveTime;
-            transform.position = Vector3.Lerp(start, finish, t);
+            Vector3 currPos = transform.position;
+            Vector3 nextLerpPos = Vector3.Lerp(start, finish, runAnimationCurve.Evaluate(t));
+            currPos.x = nextLerpPos.x;
+            currPos.y += 0.015f * Mathf.Sin(Time.time * moveTime);
+            currPos.z = nextLerpPos.z;
+
+            Vector3 currRot = transform.rotation.eulerAngles;
+            currRot.z = swingAnimationCurve.Evaluate(t) * Mathf.Sin(Time.time * moveTime/2f) * 30f;
+            transform.SetPositionAndRotation(currPos, Quaternion.Euler(currRot));
             yield return null;
         }
         moving = false;
