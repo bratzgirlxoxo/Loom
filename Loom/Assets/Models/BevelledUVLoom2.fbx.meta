@@ -77,6 +77,18 @@ ModelImporter:
     100142: StairsPlatform2
     100144: StairsPlatform3
     100146: WaterOrb
+    100148: Floor2OuterWall1
+    100150: Stairs17
+    100152: Stairs20
+    100154: Stairs21
+    100156: Stairs22
+    100158: Stairs23
+    100160: Stairs24
+    100162: Stairs25
+    100164: Stairs26
+    100166: Stairs27
+    100168: Stairs28
+    100170: Stairs29
     400000: Awning
     400002: AwningPillar1
     400004: AwningPillar2
@@ -151,8 +163,21 @@ ModelImporter:
     400142: StairsPlatform2
     400144: StairsPlatform3
     400146: WaterOrb
+    400148: Floor2OuterWall1
+    400150: Stairs17
+    400152: Stairs20
+    400154: Stairs21
+    400156: Stairs22
+    400158: Stairs23
+    400160: Stairs24
+    400162: Stairs25
+    400164: Stairs26
+    400166: Stairs27
+    400168: Stairs28
+    400170: Stairs29
     2100000: lambert1
     2100002: lambert2
+    2100004: lambert3
     2300000: Awning
     2300002: AwningPillar1
     2300004: AwningPillar2
@@ -226,6 +251,16 @@ ModelImporter:
     2300140: StairsPlatform2
     2300142: StairsPlatform3
     2300144: WaterOrb
+    2300146: Floor2OuterWall1
+    2300148: Stairs17
+    2300150: Stairs20
+    2300152: Stairs21
+    2300154: Stairs22
+    2300156: Stairs23
+    2300158: Stairs24
+    2300160: Stairs25
+    2300162: Stairs28
+    2300164: Stairs29
     3300000: Awning
     3300002: AwningPillar1
     3300004: AwningPillar2
@@ -299,6 +334,16 @@ ModelImporter:
     3300140: StairsPlatform2
     3300142: StairsPlatform3
     3300144: WaterOrb
+    3300146: Floor2OuterWall1
+    3300148: Stairs17
+    3300150: Stairs20
+    3300152: Stairs21
+    3300154: Stairs22
+    3300156: Stairs23
+    3300158: Stairs24
+    3300160: Stairs25
+    3300162: Stairs28
+    3300164: Stairs29
     4300000: Awning
     4300002: AwningPillar1
     4300004: AwningPillar2
@@ -372,6 +417,16 @@ ModelImporter:
     4300140: pCube76
     4300142: polySurface13
     4300144: polySurface14
+    4300146: Floor2OuterWall1
+    4300148: Stairs17
+    4300150: Stairs20
+    4300152: Stairs21
+    4300154: Stairs22
+    4300156: Stairs23
+    4300158: Stairs24
+    4300160: Stairs25
+    4300162: Stairs28
+    4300164: Stairs29
   externalObjects: {}
   materials:
     importMaterials: 1

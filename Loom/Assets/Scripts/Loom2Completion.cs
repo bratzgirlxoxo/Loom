@@ -10,7 +10,7 @@ public class Loom2Completion : MonoBehaviour
     public float riseTime;
     public ParticleBells bells;
 
-    public TutorialGhost2 fireball2;
+    public TutorialGhost2 lantern2;
 
     private Vector3 endPos;
 
@@ -25,7 +25,6 @@ public class Loom2Completion : MonoBehaviour
         {
             onRoof = false;
             bells.end = true;
-            GetComponent<ParticleSystem>().Play();
             StartCoroutine(riseUP());
         }
         
@@ -86,10 +85,10 @@ public class Loom2Completion : MonoBehaviour
             Destroy(particleObjects[i]);
         }
 
-        transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
+        transform.localScale = Vector3.one;
 
         faded = true;
-        StartCoroutine(fireball2.Birth());
+        StartCoroutine(lantern2.Birth(endPos));
     }
     
 }

@@ -11,6 +11,7 @@ public class TutorialGhost : MonoBehaviour
     public float jumpStrength;
     public float runTime = 3;
     public AnimationCurve runAnimationCurve;
+    public AnimationCurve swingAnimationCurve;
 
     public Transform startPosTrans;
     public Transform divingBoardTrans;
@@ -114,7 +115,11 @@ public class TutorialGhost : MonoBehaviour
             currPos.x = nextLerpPos.x;
             currPos.y += 0.015f * Mathf.Sin(Time.time * runTime);
             currPos.z = nextLerpPos.z;
-            transform.position = currPos;
+
+            Vector3 currRot = transform.rotation.eulerAngles;
+            currRot.z = swingAnimationCurve.Evaluate(t) * Mathf.Sin(Time.time * runTime/2f) * 30f;
+            transform.SetPositionAndRotation(currPos, Quaternion.Euler(currRot));
+            
             yield return null;
         }
 
@@ -138,7 +143,10 @@ public class TutorialGhost : MonoBehaviour
             currPos.x = nextLerpPos.x;
             currPos.y += 0.015f * Mathf.Sin(Time.time * runTime);
             currPos.z = nextLerpPos.z;
-            transform.position = currPos;
+            
+            Vector3 currRot = transform.rotation.eulerAngles;
+            currRot.z = swingAnimationCurve.Evaluate(t) * Mathf.Sin(Time.time * runTime/2f) * 30f;
+            transform.SetPositionAndRotation(currPos, Quaternion.Euler(currRot));
             yield return null;
         }
 
