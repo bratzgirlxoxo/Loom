@@ -34,6 +34,14 @@ namespace AK
         static const AkUniqueID LOOM3_STOP_ENDWALK_EVENT = 78383388U;
         static const AkUniqueID LOOM3_STOP_INTROWALK_EVENT = 1793405145U;
         static const AkUniqueID LOOM3_STOP_MAINWALK_EVENT = 1155784786U;
+        static const AkUniqueID MAINMENU_BASS_PLAY = 1693439084U;
+        static const AkUniqueID MAINMENU_BASS_STOP = 3663223670U;
+        static const AkUniqueID MAINMENU_MELODY1_PLAY = 206749876U;
+        static const AkUniqueID MAINMENU_MELODY1_STOP = 1910755470U;
+        static const AkUniqueID MAINMENU_MELODY2_PLAY = 2448971689U;
+        static const AkUniqueID MAINMENU_MELODY2_STOP = 3971388623U;
+        static const AkUniqueID MAINMENU_ORGAN_PLAY = 2621191726U;
+        static const AkUniqueID MAINMENU_ORGAN_STOP = 3664307472U;
         static const AkUniqueID OCEAN_PLAY_EVENT = 3294845851U;
         static const AkUniqueID OCEANSPLASH_PLAY_EVENT = 3564306560U;
         static const AkUniqueID PILLAR_PLAY_EVENT = 416863711U;
@@ -54,6 +62,7 @@ namespace AK
         static const AkUniqueID LOOM1_ENVIRONMENT = 370618385U;
         static const AkUniqueID LOOM2 = 7184428U;
         static const AkUniqueID LOOM2_ENVIRONMENT = 662122242U;
+        static const AkUniqueID MAINMENU = 3604647259U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID TRANSITION = 1865857008U;
@@ -67,6 +76,8 @@ namespace AK
         static const AkUniqueID LOOM1_WALKDECAY = 511694909U;
         static const AkUniqueID LOOM2_BELLDELAY = 2814466889U;
         static const AkUniqueID LOOM2_WALKDECAY = 3240738094U;
+        static const AkUniqueID MAINMENU_AUX = 146274212U;
+        static const AkUniqueID MAINMENU_AUX2 = 1570428702U;
         static const AkUniqueID TRANSITION_AUX_BUS = 911329060U;
     } // namespace AUX_BUSSES
 
