@@ -10,6 +10,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="MouseMovement.cs" t="Include" />
+        <e p="RTPCSend.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="EventPositionConfiner.cs" t="Include" />
           <e p="FireballMotion1.cs" t="Include" />

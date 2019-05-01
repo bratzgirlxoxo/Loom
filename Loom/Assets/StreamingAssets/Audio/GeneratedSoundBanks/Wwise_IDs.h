@@ -49,6 +49,11 @@ namespace AK
         static const AkUniqueID TRANSITION1_STOP_WALKING_EVENT = 3138170969U;
     } // namespace EVENTS
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERHEIGHT = 2243460727U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
