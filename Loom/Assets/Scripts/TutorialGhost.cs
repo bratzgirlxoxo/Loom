@@ -53,7 +53,7 @@ public class TutorialGhost : MonoBehaviour
     void Update()
     {
         
-        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 10f)
+        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 8f)
         {
             rBody.useGravity = true;
             coll.enabled = true;

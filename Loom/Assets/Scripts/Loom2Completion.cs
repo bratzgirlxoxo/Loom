@@ -17,7 +17,7 @@ public class Loom2Completion : MonoBehaviour
     private bool risen;
     private bool faded;
     
-    public AK.Wwise.Event Loom2RisEvent;
+    public AK.Wwise.Event Loom2RiseEvent;
     
     void Update()
     {
@@ -43,7 +43,7 @@ public class Loom2Completion : MonoBehaviour
 
     IEnumerator riseUP()
     {
-        Loom2RisEvent.Post(transform.gameObject);
+        Loom2RiseEvent.Post(transform.gameObject);
         lantern2.transform.parent = bells.transform.parent;
         transform.position = particleObjects[0].transform.position;
         Vector3 startPosition = particleObjects[0].transform.position;

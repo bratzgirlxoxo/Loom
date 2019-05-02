@@ -5353,7 +5353,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 655881827}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &112825379
+--- !u!64 &112825376
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5367,19 +5367,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300136, guid: 428749beef3cc7343845164c2643c5df, type: 3}
---- !u!65 &112825380
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112825375}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 515.9898, y: 183.95508, z: 463.51273}
-  m_Center: {x: -9.745345, y: 91.97754, z: -231.75542}
 --- !u!1 &113564438
 GameObject:
   m_ObjectHideFlags: 0
@@ -12254,6 +12241,10 @@ PrefabInstance:
       propertyPath: m_positionOffsetData.positionOffset.y
       value: 1.5698118
       objectReference: {fileID: 0}
+    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
@@ -17475,6 +17466,7 @@ MonoBehaviour:
   fireflies:
   - {fileID: 2129151596}
   - {fileID: 803436236}
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -17483,6 +17475,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &326331089
 GameObject:
   m_ObjectHideFlags: 0
@@ -18696,6 +18692,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350897535700046185, guid: baa17cfaa9bf54b48be224be596788ca,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa17cfaa9bf54b48be224be596788ca, type: 3}
 --- !u!1 &474051193 stripped
@@ -19233,6 +19234,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+--- !u!1 &523177417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 523177416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &523177418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523177417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c82adfe0dc65b247b859464585b72b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHeight: 0
 --- !u!1001 &534710017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19514,13 +19534,19 @@ MonoBehaviour:
   fireflies:
   - {fileID: 803436236}
   - {fileID: 2129151596}
-  emergeTime: 6
+  riseObject: {fileID: 1247508872}
+  emergeTime: 8
   readyToEmerge: 0
   emergingParticles: {fileID: 1768638089}
   PillarAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 33adfdf63efe559438cc5380d1a52983,
+    WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
+      type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4e815edce3068b642829f62dfe883d21,
       type: 2}
 --- !u!1 &590969664 stripped
 GameObject:
@@ -24982,7 +25008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 428749beef3cc7343845164c2643c5df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 428749beef3cc7343845164c2643c5df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27272,6 +27298,7 @@ GameObject:
   - component: {fileID: 662196300}
   - component: {fileID: 1820435149210839762}
   - component: {fileID: 662196298}
+  - component: {fileID: 662196303}
   m_Layer: 0
   m_Name: Walking
   m_TagString: Untagged
@@ -27300,7 +27327,25 @@ MonoBehaviour:
   - 6
   runAnimationCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -27338,7 +27383,7 @@ CapsuleCollider:
   m_Radius: 0.75
   m_Height: 2.5
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1.2, z: 0}
 --- !u!54 &662196301
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27374,6 +27419,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &662196303
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662196297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &668579261
 GameObject:
   m_ObjectHideFlags: 0
@@ -27607,6 +27665,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -28064,6 +28126,7 @@ MonoBehaviour:
   nextPillar: {fileID: 1611241894}
   loomPillar: 0
   fireflies: []
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -28072,6 +28135,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &867113109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36400,6 +36467,7 @@ MonoBehaviour:
   loomPillar: 0
   fireflies:
   - {fileID: 1539684282}
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -36408,6 +36476,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1037470367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36824,6 +36896,7 @@ MonoBehaviour:
   loomPillar: 0
   fireflies:
   - {fileID: 595040914}
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -36832,6 +36905,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1078322452
 GameObject:
   m_ObjectHideFlags: 0
@@ -42965,7 +43042,6 @@ GameObject:
   - component: {fileID: 1183910419}
   - component: {fileID: 1183910418}
   - component: {fileID: 1183910417}
-  - component: {fileID: 1183910415}
   m_Layer: 0
   m_Name: Lantern2
   m_TagString: Ghost
@@ -42981,7 +43057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183910412}
   m_LocalRotation: {x: -0.33975205, y: 0.3225567, z: 0.76231, w: -0.4465525}
-  m_LocalPosition: {x: -0.25, y: -0.52, z: 0.31}
+  m_LocalPosition: {x: 0.03, y: -0.11, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 443313804}
@@ -42989,19 +43065,6 @@ Transform:
   m_Father: {fileID: 662196299}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 135, z: 0}
---- !u!135 &1183910415
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183910412}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.02
-  m_Center: {x: 0.000005722046, y: -0.7414863, z: 0.000038146973}
 --- !u!65 &1183910417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48376,6 +48439,7 @@ MonoBehaviour:
   nextPillar: {fileID: 323348281}
   loomPillar: 0
   fireflies: []
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -48384,6 +48448,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1265826470
 GameObject:
   m_ObjectHideFlags: 0
@@ -53362,6 +53430,7 @@ MonoBehaviour:
   fireflies:
   - {fileID: 1863235157}
   - {fileID: 1062371077}
+  riseObject: {fileID: 0}
   emergeTime: 6
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -53370,6 +53439,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 33adfdf63efe559438cc5380d1a52983,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1412904102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58517,6 +58590,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.023
       objectReference: {fileID: 0}
+    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
 --- !u!1001 &1526590620
@@ -59123,6 +59200,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350897535700046185, guid: baa17cfaa9bf54b48be224be596788ca,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa17cfaa9bf54b48be224be596788ca, type: 3}
 --- !u!1 &1552647455 stripped
@@ -59356,6 +59438,7 @@ MonoBehaviour:
   fireflies:
   - {fileID: 1062371077}
   - {fileID: 1863235157}
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -59364,6 +59447,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1611241896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85965,10 +86052,10 @@ MonoBehaviour:
   riseTime: 6
   bells: {fileID: 630422619}
   lantern2: {fileID: 662196298}
-  Loom2RisEvent:
+  Loom2RiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4e815edce3068b642829f62dfe883d21,
+    WwiseObjectReference: {fileID: 11400000, guid: 33adfdf63efe559438cc5380d1a52983,
       type: 2}
 --- !u!1001 &3420995308770555009
 PrefabInstance:
@@ -86191,6 +86278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350897535700046185, guid: baa17cfaa9bf54b48be224be596788ca,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa17cfaa9bf54b48be224be596788ca, type: 3}

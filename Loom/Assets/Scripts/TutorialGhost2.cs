@@ -39,7 +39,7 @@ public class TutorialGhost2 : MonoBehaviour
         stageIdx++;
         
         positions = new Vector3[positionTransforms.Length + 1];
-        for (int i = 0; i < positions.Length; i++)
+        for (int i = 0; i < positionTransforms.Length; i++)
         {
             positions[i+1] = positionTransforms[i].position;
         }
