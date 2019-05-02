@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\work\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\work\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Loom.-139755753.00" t="ExcludeRecursive" />
-    <e p="C:\Users\work\Git\Loom\Loom" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -52,6 +50,7 @@
           <e p="TutorialGhost.cs" t="Include" />
           <e p="TutorialGhost2.cs" t="Include" />
           <e p="uiCandle.cs" t="Include" />
+          <e p="WeirdWaterScript.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="ArtworkShader.shader" t="Include" />
@@ -627,6 +626,8 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Loom.514814042.00" t="ExcludeRecursive" />
   </component>
   <component name="RiderRiderContentModelStore">
     <excludedPaths>
