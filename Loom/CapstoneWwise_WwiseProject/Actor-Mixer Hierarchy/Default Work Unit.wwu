@@ -461,7 +461,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -886,6 +886,35 @@
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{D9110481-EB05-413A-ACCF-5C44691B1B29}" ShortID="777642224">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="PlayerHeight" ID="{D6B48931-1954-42A4-9621-1C3ADC258167}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B03A52A1-EF36-441B-A973-3C5FF7C0C278}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
+														<YPos>-24.34967</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
