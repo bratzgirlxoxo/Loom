@@ -9,6 +9,7 @@
 						<ObjectRef Name="Fireball_Stop_Event" ID="{52AF11DE-2AE6-4116-A5A9-943927379A81}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_EndWalk_Event" ID="{46B1200C-A9BE-418A-B518-D15253ADE098}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Stop_EndWalk_Event" ID="{D6E074B9-7465-426B-A8C0-1D1561C9DDE0}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Loom2_Play_WaterRise_Event" ID="{FC62CCF4-2AB7-427B-9C83-E1B0185DDA92}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_MainWalk_Event" ID="{6902F71A-060B-4336-9CC3-1CC342EBC670}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Stop_Walk_Event" ID="{FBEC9EAD-6629-435A-8136-97AE34FAC9E8}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_Walk_Event" ID="{6E0DC739-4BA0-43AB-AB6D-6F19A3C281EC}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
