@@ -11,7 +11,6 @@ public class TutorialGhost : MonoBehaviour
     public float jumpStrength;
     public float runTime = 3;
     public AnimationCurve runAnimationCurve;
-    public AnimationCurve swingAnimationCurve;
 
     public Transform startPosTrans;
     public Transform divingBoardTrans;
@@ -25,7 +24,7 @@ public class TutorialGhost : MonoBehaviour
     private Rigidbody rBody;
 
     public ParticleSystem burstParticles;
-    private MeshRenderer lantern;
+    public MeshRenderer lantern;
 
     private Collider coll;
 
@@ -45,22 +44,14 @@ public class TutorialGhost : MonoBehaviour
         rBody.useGravity = false;
         myLight.enabled = false;
 
-        lantern = GetComponent<MeshRenderer>();
         lantern.enabled = false;
 
         coll = GetComponent<Collider>();
-        coll.enabled = false;
+        //coll.enabled = false;
     }
 
     void Update()
     {
-        if (!moving)
-        {
-            Vector3 currPos = transform.position;
-            currPos.y += 0.015f * Mathf.Sin(Time.time * runTime);
-            transform.position = currPos;
-        }
-        
         
         if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 10f)
         {
@@ -97,7 +88,6 @@ public class TutorialGhost : MonoBehaviour
 
     public IEnumerator JumpTutorial()
     {
-        moving = true;
         myLight.enabled = true;
         burstParticles.Play();
 
@@ -110,16 +100,9 @@ public class TutorialGhost : MonoBehaviour
         while (t <= 1f)
         {
             t += Time.deltaTime / runTime;
-            Vector3 currPos = transform.position;
             Vector3 nextLerpPos = Vector3.Lerp(startPos, jumpPos, runAnimationCurve.Evaluate(t));
-            currPos.x = nextLerpPos.x;
-            currPos.y += 0.015f * Mathf.Sin(Time.time * runTime);
-            currPos.z = nextLerpPos.z;
 
-            Vector3 currRot = transform.rotation.eulerAngles;
-            currRot.z = swingAnimationCurve.Evaluate(t) * Mathf.Sin(Time.time * runTime/2f) * 30f;
-            transform.SetPositionAndRotation(currPos, Quaternion.Euler(currRot));
-            
+            transform.position = nextLerpPos;
             yield return null;
         }
 
@@ -138,15 +121,9 @@ public class TutorialGhost : MonoBehaviour
         while (t <= 1f)
         {
             t += Time.deltaTime / runTime;
-            Vector3 currPos = transform.position;
             Vector3 nextLerpPos = Vector3.Lerp(startPos, stage3Pos, runAnimationCurve.Evaluate(t));
-            currPos.x = nextLerpPos.x;
-            currPos.y += 0.015f * Mathf.Sin(Time.time * runTime);
-            currPos.z = nextLerpPos.z;
             
-            Vector3 currRot = transform.rotation.eulerAngles;
-            currRot.z = swingAnimationCurve.Evaluate(t) * Mathf.Sin(Time.time * runTime/2f) * 30f;
-            transform.SetPositionAndRotation(currPos, Quaternion.Euler(currRot));
+            transform.position = nextLerpPos;
             yield return null;
         }
 
