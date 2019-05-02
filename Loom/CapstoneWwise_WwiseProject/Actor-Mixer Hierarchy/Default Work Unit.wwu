@@ -2566,6 +2566,11 @@
 												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -2732,6 +2737,74 @@
 												<ItemRef Name="loom3_mainWalking_6" ID="{A4A03437-C641-44E3-89D7-AE634D83BFB4}"/>
 											</Playlist>
 										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Door" ID="{9B1D28A2-7936-4FBB-8EC1-8930495B70D1}" ShortID="345272715">
+									<ChildrenList>
+										<Sound Name="loom3_door_mechanical" ID="{D60C289B-2703-45D9-AFA3-5B82FA514C02}" ShortID="402787823">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="FireballAux" ID="{D9258ACB-D2B5-4085-AF00-4A488C215072}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="loom3_door_mechanical" ID="{F72AEAE1-4F1F-4109-9059-02D4AA36C434}" ShortID="206552641">
+													<Language>SFX</Language>
+													<AudioFile>Final\loom3_door_mechanical.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="loom3_door_mechanical" ID="{F72AEAE1-4F1F-4109-9059-02D4AA36C434}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="loom3_door_musical" ID="{E845C0F8-6DE9-4510-9C87-4065F4F0FC2F}" ShortID="7828784">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="_500ms_Per_Hour" ID="{9CE2F0FB-CE0B-4CC7-A699-E30528959D0E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="FireballAux" ID="{D9258ACB-D2B5-4085-AF00-4A488C215072}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="loom3_door_musical" ID="{8433229B-9004-4D00-9EFE-AFE64EAEC9E8}" ShortID="123165258">
+													<Language>SFX</Language>
+													<AudioFile>Final\loom3_door_musical.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="loom3_door_musical" ID="{8433229B-9004-4D00-9EFE-AFE64EAEC9E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
