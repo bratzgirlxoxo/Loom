@@ -79,18 +79,18 @@
 	<ValidationCacheItem File="C:\Users\work\Git\CapstoneWwiseRepo\CapstoneWwise\CapstoneWwise_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1553543071" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\CapstoneWwiseRepo\CapstoneWwise\CapstoneWwise_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1553543071" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\CapstoneWwiseRepo\CapstoneWwise\CapstoneWwise_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1553543071" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556647011" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556900581" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1556146524" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1555168746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\CapstoneWwise_WwiseProject.work.wsettings" DateLow="1556647011" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\CapstoneWwise_WwiseProject.work.wsettings" DateLow="1556757992" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\CapstoneWwise_WwiseProject.wproj" DateLow="1555168746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1555168746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1555168746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1555168746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1555168746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1555545890" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Effects\Factory Effects.wwu" DateLow="1556643532" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Default Work Unit.wwu" DateLow="1556644157" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Effects\Factory Effects.wwu" DateLow="1556900582" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Default Work Unit.wwu" DateLow="1556900582" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Environment.wwu" DateLow="1555545890" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Fireball.wwu" DateLow="1556476569" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Loom1.wwu" DateLow="1556146524" DateHigh="0"/>
@@ -98,7 +98,7 @@
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Loom3.wwu" DateLow="1556476569" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\MainMenu.wwu" DateLow="1556644157" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Events\Misc.wwu" DateLow="1555545890" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1555168746" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1556742948" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1555168746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556643532" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1556146524" DateHigh="0"/>
@@ -106,7 +106,7 @@
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1555168748" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1555168748" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Queries\Factory Queries.wwu" DateLow="1555168748" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1556644157" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1556900582" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1555168748" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\States\Default Work Unit.wwu" DateLow="1555168748" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1555168748" DateHigh="0"/>

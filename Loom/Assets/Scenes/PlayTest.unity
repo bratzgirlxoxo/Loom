@@ -27661,14 +27661,14 @@ PrefabInstance:
       propertyPath: fpsController
       value: 
       objectReference: {fileID: 1949004185}
+    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 816740697910565332, guid: 169ece776bfe8ca47860253619be6cbf,
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
-      propertyPath: m_Intensity
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -27836,6 +27836,12 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 163103661}
+    - target: {fileID: 1558968430238758407, guid: baa17cfaa9bf54b48be224be596788ca,
+        type: 3}
+      propertyPath: DoorPlayEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 94d4c62ea3aedeb4c9a91fbb8159363f,
+        type: 2}
     - target: {fileID: 877676965489635830, guid: baa17cfaa9bf54b48be224be596788ca,
         type: 3}
       propertyPath: m_IsActive
@@ -58585,14 +58591,14 @@ PrefabInstance:
       propertyPath: cutCam
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4573055263286320319, guid: 169ece776bfe8ca47860253619be6cbf,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.023
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318062589, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
-      propertyPath: m_Intensity
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169ece776bfe8ca47860253619be6cbf, type: 3}
