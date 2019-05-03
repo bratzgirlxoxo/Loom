@@ -9,11 +9,15 @@ public class PathPillar : MonoBehaviour
     public bool loomPillar;
 
     public GameObject[] fireflies;
+    public GameObject riseObject;
    
     private Vector3 startPos;
     private Vector3 endPos;
     private float t;
 
+    private bool imageFlashed;
+    
+    
 
     public float emergeTime;
     private bool emerging;
@@ -22,6 +26,7 @@ public class PathPillar : MonoBehaviour
     public ParticleSystem emergingParticles;
 
     public AK.Wwise.Event PillarAudioEvent;
+    public AK.Wwise.Event Loom2RiseEvent;
     
     void Start()
     {
@@ -31,7 +36,6 @@ public class PathPillar : MonoBehaviour
         if (loomPillar)
         {
             endPos = new Vector3(startPos.x, startPos.y + Mathf.Abs(startPos.y) + 0.75f, startPos.z);
-            PillarAudioEvent.Post(gameObject);
         }
     }
 
@@ -65,11 +69,16 @@ public class PathPillar : MonoBehaviour
         if (coll.CompareTag("Player") && readyToEmerge)
         {
             emerging = true;
-            PillarAudioEvent.Post(GameObject.Find("Loom2RiseSound"));
+
 
             if (loomPillar)
             {
                 emergingParticles.Play();
+                Loom2RiseEvent.Post(riseObject);
+            }
+            else
+            {
+                PillarAudioEvent.Post(gameObject);
             }
         }
     }
