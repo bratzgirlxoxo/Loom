@@ -35,6 +35,7 @@
 				<Event Id="2785362746" Name="Loom2_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="309204471" Name="Loom2_Play_WaterRise_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_WaterRise_Event"/>
 				<Event Id="2693566612" Name="Loom2_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Stop_Walk_Event" MaxAttenuation="0.000000"/>
+				<Event Id="4110046566" Name="Loom3_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_Ascend_Event" MaxAttenuation="30.000000"/>
 				<Event Id="3349492064" Name="Loom3_Play_Door_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_Door_Event"/>
 				<Event Id="752228486" Name="Loom3_Play_EndWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_EndWalk_Event"/>
 				<Event Id="1320833443" Name="Loom3_Play_IntroWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_IntroWalk_Event" MaxAttenuation="50.000000"/>
@@ -293,6 +294,10 @@
 					<ShortName>menu_organ_3.wav</ShortName>
 					<Path>SFX\menu_organ_3_26EE7DE2.wem</Path>
 				</File>
+				<File Id="504843612" Language="SFX">
+					<ShortName>loom3_bass.wav</ShortName>
+					<Path>SFX\loom3_bass_D7B93DBB.wem</Path>
+				</File>
 				<File Id="519963523" Language="SFX">
 					<ShortName>loom1_walk1.wav</ShortName>
 					<Path>SFX\loom1_walk1_4142A7DF.wem</Path>
@@ -368,6 +373,10 @@
 				<File Id="721931349" Language="SFX">
 					<ShortName>Fast\fireball_fast_4.wav</ShortName>
 					<Path>SFX\Fast\fireball_fast_4_8956FC97.wem</Path>
+				</File>
+				<File Id="727313203" Language="SFX">
+					<ShortName>loom3_wind.wav</ShortName>
+					<Path>SFX\loom3_wind_10CE8B5B.wem</Path>
 				</File>
 				<File Id="732193301" Language="SFX">
 					<ShortName>Bells\loom2_bell_3.wav</ShortName>

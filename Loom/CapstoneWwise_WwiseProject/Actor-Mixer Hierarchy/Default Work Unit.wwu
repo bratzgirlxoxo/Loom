@@ -2892,6 +2892,135 @@
 										</Sound>
 									</ChildrenList>
 								</Folder>
+								<ActorMixer Name="Loom3_Ascend" ID="{CFA11A5E-9F09-4A9E-B964-6A6B69C5C55B}" ShortID="448001438">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{CBBA2410-450C-4AFA-956A-56FDE214AA77}" ShortID="144013365">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PlayerHeight" ID="{D6B48931-1954-42A4-9621-1C3ADC258167}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{45DEDB7C-776F-493C-8A33-D2DC6AB6E868}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>2</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>12.53395</XPos>
+																<YPos>-23.21156</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>29.9962790697674</XPos>
+																<YPos>-3.87639565324261</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>40</XPos>
+																<YPos>-3.65443</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Rising_Texture_Attenuation" ID="{C6B9447F-8438-4850-A056-184D6F6918C9}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Ascend_Aux" ID="{63F19A72-0D69-4EBB-AE47-AB8070CC88FF}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="loom3_wind" ID="{7780DFE6-57CB-44CC-9F0E-9D58A216C1CB}" ShortID="515099241">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="loom3_wind" ID="{097201C1-CE06-44B3-A1A1-E0B190E92946}" ShortID="727313203">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.702524698133919"/>
+														<Property Name="LoopEnd" Type="Real64" Value="31.192096597146"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>loom3_wind.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="loom3_wind" ID="{097201C1-CE06-44B3-A1A1-E0B190E92946}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="loom3_bass" ID="{92ABBCB2-8AC5-435D-AA86-E3A73D8E61E9}" ShortID="77102150">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+												</Reference>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="_1_Second_Delay" ID="{5AAB81A5-3444-4DE7-AEB3-2DDBB33D455B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="loom3_bass" ID="{8C383867-2869-46F6-ACFD-172A4395F235}" ShortID="504843612">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="14.4017563117453"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.913282107574094"/>
+														<Property Name="LoopEnd" Type="Real64" Value="31.0515916575192"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>loom3_bass.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="loom3_bass" ID="{8C383867-2869-46F6-ACFD-172A4395F235}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

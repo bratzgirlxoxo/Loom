@@ -33,6 +33,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3726429074	Loom2_Play_Candle_Event_Sound			\Default Work Unit\Loom2\Loom2_Play_Candle_Event_Sound	
 	3957531880	Loom1_Play_Candle_Strike_Event			\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event	
 	3971388623	MainMenu_Melody2_Stop			\Default Work Unit\MainMenu\MainMenu_Melody2_Stop	
+	4110046566	Loom3_Play_Ascend_Event			\Default Work Unit\Loom3\Loom3_Play_Ascend_Event	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2243460727	PlayerHeight			\Default Work Unit\PlayerHeight	
@@ -40,6 +41,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	136714882	_500ms_Per_Hour	Wwise Stereo Delay			
 	484890516	Church_Small_Wood	Wwise RoomVerb			
+	1443902288	_1_Second_Delay	Wwise Stereo Delay			
 	1590660382	Nearly_Forever	Wwise Delay			
 	1735130781	Aliasing	Wwise Tremolo			
 	2667647788	Single_Band_1Khz_Wide	Wwise Parametric EQ			
@@ -104,6 +106,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	482582143	menu_organ_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\menu_organ_4_E3390C3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Organ\menu_organ_4		1079452
 	484004797	loom2_candle4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom2_candle4_B9CB250C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Candle\Loom2_Candle_Event_Sound\loom2_candle4		2419264
 	496064248	menu_organ_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\menu_organ_3_26EE7DE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Organ\menu_organ_3		1069540
+	504843612	loom3_bass	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom3_bass_D7B93DBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Loom3_Ascend\loom3_bass		5644928
 	519963523	loom1_walk1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom1_walk1_4142A7DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Walking\loom1_walk1		1565616
 	539774903	loom3_endWalking_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\End\loom3_endWalking_2_5D11227E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\End\loom3_endWalking_2		992316
 	547498913	menu_melody_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Melody1\menu_melody_1_69528967.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Melody1\menu_melody_1		1093744
@@ -123,6 +126,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	699750576	candle_ambience_5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\candle_ambience_5_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Candle\Candle_Ambience\candle_ambience_5		1411264
 	718542971	loom2_bell_8	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Bells\loom2_bell_9_FE512C72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_8		1027752
 	721931349	fireball_fast_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Fast\fireball_fast_4_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fireball\Fast\fireball_fast_4		1411264
+	727313203	loom3_wind	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom3_wind_10CE8B5B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Loom3_Ascend\loom3_wind		5644928
 	732193301	loom2_bell_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Bells\loom2_bell_3_3F8DF848.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_3		661564
 	737595458	loom3_introWalking_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\Intro\loom3_introWalking_3_1A4A4AFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\Intro\loom3_introWalking_3		1576640
 	753291653	loom2_bell_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Bells\loom2_bell_1_774B766D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_1		982864

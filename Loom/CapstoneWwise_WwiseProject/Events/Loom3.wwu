@@ -111,6 +111,30 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Loom3_Play_Ascend_Event" ID="{07C1AF67-B070-4789-B13F-C508C966869E}">
+					<ChildrenList>
+						<Action Name="" ID="{D6385119-670D-49EE-BDA3-C3DCC3FF1E19}" ShortID="225412858">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_bass" ID="{92ABBCB2-8AC5-435D-AA86-E3A73D8E61E9}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E12B1D71-6264-4B0B-B250-C9FF9AD69315}" ShortID="1064840732">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_wind" ID="{7780DFE6-57CB-44CC-9F0E-9D58A216C1CB}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
