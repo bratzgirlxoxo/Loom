@@ -8,7 +8,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	752228486	Loom3_Play_EndWalk_Event			\Default Work Unit\Loom3\Loom3_Play_EndWalk_Event	
 	893457600	Loom2_Play_ParticleRise_Event			\Default Work Unit\Loom2\Loom2_Play_ParticleRise_Event	
 	964056455	Transition1_Play_Walking_Event			\Default Work Unit\Misc\Transition1_Play_Walking_Event	
-	1124674076	Loom1_Play_Jump_Up_Event			\Default Work Unit\Loom1\Loom1_Play_Jump_Up_Event	
 	1155784786	Loom3_Stop_MainWalk_Event			\Default Work Unit\Loom3\Loom3_Stop_MainWalk_Event	
 	1320833443	Loom3_Play_IntroWalk_Event			\Default Work Unit\Loom3\Loom3_Play_IntroWalk_Event	
 	1636804058	Fireball_Play_Event			\Default Work Unit\Fireball\Fireball_Play_Event	
@@ -17,7 +16,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1774379222	Loom1_Play_Candle_Ambience_Event			\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event	
 	1793405145	Loom3_Stop_IntroWalk_Event			\Default Work Unit\Loom3\Loom3_Stop_IntroWalk_Event	
 	1910755470	MainMenu_Melody1_Stop			\Default Work Unit\MainMenu\MainMenu_Melody1_Stop	
-	2108556256	Loom1_Play_Jump_Land_Event			\Default Work Unit\Loom1\Loom1_Play_Jump_Land_Event	
 	2311484592	Loom2_Play_Bass_Texture_Event			\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event	
 	2448971689	MainMenu_Melody2_Play			\Default Work Unit\MainMenu\MainMenu_Melody2_Play	
 	2621191726	MainMenu_Organ_Play			\Default Work Unit\MainMenu\MainMenu_Organ_Play	
@@ -28,6 +26,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3138170969	Transition1_Stop_Walking_Event			\Default Work Unit\Misc\Transition1_Stop_Walking_Event	
 	3294845851	Ocean_Play_Event			\Default Work Unit\Environment\Ocean_Play_Event	
 	3348270690	Loom2_Play_Bell_Event			\Default Work Unit\Loom2\Loom2_Play_Bell_Event	
+	3349492064	Loom3_Play_Door_Event			\Default Work Unit\Loom3\Loom3_Play_Door_Event	
 	3564306560	OceanSplash_Play_Event			\Default Work Unit\Misc\OceanSplash_Play_Event	
 	3663223670	MainMenu_Bass_Stop			\Default Work Unit\MainMenu\MainMenu_Bass_Stop	
 	3664307472	MainMenu_Organ_Stop			\Default Work Unit\MainMenu\MainMenu_Organ_Stop	
@@ -39,6 +38,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2243460727	PlayerHeight			\Default Work Unit\PlayerHeight	
 
 Effect plug-ins	ID	Name	Type				Notes
+	136714882	_500ms_Per_Hour	Wwise Stereo Delay			
 	484890516	Church_Small_Wood	Wwise RoomVerb			
 	1590660382	Nearly_Forever	Wwise Delay			
 	1735130781	Aliasing	Wwise Tremolo			
@@ -59,16 +59,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	108272898	loom1_walk5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom1_walk5_E7DF38D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Walking\loom1_walk5		1918416
 	115469084	Transition_Walk_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_4_075E7F2D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_4		441064
 	118869749	pillar_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Pillar Audio\pillar_2_048F6488.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Pillar Audio\pillar_2		3536424
+	123165258	loom3_door_musical	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Final\loom3_door_musical_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Door\loom3_door_musical		2469664
 	138263036	candle_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\candle_3_59DDA0C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Candle\Loom1_Candle_Event_Sound\candle_3		529264
 	139181463	menu_melody_5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Melody1\menu_melody_5_8A2C483C.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Melody1\menu_melody_5		1129024
 	141803887	Transition_Walk_6	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_6_A583CE3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_6		1014364
 	142565857	loom2_walk7	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom2_walk7_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Loom2_Walking\loom2_walk7		1890064
-	144563167	rising_texture_loop	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\rising_texture_loop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\rising_texture_loop		2205064
+	144563167	rising_texture_loop	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\rising_texture_loop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Ascend\rising_texture_loop		2205064
 	151258268	loom1_walk9	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom1_walk9_2F105A6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Walking\loom1_walk9		2116864
 	152228876	loom1_walk8	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom1_walk8_FCE671D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Walking\loom1_walk8		915140
 	155211066	Ocean1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Ocean1_74C37703.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ocean\Ocean1		26139900
 	180187381	menu_melody2_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Melody2\menu_melody2_2_C94853E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Melody2\menu_melody2_2		567700
 	190141388	candle_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\candle_4_C9E30F91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Candle\Loom1_Candle_Event_Sound\candle_4		573364
+	206552641	loom3_door_mechanical	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Final\loom3_door_mechanical_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Door\loom3_door_mechanical		1411264
 	227049778	loom3_mainWalking_3	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\Main\loom3_mainWalking_3_279CEAE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\Main\loom3_mainWalking_3		1035612
 	228876318	loom3_endWalking_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\End\loom3_endWalking_1_A7FB3207.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\End\loom3_endWalking_1		793864
 	237585359	loom3_introWalking_1	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\Intro\loom3_introWalking_1_05ED47DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\Intro\loom3_introWalking_1		1819192
@@ -82,6 +84,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	321688546	loom2_bell_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Bells\loom2_bell_4_0D6C1194.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom2\Environment\Bells\loom2_bell_4		652116
 	327883855	match_strike	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\match_strike_F2DAF724.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Candle\match_strike		350056
 	328576575	loom3_introWalking_6	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\Intro\loom3_introWalking_6_C3078B05.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\Intro\loom3_introWalking_6		570608
+	331585756	loom1_wind	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\loom1_wind_C07BCF76.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom1\Environment\Loom1_Ascend\loom1_wind		8467328
 	332943447	menu_bass_2	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Bass\menu_bass_2_9CB9799D.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Bass\menu_bass_2		1181944
 	333812879	loom3_endWalking_4	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Walking\End\loom3_endWalking_4_A56C358D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loom3\Environment\Walking\End\loom3_endWalking_4		860016
 	344561399	Transition_Walk_5	C:\Users\work\Git\Loom\Loom\CapstoneWwise_WwiseProject\.cache\Mac\SFX\Transition Walking\Transition_Walk_5_E6304CA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition1\Environment\Transition Walking\Transition_Walk_5		485164

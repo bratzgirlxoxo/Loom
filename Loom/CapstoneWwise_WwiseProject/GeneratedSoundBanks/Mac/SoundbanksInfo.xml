@@ -25,9 +25,7 @@
 				<Event Id="387080348" Name="Fireball_Stop_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Stop_Event" MaxAttenuation="0.000000"/>
 				<Event Id="1774379222" Name="Loom1_Play_Candle_Ambience_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3957531880" Name="Loom1_Play_Candle_Strike_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event" MaxAttenuation="20.000000"/>
-				<Event Id="2108556256" Name="Loom1_Play_Jump_Land_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Jump_Land_Event"/>
-				<Event Id="1124674076" Name="Loom1_Play_Jump_Up_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Jump_Up_Event"/>
-				<Event Id="2797264112" Name="Loom1_Play_Rising_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Rising_Texture_Event" MaxAttenuation="50.000000"/>
+				<Event Id="2797264112" Name="Loom1_Play_Rising_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Rising_Texture_Event" MaxAttenuation="30.000000"/>
 				<Event Id="2993600909" Name="Loom1_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="110069035" Name="Loom1_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Stop_Walk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="2311484592" Name="Loom2_Play_Bass_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event" MaxAttenuation="100.000000"/>
@@ -37,6 +35,7 @@
 				<Event Id="2785362746" Name="Loom2_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="309204471" Name="Loom2_Play_WaterRise_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_WaterRise_Event"/>
 				<Event Id="2693566612" Name="Loom2_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Stop_Walk_Event" MaxAttenuation="0.000000"/>
+				<Event Id="3349492064" Name="Loom3_Play_Door_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_Door_Event"/>
 				<Event Id="752228486" Name="Loom3_Play_EndWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_EndWalk_Event"/>
 				<Event Id="1320833443" Name="Loom3_Play_IntroWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_IntroWalk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="1678075168" Name="Loom3_Play_MainWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_MainWalk_Event" MaxAttenuation="50.000000"/>
@@ -114,6 +113,10 @@
 					<ShortName>Pillar Audio\pillar_2.wav</ShortName>
 					<Path>SFX\Pillar Audio\pillar_2_048F6488.wem</Path>
 				</File>
+				<File Id="123165258" Language="SFX">
+					<ShortName>Final\loom3_door_musical.wav</ShortName>
+					<Path>SFX\Final\loom3_door_musical_56D34C19.wem</Path>
+				</File>
 				<File Id="138263036" Language="SFX">
 					<ShortName>candle_3.wav</ShortName>
 					<Path>SFX\candle_3_59DDA0C8.wem</Path>
@@ -153,6 +156,10 @@
 				<File Id="190141388" Language="SFX">
 					<ShortName>candle_4.wav</ShortName>
 					<Path>SFX\candle_4_C9E30F91.wem</Path>
+				</File>
+				<File Id="206552641" Language="SFX">
+					<ShortName>Final\loom3_door_mechanical.wav</ShortName>
+					<Path>SFX\Final\loom3_door_mechanical_56D34C19.wem</Path>
 				</File>
 				<File Id="227049778" Language="SFX">
 					<ShortName>Walking\Main\loom3_mainWalking_3.wav</ShortName>
@@ -205,6 +212,10 @@
 				<File Id="328576575" Language="SFX">
 					<ShortName>Walking\Intro\loom3_introWalking_6.wav</ShortName>
 					<Path>SFX\Walking\Intro\loom3_introWalking_6_C3078B05.wem</Path>
+				</File>
+				<File Id="331585756" Language="SFX">
+					<ShortName>loom1_wind.wav</ShortName>
+					<Path>SFX\loom1_wind_C07BCF76.wem</Path>
 				</File>
 				<File Id="332943447" Language="SFX">
 					<ShortName>Bass\menu_bass_2.wav</ShortName>
