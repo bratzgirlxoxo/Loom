@@ -10,6 +10,30 @@
 				<WorkUnit Name="Misc" ID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" PersistMode="Reference"/>
 				<WorkUnit Name="Fireball" ID="{515F67A7-8700-4995-8B85-87F57AA0146C}" PersistMode="Reference"/>
 				<WorkUnit Name="MainMenu" ID="{9E114218-4C9E-4AD6-98B7-55475394826B}" PersistMode="Reference"/>
+				<Event Name="Loom3_Play_Door_Event" ID="{4037009D-982B-4191-80F7-B2AE8B6B95FC}">
+					<ChildrenList>
+						<Action Name="" ID="{3999EB98-F59E-485F-91FB-7FE560FF4042}" ShortID="838136322">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_door_mechanical" ID="{D60C289B-2703-45D9-AFA3-5B82FA514C02}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DB5375B3-EC09-483E-B4EF-336DDB9A63A1}" ShortID="779471749">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_door_musical" ID="{E845C0F8-6DE9-4510-9C87-4065F4F0FC2F}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1847,9 +1847,9 @@
 								<Property Name="EnableFeedback" Type="bool" Value="True"/>
 								<Property Name="FilterFrequency" Type="Real32" Value="2364"/>
 								<Property Name="FilterGain" Type="Real32" Value="-24"/>
-								<Property Name="LeftCrossfeed" Type="Real32" Value="-15"/>
+								<Property Name="LeftCrossfeed" Type="Real32" Value="-15.7"/>
 								<Property Name="LeftDelayTime" Type="Real32" Value="0.47"/>
-								<Property Name="LeftFeedback" Type="Real32" Value="-18.5"/>
+								<Property Name="LeftFeedback" Type="Real32" Value="-24.6"/>
 								<Property Name="RightCrossfeed" Type="Real32" Value="-6"/>
 								<Property Name="RightDelayTime" Type="Real32" Value="0.39"/>
 								<Property Name="RightFeedback" Type="Real32" Value="-6"/>
