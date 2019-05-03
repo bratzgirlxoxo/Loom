@@ -56,7 +56,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Loom1_Play_Rising_Texture_Event" ID="{FDC9B1CF-7D29-4E73-8524-4CFB6A3884DC}">
+				<Event Name="Loom1_Play_Ascend_Event" ID="{FDC9B1CF-7D29-4E73-8524-4CFB6A3884DC}">
 					<ChildrenList>
 						<Action Name="" ID="{853D580D-3118-494D-959C-CF8FA46249C1}" ShortID="5974991">
 							<PropertyList>
@@ -64,7 +64,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="rising_texture_loop" ID="{ADCA0DFE-8CD5-4CFD-A855-41682E448D6D}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+									<ObjectRef Name="loom1_bass" ID="{ADCA0DFE-8CD5-4CFD-A855-41682E448D6D}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -74,7 +74,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="loom1_wind" ID="{024B00DB-3077-4010-9298-726D3D02D3A9}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+									<ObjectRef Name="loom1_wind" ID="{D849F24B-FD35-4209-BCE9-E7AD24567CD0}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

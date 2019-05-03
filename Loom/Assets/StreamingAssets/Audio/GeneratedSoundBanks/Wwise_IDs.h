@@ -15,12 +15,12 @@ namespace AK
     {
         static const AkUniqueID FIREBALL_PLAY_EVENT = 1636804058U;
         static const AkUniqueID FIREBALL_STOP_EVENT = 387080348U;
+        static const AkUniqueID LOOM1_PLAY_ASCEND_EVENT = 924825024U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_AMBIENCE_EVENT = 1774379222U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_STRIKE_EVENT = 3957531880U;
-        static const AkUniqueID LOOM1_PLAY_RISING_TEXTURE_EVENT = 2797264112U;
         static const AkUniqueID LOOM1_PLAY_WALK_EVENT = 2993600909U;
         static const AkUniqueID LOOM1_STOP_WALK_EVENT = 110069035U;
-        static const AkUniqueID LOOM2_PLAY_BASS_TEXTURE_EVENT = 2311484592U;
+        static const AkUniqueID LOOM2_PLAY_ASCEND_EVENT = 3272865395U;
         static const AkUniqueID LOOM2_PLAY_BELL_EVENT = 3348270690U;
         static const AkUniqueID LOOM2_PLAY_CANDLE_EVENT_SOUND = 3726429074U;
         static const AkUniqueID LOOM2_PLAY_PARTICLERISE_EVENT = 893457600U;
@@ -62,6 +62,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ASCEND = 1497192015U;
         static const AkUniqueID FIREBALL = 3841200954U;
         static const AkUniqueID LOOM1 = 7184431U;
         static const AkUniqueID LOOM1_ENVIRONMENT = 370618385U;
@@ -75,6 +76,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID ASCEND_AUX = 3413864U;
         static const AkUniqueID FIREBALLAUX = 4290880864U;
         static const AkUniqueID JUMPREVERB = 3302700529U;
         static const AkUniqueID LOOM1_CANDLEVERB = 475597662U;

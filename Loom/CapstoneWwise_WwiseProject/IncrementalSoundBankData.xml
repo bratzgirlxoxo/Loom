@@ -3,11 +3,11 @@
 	<Platform GUID="{D4AF8852-5116-417A-95C9-6DB8E266A64F}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1289820654" Timestamp="1556901665"/>
+				<File Name="Init" Hash="5743643" Timestamp="1556910831"/>
 				<File Name="Loom1" Hash="2020582669" Timestamp="1555278318"/>
 				<File Name="Loom2" Hash="350241944" Timestamp="1555278319"/>
 				<File Name="Loom3" Hash="1135313194" Timestamp="1555278799"/>
-				<File Name="Main" Hash="3399825747" Timestamp="1556905717"/>
+				<File Name="Main" Hash="1847227710" Timestamp="1556911663"/>
 				<File Name="Misc" Hash="424178200" Timestamp="1555278319"/>
 			</Language>
 			<Language ID="684519430">
@@ -16,18 +16,18 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2956267259" Timestamp="1556905717"/>
+				<File Name="" Hash="2843062704" Timestamp="1556911663"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C5AEF8EF-554B-4A93-A244-26AB11F84BEA}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1578620992" Timestamp="1556901661"/>
+				<File Name="Init" Hash="246462233" Timestamp="1556910829"/>
 				<File Name="Loom1" Hash="2020582669" Timestamp="1555278317"/>
 				<File Name="Loom2" Hash="350241944" Timestamp="1555278317"/>
 				<File Name="Loom3" Hash="1135313194" Timestamp="1555278799"/>
-				<File Name="Main" Hash="3399825747" Timestamp="1556905716"/>
+				<File Name="Main" Hash="1847227710" Timestamp="1556911662"/>
 				<File Name="Misc" Hash="424178200" Timestamp="1555278318"/>
 			</Language>
 			<Language ID="684519430">
@@ -36,7 +36,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3030816157" Timestamp="1556905716"/>
+				<File Name="" Hash="136188994" Timestamp="1556911662"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

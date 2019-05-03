@@ -23,12 +23,12 @@
 			<IncludedEvents>
 				<Event Id="1636804058" Name="Fireball_Play_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Play_Event" MaxAttenuation="15.000000"/>
 				<Event Id="387080348" Name="Fireball_Stop_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Stop_Event" MaxAttenuation="0.000000"/>
+				<Event Id="924825024" Name="Loom1_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Ascend_Event" MaxAttenuation="30.000000"/>
 				<Event Id="1774379222" Name="Loom1_Play_Candle_Ambience_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3957531880" Name="Loom1_Play_Candle_Strike_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event" MaxAttenuation="20.000000"/>
-				<Event Id="2797264112" Name="Loom1_Play_Rising_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Rising_Texture_Event" MaxAttenuation="30.000000"/>
 				<Event Id="2993600909" Name="Loom1_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="110069035" Name="Loom1_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Stop_Walk_Event" MaxAttenuation="0.000000"/>
-				<Event Id="2311484592" Name="Loom2_Play_Bass_Texture_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bass_Texture_Event" MaxAttenuation="100.000000"/>
+				<Event Id="3272865395" Name="Loom2_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Ascend_Event" MaxAttenuation="30.000000"/>
 				<Event Id="3348270690" Name="Loom2_Play_Bell_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bell_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3726429074" Name="Loom2_Play_Candle_Event_Sound" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Candle_Event_Sound"/>
 				<Event Id="893457600" Name="Loom2_Play_ParticleRise_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_ParticleRise_Event" MaxAttenuation="50.000000"/>
@@ -72,6 +72,10 @@
 				<File Id="35396188" Language="SFX">
 					<ShortName>Bass\menu_bass_4.wav</ShortName>
 					<Path>SFX\Bass\menu_bass_4_F4C5328A.wem</Path>
+				</File>
+				<File Id="63313570" Language="SFX">
+					<ShortName>loom1_wind.wav</ShortName>
+					<Path>SFX\loom1_wind_BEC8A727.wem</Path>
 				</File>
 				<File Id="75155974" Language="SFX">
 					<ShortName>Walking\End\loom3_endWalking_3.wav</ShortName>
@@ -201,6 +205,10 @@
 					<ShortName>Walking\End\loom3_endWalking_7.wav</ShortName>
 					<Path>SFX\Walking\End\loom3_endWalking_7_6A4801A2.wem</Path>
 				</File>
+				<File Id="308242592" Language="SFX">
+					<ShortName>loom2_wind.wav</ShortName>
+					<Path>SFX\loom2_wind_6DF2A7A3.wem</Path>
+				</File>
 				<File Id="321688546" Language="SFX">
 					<ShortName>Bells\loom2_bell_4.wav</ShortName>
 					<Path>SFX\Bells\loom2_bell_4_0D6C1194.wem</Path>
@@ -212,10 +220,6 @@
 				<File Id="328576575" Language="SFX">
 					<ShortName>Walking\Intro\loom3_introWalking_6.wav</ShortName>
 					<Path>SFX\Walking\Intro\loom3_introWalking_6_C3078B05.wem</Path>
-				</File>
-				<File Id="331585756" Language="SFX">
-					<ShortName>loom1_wind.wav</ShortName>
-					<Path>SFX\loom1_wind_C07BCF76.wem</Path>
 				</File>
 				<File Id="332943447" Language="SFX">
 					<ShortName>Bass\menu_bass_2.wav</ShortName>
