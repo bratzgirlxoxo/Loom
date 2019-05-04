@@ -23,19 +23,19 @@
 			<IncludedEvents>
 				<Event Id="1636804058" Name="Fireball_Play_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Play_Event" MaxAttenuation="15.000000"/>
 				<Event Id="387080348" Name="Fireball_Stop_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Stop_Event" MaxAttenuation="0.000000"/>
-				<Event Id="924825024" Name="Loom1_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Ascend_Event" MaxAttenuation="30.000000"/>
+				<Event Id="924825024" Name="Loom1_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Ascend_Event" MaxAttenuation="50.000000"/>
 				<Event Id="1774379222" Name="Loom1_Play_Candle_Ambience_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3957531880" Name="Loom1_Play_Candle_Strike_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event" MaxAttenuation="20.000000"/>
 				<Event Id="2993600909" Name="Loom1_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="110069035" Name="Loom1_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Stop_Walk_Event" MaxAttenuation="0.000000"/>
-				<Event Id="3272865395" Name="Loom2_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Ascend_Event" MaxAttenuation="30.000000"/>
+				<Event Id="3272865395" Name="Loom2_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Ascend_Event" MaxAttenuation="50.000000"/>
 				<Event Id="3348270690" Name="Loom2_Play_Bell_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Bell_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3726429074" Name="Loom2_Play_Candle_Event_Sound" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Candle_Event_Sound"/>
 				<Event Id="893457600" Name="Loom2_Play_ParticleRise_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_ParticleRise_Event" MaxAttenuation="50.000000"/>
 				<Event Id="2785362746" Name="Loom2_Play_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_Walk_Event" MaxAttenuation="50.000000"/>
 				<Event Id="309204471" Name="Loom2_Play_WaterRise_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Play_WaterRise_Event"/>
 				<Event Id="2693566612" Name="Loom2_Stop_Walk_Event" ObjectPath="\Events\Default Work Unit\Loom2\Loom2_Stop_Walk_Event" MaxAttenuation="0.000000"/>
-				<Event Id="4110046566" Name="Loom3_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_Ascend_Event" MaxAttenuation="30.000000"/>
+				<Event Id="4110046566" Name="Loom3_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_Ascend_Event" MaxAttenuation="50.000000"/>
 				<Event Id="3349492064" Name="Loom3_Play_Door_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_Door_Event"/>
 				<Event Id="752228486" Name="Loom3_Play_EndWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_EndWalk_Event"/>
 				<Event Id="1320833443" Name="Loom3_Play_IntroWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Play_IntroWalk_Event" MaxAttenuation="50.000000"/>

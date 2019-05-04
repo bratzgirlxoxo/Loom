@@ -1668,6 +1668,9 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{509836A0-8E99-4F28-9012-8D9049A31A89}" ShortID="449971443">
 													<ReferenceList>
@@ -1686,18 +1689,13 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>9.98883</XPos>
-																<YPos>-26.89113</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>29.99628</XPos>
-																<YPos>-3.26253</YPos>
+																<XPos>22.50233</XPos>
+																<YPos>-1.32433</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>40</XPos>
-																<YPos>-3.39121</YPos>
+																<YPos>-1.12232</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -2897,9 +2895,6 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{CBBA2410-450C-4AFA-956A-56FDE214AA77}" ShortID="144013365">
 													<ReferenceList>
@@ -2918,18 +2913,18 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>12.53395</XPos>
-																<YPos>-23.21156</YPos>
+																<XPos>10.05953</XPos>
+																<YPos>-24.58442</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>29.9962790697674</XPos>
-																<YPos>-3.87639565324261</YPos>
+																<XPos>22.50233</XPos>
+																<YPos>-1.28761</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>40</XPos>
-																<YPos>-3.65443</YPos>
+																<YPos>-1.22273</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
