@@ -77,7 +77,13 @@
 						</Bus>
 						<Bus Name="Transition" ID="{EC838A6E-D505-441D-B375-C46C9CA880E8}">
 							<ChildrenList>
-								<AuxBus Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}"/>
+								<AuxBus Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<ObjectRef Name="Transition_Stereo_Delay" ID="{CAB2016B-62E2-4D13-B130-AC34E6ACA6F3}" WorkUnitID="{A7D374E4-883E-4DCE-903F-192DE202D22A}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Fireball" ID="{1E352956-75CE-459C-8FCD-8209AD2794C6}">
