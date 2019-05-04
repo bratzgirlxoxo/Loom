@@ -1750,10 +1750,13 @@
 						</Effect>
 						<Effect Name="_1_Second_Delay" ID="{5AAB81A5-3444-4DE7-AEB3-2DDBB33D455B}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
+								<Property Name="EnableFeedback" Type="bool" Value="True"/>
 								<Property Name="FilterFrequency" Type="Real32" Value="261"/>
 								<Property Name="FilterGain" Type="Real32" Value="10.5"/>
 								<Property Name="LeftDelayTime" Type="Real32" Value="1"/>
+								<Property Name="LeftFeedback" Type="Real32" Value="-6.7"/>
 								<Property Name="RightDelayTime" Type="Real32" Value="1"/>
+								<Property Name="RightFeedback" Type="Real32" Value="-6.7"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="LR_Slap_with_CrossFeed" ID="{30319A92-C5AC-437A-9864-430059762933}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">

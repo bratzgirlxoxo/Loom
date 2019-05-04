@@ -124,6 +124,17 @@
 								</AuxBus>
 							</ChildrenList>
 						</Bus>
+						<Bus Name="Ascend" ID="{05DFE1AA-2E07-418D-B5CE-B2443C4D1B3F}">
+							<ChildrenList>
+								<AuxBus Name="Ascend_Aux" ID="{63F19A72-0D69-4EBB-AE47-AB8070CC88FF}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

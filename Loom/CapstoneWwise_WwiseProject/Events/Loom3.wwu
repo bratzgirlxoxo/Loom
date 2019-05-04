@@ -87,6 +87,54 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Loom3_Play_Door_Event" ID="{4037009D-982B-4191-80F7-B2AE8B6B95FC}">
+					<ChildrenList>
+						<Action Name="" ID="{3999EB98-F59E-485F-91FB-7FE560FF4042}" ShortID="838136322">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_door_mechanical" ID="{D60C289B-2703-45D9-AFA3-5B82FA514C02}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DB5375B3-EC09-483E-B4EF-336DDB9A63A1}" ShortID="779471749">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_door_musical" ID="{E845C0F8-6DE9-4510-9C87-4065F4F0FC2F}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Loom3_Play_Ascend_Event" ID="{07C1AF67-B070-4789-B13F-C508C966869E}">
+					<ChildrenList>
+						<Action Name="" ID="{D6385119-670D-49EE-BDA3-C3DCC3FF1E19}" ShortID="225412858">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_bass" ID="{92ABBCB2-8AC5-435D-AA86-E3A73D8E61E9}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E12B1D71-6264-4B0B-B250-C9FF9AD69315}" ShortID="1064840732">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="loom3_wind" ID="{7780DFE6-57CB-44CC-9F0E-9D58A216C1CB}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

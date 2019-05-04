@@ -22,6 +22,7 @@ public class LightStand : MonoBehaviour
     public int idx;
 
     public AK.Wwise.Event Candle_Strike_Event;
+    public AK.Wwise.Event DoorPlayEvent;
 
     private Vector3 startPos;
     private Vector3 endPos;
@@ -71,7 +72,9 @@ public class LightStand : MonoBehaviour
             } else if (loom3)
             {
                 myLight.SetActive(true);
+                //////
                 StartCoroutine(door.GetComponent<Loom3Door>().OpenDoor());
+                DoorPlayEvent.Post(door);
             }
             
             StartCoroutine(SettleDown(transform.localPosition));
