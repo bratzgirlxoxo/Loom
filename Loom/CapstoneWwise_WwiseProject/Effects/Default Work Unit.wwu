@@ -32,6 +32,16 @@
 						<Property Name="WetDryMix" Type="Real32" Value="36.5"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="Transition_Stereo_Delay" ID="{CAB2016B-62E2-4D13-B130-AC34E6ACA6F3}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-2"/>
+						<Property Name="EnableFeedback" Type="bool" Value="True"/>
+						<Property Name="LeftDelayTime" Type="Real32" Value="0.75"/>
+						<Property Name="LeftFeedback" Type="Real32" Value="-6"/>
+						<Property Name="RightDelayTime" Type="Real32" Value="1.25"/>
+						<Property Name="RightFeedback" Type="Real32" Value="-6"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

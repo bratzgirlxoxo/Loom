@@ -13,11 +13,13 @@ public class EventPositionConfiner : MonoBehaviour
     [Header("Event to clamp to AkAudioListener")]
     public AK.Wwise.Event Event = new AK.Wwise.Event();
     public AK.Wwise.Event StopEvent = new AK.Wwise.Event();
+    public AK.Wwise.Event AmbienceEvent;
 
     [Header("Settings")]
     public float UpdateInterval = 0.05f;
 
     public bool ColliderInParent;
+    public bool isTransition;
     
     #region private variables
     private IEnumerator positionClamperRoutine;
@@ -29,6 +31,7 @@ public class EventPositionConfiner : MonoBehaviour
     #endregion
 
     private bool isWalking;
+    private bool hasPosted;
 
     private void Awake()
     {
@@ -44,6 +47,7 @@ public class EventPositionConfiner : MonoBehaviour
         eventEmitter.AddComponent<AkGameObj>();
 
         isWalking = false;
+        hasPosted = false;
     }
 
     private void OnEnable()
@@ -97,6 +101,15 @@ public class EventPositionConfiner : MonoBehaviour
             {
                 StopEvent.Post(eventEmitter);
                 isWalking = false;
+            }
+
+            if (isTransition)
+            {
+                if (!hasPosted)
+                {
+                    AmbienceEvent.Post(eventEmitter);
+                    hasPosted = true;
+                }
             }
 
             yield return new WaitForSecondsRealtime(UpdateInterval);

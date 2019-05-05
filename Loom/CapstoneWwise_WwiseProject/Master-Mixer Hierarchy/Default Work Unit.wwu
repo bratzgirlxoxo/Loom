@@ -77,7 +77,13 @@
 						</Bus>
 						<Bus Name="Transition" ID="{EC838A6E-D505-441D-B375-C46C9CA880E8}">
 							<ChildrenList>
-								<AuxBus Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}"/>
+								<AuxBus Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<ObjectRef Name="Transition_Stereo_Delay" ID="{CAB2016B-62E2-4D13-B130-AC34E6ACA6F3}" WorkUnitID="{A7D374E4-883E-4DCE-903F-192DE202D22A}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Fireball" ID="{1E352956-75CE-459C-8FCD-8209AD2794C6}">
@@ -88,7 +94,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="FireballAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+											<ObjectRef Name="LanternAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
 										</Reference>
 										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
 											<ObjectRef Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>

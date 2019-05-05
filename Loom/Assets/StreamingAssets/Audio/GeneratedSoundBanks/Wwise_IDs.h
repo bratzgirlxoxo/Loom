@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FIREBALL_PLAY_EVENT = 1636804058U;
-        static const AkUniqueID FIREBALL_STOP_EVENT = 387080348U;
+        static const AkUniqueID LANTERN_JUMP_PLAY_EVENT = 3328836542U;
+        static const AkUniqueID LANTERN_PLAY_EVENT = 4164020281U;
+        static const AkUniqueID LANTERN_STOP_EVENT = 692121127U;
         static const AkUniqueID LOOM1_PLAY_ASCEND_EVENT = 924825024U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_AMBIENCE_EVENT = 1774379222U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_STRIKE_EVENT = 3957531880U;
@@ -46,8 +47,9 @@ namespace AK
         static const AkUniqueID OCEAN_PLAY_EVENT = 3294845851U;
         static const AkUniqueID OCEANSPLASH_PLAY_EVENT = 3564306560U;
         static const AkUniqueID PILLAR_PLAY_EVENT = 416863711U;
-        static const AkUniqueID TRANSITION1_PLAY_WALKING_EVENT = 964056455U;
-        static const AkUniqueID TRANSITION1_STOP_WALKING_EVENT = 3138170969U;
+        static const AkUniqueID TRANSITION_PLAY_AMBIENCE_EVENT = 1999607201U;
+        static const AkUniqueID TRANSITION_PLAY_WALKING_EVENT = 1406573732U;
+        static const AkUniqueID TRANSITION_STOP_WALKING_EVENT = 4096384826U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

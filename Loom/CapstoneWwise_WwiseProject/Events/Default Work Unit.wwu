@@ -8,8 +8,9 @@
 				<WorkUnit Name="Environment" ID="{D454797A-7B7E-423C-BEBF-50D618AD1887}" PersistMode="Reference"/>
 				<WorkUnit Name="Loom3" ID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" PersistMode="Reference"/>
 				<WorkUnit Name="Misc" ID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" PersistMode="Reference"/>
-				<WorkUnit Name="Fireball" ID="{515F67A7-8700-4995-8B85-87F57AA0146C}" PersistMode="Reference"/>
+				<WorkUnit Name="Lantern" ID="{515F67A7-8700-4995-8B85-87F57AA0146C}" PersistMode="Reference"/>
 				<WorkUnit Name="MainMenu" ID="{9E114218-4C9E-4AD6-98B7-55475394826B}" PersistMode="Reference"/>
+				<WorkUnit Name="Transition" ID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

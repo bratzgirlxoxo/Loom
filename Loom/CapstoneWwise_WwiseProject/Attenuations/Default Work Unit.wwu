@@ -129,7 +129,7 @@
 				</Attenuation>
 				<Attenuation Name="Rising_Texture_Attenuation" ID="{C6B9447F-8438-4850-A056-184D6F6918C9}" ShortID="657418359">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -141,21 +141,16 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>-200</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>2.82132</XPos>
+											<XPos>35.10972</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>27.60188</XPos>
-											<YPos>0</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>30</XPos>
+											<XPos>50</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -397,7 +392,7 @@
 						</FocusUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="FireballAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" ShortID="228840501">
+				<Attenuation Name="LanternAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" ShortID="228840501">
 					<PropertyList>
 						<Property Name="RadiusMax" Type="Real64" Value="15"/>
 					</PropertyList>
