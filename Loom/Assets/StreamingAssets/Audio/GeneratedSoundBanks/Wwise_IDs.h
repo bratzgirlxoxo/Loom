@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FIREBALL_PLAY_EVENT = 1636804058U;
-        static const AkUniqueID FIREBALL_STOP_EVENT = 387080348U;
+        static const AkUniqueID LANTERN_JUMP_PLAY_EVENT = 3328836542U;
+        static const AkUniqueID LANTERN_PLAY_EVENT = 4164020281U;
+        static const AkUniqueID LANTERN_STOP_EVENT = 692121127U;
         static const AkUniqueID LOOM1_PLAY_ASCEND_EVENT = 924825024U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_AMBIENCE_EVENT = 1774379222U;
         static const AkUniqueID LOOM1_PLAY_CANDLE_STRIKE_EVENT = 3957531880U;

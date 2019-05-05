@@ -21,8 +21,9 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1636804058" Name="Fireball_Play_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Play_Event" MaxAttenuation="15.000000"/>
-				<Event Id="387080348" Name="Fireball_Stop_Event" ObjectPath="\Events\Default Work Unit\Fireball\Fireball_Stop_Event" MaxAttenuation="0.000000"/>
+				<Event Id="3328836542" Name="Lantern_Jump_Play_Event" ObjectPath="\Events\Default Work Unit\Lantern_Jump_Play_Event" MaxAttenuation="15.000000"/>
+				<Event Id="4164020281" Name="Lantern_Play_Event" ObjectPath="\Events\Default Work Unit\Lantern\Lantern_Play_Event" MaxAttenuation="15.000000"/>
+				<Event Id="692121127" Name="Lantern_Stop_Event" ObjectPath="\Events\Default Work Unit\Lantern\Lantern_Stop_Event" MaxAttenuation="0.000000"/>
 				<Event Id="924825024" Name="Loom1_Play_Ascend_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Ascend_Event" MaxAttenuation="50.000000"/>
 				<Event Id="1774379222" Name="Loom1_Play_Candle_Ambience_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event" MaxAttenuation="20.000000"/>
 				<Event Id="3957531880" Name="Loom1_Play_Candle_Strike_Event" ObjectPath="\Events\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event" MaxAttenuation="20.000000"/>
@@ -69,6 +70,10 @@
 				<File Id="22008258" Language="SFX">
 					<ShortName>loom2_rise.wav</ShortName>
 					<Path>SFX\loom2_rise_5B8F6D41.wem</Path>
+				</File>
+				<File Id="25090345" Language="SFX">
+					<ShortName>Raven Hit.wav</ShortName>
+					<Path>SFX\Raven Hit_0C7E5072.wem</Path>
 				</File>
 				<File Id="35396188" Language="SFX">
 					<ShortName>Bass\menu_bass_4.wav</ShortName>

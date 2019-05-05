@@ -94,7 +94,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="FireballAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+											<ObjectRef Name="LanternAttenuation" ID="{454038D3-E088-41F4-A094-38F862F979B3}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
 										</Reference>
 										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
 											<ObjectRef Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>

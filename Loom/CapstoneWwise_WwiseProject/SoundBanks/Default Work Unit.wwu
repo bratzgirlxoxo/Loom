@@ -6,7 +6,7 @@
 				<SoundBank Name="Main" ID="{FF3B730E-95B8-4155-82B1-82D9425BD88C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Loom3_Stop_MainWalk_Event" ID="{3128DD16-64C2-406A-AD0B-E7B39975E143}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Fireball_Stop_Event" ID="{52AF11DE-2AE6-4116-A5A9-943927379A81}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Lantern_Stop_Event" ID="{52AF11DE-2AE6-4116-A5A9-943927379A81}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_EndWalk_Event" ID="{46B1200C-A9BE-418A-B518-D15253ADE098}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_Door_Event" ID="{4037009D-982B-4191-80F7-B2AE8B6B95FC}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Stop_EndWalk_Event" ID="{D6E074B9-7465-426B-A8C0-1D1561C9DDE0}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
@@ -30,7 +30,7 @@
 						<ObjectRef Name="Loom3_Play_IntroWalk_Event" ID="{B5FDF93F-8DA6-4D6A-87E1-0397A5F3AD05}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Play_Ascend_Event" ID="{FDC9B1CF-7D29-4E73-8524-4CFB6A3884DC}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="OceanSplash_Play_Event" ID="{AD6AF879-00AF-4E9E-92F2-6A16165D6000}" WorkUnitID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Fireball_Play_Event" ID="{5B179B1B-BBC3-4F1A-B9B6-CC5A006F725B}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Lantern_Play_Event" ID="{5B179B1B-BBC3-4F1A-B9B6-CC5A006F725B}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_Ascend_Event" ID="{C22939E3-2EFB-4F4B-9270-96ACCE35EB88}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ocean_Play_Event" ID="{32044981-8FB7-4FE4-B487-5E2275374E17}" WorkUnitID="{D454797A-7B7E-423C-BEBF-50D618AD1887}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
