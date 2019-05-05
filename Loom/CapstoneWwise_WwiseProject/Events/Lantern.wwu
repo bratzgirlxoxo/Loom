@@ -51,6 +51,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Lantern_Jump_Play_Event" ID="{9BD57B96-0A23-461C-A275-F39EA498A620}">
+					<ChildrenList>
+						<Action Name="" ID="{6F6A529C-2035-458B-8A13-10F23FED098E}" ShortID="52553046">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lantern_jump" ID="{FA9715AC-F195-4F9F-A14C-E8ADA5C36A68}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

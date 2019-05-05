@@ -15,12 +15,11 @@
 						<ObjectRef Name="Loom2_Stop_Walk_Event" ID="{FBEC9EAD-6629-435A-8136-97AE34FAC9E8}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_Walk_Event" ID="{6E0DC739-4BA0-43AB-AB6D-6F19A3C281EC}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_ParticleRise_Event" ID="{5A644985-B7F7-440E-818F-D542D12D2FBC}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Transition1_Play_Walking_Event" ID="{F969690C-9D06-4465-9254-5CD4AE6D4E31}" WorkUnitID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Pillar_Play_Event" ID="{F3B7BEF3-DFD1-4491-8F23-869BFB37CB98}" WorkUnitID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pillar_Play_Event" ID="{F3B7BEF3-DFD1-4491-8F23-869BFB37CB98}" WorkUnitID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_Bell_Event" ID="{777BDBEB-A243-4549-8EA5-9CD2AF3FD0F8}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Lantern_Jump_Play_Event" ID="{9BD57B96-0A23-461C-A275-F39EA498A620}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_Ascend_Event" ID="{07C1AF67-B070-4789-B13F-C508C966869E}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Play_Candle_Ambience_Event" ID="{65208BDB-73AB-48D5-B91F-19B1F43761B5}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Transition1_Stop_Walking_Event" ID="{1F143ACD-02C9-491D-8D8A-CBF848A2725C}" WorkUnitID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_Candle_Event_Sound" ID="{9E157146-8D9F-49B8-AAC1-99EC00F6BF9F}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Stop_IntroWalk_Event" ID="{754FECAD-444A-49CA-82BC-818B04D425B7}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Play_Walk_Event" ID="{5F74EE49-9341-4A77-9677-B1A737460DDD}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
@@ -28,6 +27,7 @@
 						<ObjectRef Name="Loom1_Play_Candle_Strike_Event" ID="{4ECD3DAF-1219-4B1C-B7A2-36665932780B}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Stop_Walk_Event" ID="{E314A6A5-67AB-4B1E-95B7-7A3756105A76}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom3_Play_IntroWalk_Event" ID="{B5FDF93F-8DA6-4D6A-87E1-0397A5F3AD05}" WorkUnitID="{80984B3D-99CC-4877-A9EA-8A6E68B350C6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Transition" ID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" WorkUnitID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom1_Play_Ascend_Event" ID="{FDC9B1CF-7D29-4E73-8524-4CFB6A3884DC}" WorkUnitID="{AD8D7EA2-BFF7-45E7-8E9F-5415A19F371B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="OceanSplash_Play_Event" ID="{AD6AF879-00AF-4E9E-92F2-6A16165D6000}" WorkUnitID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Lantern_Play_Event" ID="{5B179B1B-BBC3-4F1A-B9B6-CC5A006F725B}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>

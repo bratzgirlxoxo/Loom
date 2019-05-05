@@ -47,8 +47,9 @@ namespace AK
         static const AkUniqueID OCEAN_PLAY_EVENT = 3294845851U;
         static const AkUniqueID OCEANSPLASH_PLAY_EVENT = 3564306560U;
         static const AkUniqueID PILLAR_PLAY_EVENT = 416863711U;
-        static const AkUniqueID TRANSITION1_PLAY_WALKING_EVENT = 964056455U;
-        static const AkUniqueID TRANSITION1_STOP_WALKING_EVENT = 3138170969U;
+        static const AkUniqueID TRANSITION_PLAY_AMBIENCE_EVENT = 1999607201U;
+        static const AkUniqueID TRANSITION_PLAY_WALKING_EVENT = 1406573732U;
+        static const AkUniqueID TRANSITION_STOP_WALKING_EVENT = 4096384826U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

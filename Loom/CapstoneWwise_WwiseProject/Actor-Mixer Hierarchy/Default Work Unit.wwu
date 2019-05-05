@@ -236,7 +236,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1783,7 +1783,7 @@
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Transition1" ID="{A938E59C-618E-434C-8415-B999102CDA78}" ShortID="1010815957">
+				<ActorMixer Name="Transition" ID="{A938E59C-618E-434C-8415-B999102CDA78}" ShortID="1010815957">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1801,6 +1801,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Environment" ID="{BD703E5F-5FC9-4A4A-88FD-C85CE2F91C90}" ShortID="951212535">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
@@ -1808,11 +1811,19 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Transition_Aux_Bus" ID="{9229E957-B02B-441D-B9CF-534AA3B83A80}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Pillar Audio" ID="{EBB7B9B3-DA33-4724-9AD8-8D6C9F6CD834}" ShortID="152827962">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -1938,7 +1949,6 @@
 								<RandomSequenceContainer Name="Transition Walking" ID="{F53C2CBC-7993-495C-A0B0-A07BCA324C1B}" ShortID="830557483">
 									<PropertyList>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -2254,6 +2264,82 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<Sound Name="pillar audio v2" ID="{304BBAFD-B2C5-4E60-82AF-5EAC2B152EA0}" ShortID="977323579">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Pillar_Attenuation" ID="{303C8739-6DDC-42A9-8B40-B4211E935E3B}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pillar audio v2" ID="{8D347B99-382B-47C2-A636-A601BA3293DB}" ShortID="199079004">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="23.1640134560959"/>
+												<Property Name="LoopEnd" Type="Real64" Value="63.719077513186"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="20.2053699928563"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pillar audio v2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pillar audio v2" ID="{8D347B99-382B-47C2-A636-A601BA3293DB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="transition ambience" ID="{237D3251-83E4-4B25-A0A6-F47872DD67C7}" ShortID="119864052">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-32</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Transition_Walking_Attenuation" ID="{4F309473-3288-467B-81A7-4EBD5015FB43}" WorkUnitID="{B1B3041A-0ACF-41F1-86D9-0E0D49AA4923}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="transition ambience" ID="{60FB1171-37E0-423E-B44A-59F6EC78B970}" ShortID="764242461">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.38134717772949"/>
+												<Property Name="LoopEnd" Type="Real64" Value="62.9974571562983"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>transition ambience.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="transition ambience" ID="{60FB1171-37E0-423E-B44A-59F6EC78B970}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

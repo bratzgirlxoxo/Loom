@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" SchemaVersion="89" RootDocumentID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}">
+	<Events>
+		<WorkUnit Name="Transition" ID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" OwnerID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Transition_Play_Ambience_Event" ID="{ED8E6DE7-F3C4-4952-B4B0-ECE6BBA316EB}">
+					<ChildrenList>
+						<Action Name="" ID="{2C5B821F-EC04-410F-AF3F-16B8AC142604}" ShortID="20141707">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="transition ambience" ID="{237D3251-83E4-4B25-A0A6-F47872DD67C7}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Transition_Stop_Walking_Event" ID="{1F143ACD-02C9-491D-8D8A-CBF848A2725C}">
+					<ChildrenList>
+						<Action Name="" ID="{87209B73-B3D2-447D-B67C-E3365C24B6EE}" ShortID="924601049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Transition Walking" ID="{F53C2CBC-7993-495C-A0B0-A07BCA324C1B}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pillar_Play_Event" ID="{F3B7BEF3-DFD1-4491-8F23-869BFB37CB98}">
+					<ChildrenList>
+						<Action Name="" ID="{C7742D5F-13A7-4C29-A3C7-3C268E778BF5}" ShortID="508342033">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pillar audio v2" ID="{304BBAFD-B2C5-4E60-82AF-5EAC2B152EA0}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Transition_Play_Walking_Event" ID="{F969690C-9D06-4465-9254-5CD4AE6D4E31}">
+					<ChildrenList>
+						<Action Name="" ID="{FB4C5EED-15D9-4BB6-B55D-B53A01E38940}" ShortID="430744437">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Transition Walking" ID="{F53C2CBC-7993-495C-A0B0-A07BCA324C1B}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
