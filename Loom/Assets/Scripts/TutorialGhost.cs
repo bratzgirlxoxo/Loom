@@ -28,7 +28,8 @@ public class TutorialGhost : MonoBehaviour
 
     private Collider coll;
 
-
+    public AK.Wwise.Event Loom1LanternJumpEvent;
+    
     private bool moving;
 
     
@@ -52,35 +53,37 @@ public class TutorialGhost : MonoBehaviour
 
     void Update()
     {
+
+        if (!moving)
+        {
+            if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 6f)
+            {
+                rBody.useGravity = true;
+                coll.enabled = true;
+                StartCoroutine(JumpTutorial1());
+                Debug.Log("jumping");
+            }
+
+            if (stageIdx == 2 && Vector3.Distance(transform.position, player.position) < 25f)
+            {
+                rBody.useGravity = false;
+                coll.enabled = false;
+                startPos = transform.position;
+                StartCoroutine(JumpTutorial2());
+            }
+
+            if (stageIdx == 3 && Vector3.Distance(transform.position, player.position) < 3f)
+            {
+                startPos = transform.position;
+                StartCoroutine(JumpTutorial3());
+            }
+
+            if (stageIdx == 5 && Vector3.Distance(transform.position, player.position) < 6f)
+            {
+                StartCoroutine(JumpTutorial4());
+            }
+        }
         
-        if (stageIdx == 1 && Vector3.Distance(transform.position, player.position) < 8f)
-        {
-            rBody.useGravity = true;
-            coll.enabled = true;
-            rBody.AddForce((transform.up - transform.forward)*jumpStrength, ForceMode.Impulse);
-            
-            stageIdx++;
-        }
-
-        if (stageIdx == 2 && Vector3.Distance(transform.position, player.position) < 2.5f)
-        {
-            transform.position = stage2Pos;
-            stageIdx++;
-            rBody.useGravity = false;
-            coll.enabled = false;
-        }
-
-        if (stageIdx == 3 && Vector3.Distance(transform.position, player.position) < 3f)
-        {
-            stageIdx++;
-            startPos = transform.position;
-            StartCoroutine(JumpTutorial3());
-        }
-
-        if (stageIdx == 5 && Vector3.Distance(transform.position, player.position) < 6f)
-        {
-            StartCoroutine(JumpTutorial4());
-        }
     }
 
     private float t;
@@ -88,6 +91,7 @@ public class TutorialGhost : MonoBehaviour
 
     public IEnumerator JumpTutorial()
     {
+        moving = true;
         myLight.enabled = true;
         burstParticles.Play();
 
@@ -97,20 +101,31 @@ public class TutorialGhost : MonoBehaviour
         
         ParticleSystem.EmissionModule emiss = burstParticles.emission;
         emiss.enabled = true;
-        while (t <= 1f)
-        {
-            t += Time.deltaTime / runTime;
-            Vector3 nextLerpPos = Vector3.Lerp(startPos, jumpPos, runAnimationCurve.Evaluate(t));
-
-            transform.position = nextLerpPos;
-            yield return null;
-        }
+        StartCoroutine(LinearLerp(startPos, jumpPos, runTime));
 
         stageIdx++;
         
         emiss.enabled = false;
 
+        yield return null;
+    }
+
+    IEnumerator JumpTutorial1()
+    {
+        moving = true;
+        rBody.AddForce((transform.up - transform.forward)*jumpStrength, ForceMode.Impulse);
+        Loom1LanternJumpEvent.Post(transform.gameObject);
+        yield return new WaitForSeconds(4f);
+        stageIdx++;
         moving = false;
+    }
+
+    IEnumerator JumpTutorial2()
+    {
+        moving = true;
+        StartCoroutine(LinearLerp(startPos, stage2Pos, runTime));
+        stageIdx++;
+        yield return null;
     }
     
     IEnumerator JumpTutorial3()
@@ -118,20 +133,11 @@ public class TutorialGhost : MonoBehaviour
         moving = true;
         
         t = 0;
-        while (t <= 1f)
-        {
-            t += Time.deltaTime / runTime;
-            Vector3 nextLerpPos = Vector3.Lerp(startPos, stage3Pos, runAnimationCurve.Evaluate(t));
-            
-            transform.position = nextLerpPos;
-            yield return null;
-        }
+        StartCoroutine(LinearLerp(startPos, stage3Pos, runTime));
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1f);
         
         stageIdx++;
-
-        moving = false;
     }
     
     IEnumerator JumpTutorial4()
@@ -146,6 +152,20 @@ public class TutorialGhost : MonoBehaviour
         }
         myLight.enabled = false;
         Destroy(transform.gameObject);
+    }
+    
+    IEnumerator LinearLerp(Vector3 start, Vector3 finish, float moveTime)
+    {
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime / moveTime;
+            Vector3 nextLerpPos = Vector3.Lerp(start, finish, runAnimationCurve.Evaluate(t));
+
+            transform.position = nextLerpPos;
+            yield return null;
+        }
+        moving = false;
     }
     
 }

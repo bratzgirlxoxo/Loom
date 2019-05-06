@@ -9,6 +9,8 @@ public class uiCandle : MonoBehaviour
 
     public float yOffset;
 
+    public Transform mainCam;
+
     public float bounceDistance;
     public float bounceSpeed;
     public float rotationSpeed;
@@ -27,11 +29,16 @@ public class uiCandle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0f, rotationSpeed, 0f);
         Vector3 newPos = startPos;
         newPos.y += bounceDistance * Mathf.Sin(Time.time * bounceSpeed);
         transform.localPosition = newPos;
 
+        transform.forward = -mainCam.forward;
+        //Vector3 currRot = transform.eulerAngles;
+        //currRot.y = 0f;
+        //transform.eulerAngles = currRot;
+        
+        
         if (Input.GetKeyDown(KeyCode.E) && inRange)
         {
             Destroy(transform.gameObject);
