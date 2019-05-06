@@ -57,7 +57,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SurfaceDistortion:
         m_Texture: {fileID: 2800000, guid: b48ec957a04a2b24c98e79bbeff41b9e, type: 3}
-        m_Scale: {x: 4, y: 4}
+        m_Scale: {x: 6, y: 6}
         m_Offset: {x: 0, y: 0}
     - _SurfaceNoise:
         m_Texture: {fileID: 2800000, guid: 2bcf519dece06754a969e1ecd504e8df, type: 3}
@@ -82,7 +82,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SurfaceDistortionAmount: 0.27
+    - _SurfaceDistortionAmount: 0.332
     - _SurfaceNoiseCutoff: 0.77
     - _UVSec: 0
     - _ZWrite: 1
@@ -92,5 +92,5 @@ Material:
     - _DepthGradientShallow: {r: 0.008410451, g: 0.44519386, b: 0.5943396, a: 0.725}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HorizonColor: {r: 0.023529412, g: 0.039215688, b: 0.1882353, a: 1}
-    - _PlayerPos: {r: 86.46227, g: 3.5695503, b: -101.60521, a: 1}
+    - _PlayerPos: {r: -145.16605, g: 19.966454, b: -145.67407, a: 1}
     - _SurfaceNoiseScroll: {r: 0.03, g: 0.03, b: 0, a: 0}

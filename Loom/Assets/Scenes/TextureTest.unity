@@ -6394,6 +6394,8 @@ MonoBehaviour:
   nextPillar: {fileID: 552850231}
   loomPillar: 0
   fireflies: []
+  blueprints: []
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -6402,6 +6404,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  imageObj: {fileID: 0}
+  uiImage: {fileID: 0}
+  imgFreq: 0
 --- !u!1 &326331089
 GameObject:
   m_ObjectHideFlags: 0
@@ -6456,8 +6465,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a0536bc0cb0410945ac2aa456a008e31,
       type: 2}
+  AmbienceEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   UpdateInterval: 0.05
   ColliderInParent: 0
+  isTransition: 0
 --- !u!65 &326331092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6728,7 +6742,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pillar1: {fileID: 1071229027}
   nextLoom: {fileID: 0}
-  fireflies: []
   emergeTime: 4
   numLights: 3
   lights: 
@@ -7276,28 +7289,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: Jump_Up_Event.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: Jump_Land_Event.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: Walk_Event.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 016fd8b1ecd4ef44880a3e09279981a4,
-        type: 2}
-    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: Walk_Stop_Event.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: d6ebc304957b9f448be3bf21d6a0e378,
-        type: 2}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: Testing
       value: 0
@@ -7363,6 +7354,28 @@ PrefabInstance:
       propertyPath: MinDistance
       value: 1.4286804
       objectReference: {fileID: 0}
+    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Jump_Up_Event.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Jump_Land_Event.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Walk_Event.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 016fd8b1ecd4ef44880a3e09279981a4,
+        type: 2}
+    - target: {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Walk_Stop_Event.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d6ebc304957b9f448be3bf21d6a0e378,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 1797985420, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -7489,6 +7502,8 @@ MonoBehaviour:
   fireflies:
   - {fileID: 803436236}
   - {fileID: 2129151596}
+  blueprints: []
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -7497,6 +7512,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  imageObj: {fileID: 0}
+  uiImage: {fileID: 0}
+  imgFreq: 0
 --- !u!1 &595040914 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1820733157720317667, guid: 4072ec16d5a612f458d338c4c01773ad,
@@ -12703,50 +12725,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100030, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100080, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100134, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100136, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100138, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100140, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100124, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100126, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100128, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100130, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100132, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 428749beef3cc7343845164c2643c5df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94
@@ -12791,13 +12769,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400146, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_RootOrder
+      value: 79
+      objectReference: {fileID: 0}
     - target: {fileID: 2300144, guid: 428749beef3cc7343845164c2643c5df, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400146, guid: 428749beef3cc7343845164c2643c5df, type: 3}
-      propertyPath: m_RootOrder
-      value: 79
+    - target: {fileID: 100140, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100080, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100134, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100136, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100138, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100124, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100128, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100130, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100132, guid: 428749beef3cc7343845164c2643c5df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 428749beef3cc7343845164c2643c5df, type: 3}
@@ -16822,6 +16844,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7bf191fa8cbeb154e8d4fbc0e28ae32b,
       type: 2}
+  DoorPlayEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   endPosPub: {x: 0, y: 0, z: 0}
   willMove: 0
   oscillateScale: 0
@@ -16923,8 +16949,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d6ebc304957b9f448be3bf21d6a0e378,
       type: 2}
+  AmbienceEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   UpdateInterval: 0.05
   ColliderInParent: 0
+  isTransition: 0
 --- !u!1 &989363580
 GameObject:
   m_ObjectHideFlags: 0
@@ -16979,8 +17010,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3d42cadff367144dda019bbcbac0c2fc,
       type: 2}
+  AmbienceEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   UpdateInterval: 0.05
   ColliderInParent: 0
+  isTransition: 0
 --- !u!65 &989363583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17075,6 +17111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   candle: {fileID: 0}
   yOffset: 1
+  mainCam: {fileID: 0}
   bounceDistance: 0.5
   bounceSpeed: 1
   rotationSpeed: 1
@@ -17322,6 +17359,8 @@ MonoBehaviour:
   fireflies:
   - {fileID: 1923134569}
   - {fileID: 1613822521}
+  blueprints: []
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -17330,6 +17369,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  imageObj: {fileID: 0}
+  uiImage: {fileID: 0}
+  imgFreq: 0
 --- !u!1 &1073157573 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 816740697910565332, guid: 169ece776bfe8ca47860253619be6cbf,
@@ -17459,6 +17505,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7bf191fa8cbeb154e8d4fbc0e28ae32b,
       type: 2}
+  DoorPlayEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   endPosPub: {x: -35.79, y: -1.939, z: 28.95}
   willMove: 1
   oscillateScale: 0.25
@@ -22647,6 +22697,8 @@ MonoBehaviour:
   loomPillar: 0
   fireflies:
   - {fileID: 595040914}
+  blueprints: []
+  riseObject: {fileID: 0}
   emergeTime: 3
   readyToEmerge: 0
   emergingParticles: {fileID: 0}
@@ -22655,6 +22707,13 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0cd582b8193de8543aa61ebf7feac028,
       type: 2}
+  Loom2RiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  imageObj: {fileID: 0}
+  uiImage: {fileID: 0}
+  imgFreq: 0
 --- !u!1001 &1292640449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27526,17 +27585,16 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  swingAnimationCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   startPosTrans: {fileID: 1632468281}
   divingBoardTrans: {fileID: 1148384895}
   stage2PosTrans: {fileID: 1766945139}
   stage3PosTrans: {fileID: 1414388541}
   burstParticles: {fileID: 0}
+  lantern: {fileID: 0}
+  Loom1LanternJumpEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!54 &1314021089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32520,6 +32578,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7bf191fa8cbeb154e8d4fbc0e28ae32b,
       type: 2}
+  DoorPlayEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   endPosPub: {x: 0, y: 0, z: 0}
   willMove: 0
   oscillateScale: 0
@@ -33001,7 +33063,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1833881089}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

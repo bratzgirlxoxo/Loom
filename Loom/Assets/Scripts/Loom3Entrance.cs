@@ -74,6 +74,16 @@ public class Loom3Entrance : MonoBehaviour
         }
 
         fading = false;
+
+        if (start < end)
+        {
+            while (true)
+            {
+                float nextOpacity = end + (Mathf.PerlinNoise(Time.time, imageObj.position.x) * 0.5f - 0.25f);
+                uiImage.SetFloat("_Opacity", nextOpacity);
+                yield return null;
+            }
+        }
     }
 
     IEnumerator ImageScroll()

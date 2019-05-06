@@ -132,7 +132,6 @@ public class TutorialGhost : MonoBehaviour
     {
         moving = true;
         
-        t = 0;
         StartCoroutine(LinearLerp(startPos, stage3Pos, runTime));
 
         yield return new WaitForSeconds(1f);
@@ -142,15 +141,13 @@ public class TutorialGhost : MonoBehaviour
     
     IEnumerator JumpTutorial4()
     {
-        t = 0;
-        Vector3 startScale = transform.localScale;
-        while (t <= 1f)
-        {
-            t += Time.deltaTime;
-            transform.localScale = Vector3.Lerp(startScale, Vector3.zero, t);
-            yield return null;
-        }
         myLight.enabled = false;
+        myLight.transform.GetComponent<LightIntensityFlicker>().flame.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        startPos = transform.position;
+        coll.enabled = false;
+        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -10f, 0f), runTime));
+        yield return new WaitForSeconds(runTime + 1f);
         Destroy(transform.gameObject);
     }
     
