@@ -3815,11 +3815,41 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Melody2" ID="{046C4D76-74A4-43CD-BB87-AA50A6C1FC12}" ShortID="890636790">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{21FB75EA-3ABF-48BA-8BC0-1EEB3B07BF4E}" ShortID="898152097">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MousePos" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6D2EDC6F-BCCA-4606-B141-A351CA181F03}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-9</XPos>
+														<YPos>100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>9</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-8</Value>

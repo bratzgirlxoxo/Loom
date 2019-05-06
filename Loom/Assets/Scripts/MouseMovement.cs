@@ -7,6 +7,7 @@ public class MouseMovement : MonoBehaviour
     public AK.Wwise.Event OrganPlayEvent;
     public AK.Wwise.Event OrganStopEvent;
 
+    [Header("Called on Mouse Movement")]
     public AK.Wwise.Event Melody2StartEvent;
     public AK.Wwise.Event Melody2StopEvent;
 
@@ -18,6 +19,8 @@ public class MouseMovement : MonoBehaviour
     private Vector3 lastPos;
 
     public float speed;
+
+    public float decay;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +42,11 @@ public class MouseMovement : MonoBehaviour
         
         melody2EmitterPos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
 
+        AkSoundEngine.SetRTPCValue("MousePos", melody2EmitterPos.x);
+
         speed = Vector3.Magnitude(mousePos - lastPos);
 
-        if (speed > 0.1)
+        if (speed > 1)
         {
             if (!hasPlayed)
             {
@@ -51,12 +56,13 @@ public class MouseMovement : MonoBehaviour
 
         }
 
-        if (speed < 0.1)
+        if (speed < 1)
         {
             Melody2StopEvent.Post(gameObject);
             hasPlayed = false;
         }
 
         lastPos = mousePos;
+
     }
 }

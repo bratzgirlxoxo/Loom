@@ -39,6 +39,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2243460727	PlayerHeight			\Default Work Unit\PlayerHeight	
+	2995755600	MousePos			\Default Work Unit\MousePos	
 
 Effect plug-ins	ID	Name	Type				Notes
 	136714882	_500ms_Per_Hour	Wwise Stereo Delay			
