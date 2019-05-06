@@ -9,17 +9,12 @@ public class LoomTrigger : MonoBehaviour
     public GameObject pillar1;
     public GameObject nextLoom;
 
-    public GameObject[] fireflies;
-
     private Vector3 startPos;
-
     private Vector3 endPos;
 
     private float t;
-
     public float emergeTime;
 
-    private bool emerging;
 
     private bool fullyLit;
     private bool cutSceneReady;
@@ -55,26 +50,11 @@ public class LoomTrigger : MonoBehaviour
                 break;
             }
         }
-
-             
+        
         if (fullyLit && cutSceneReady)
         {
             cutScene.ready = true;
             cutSceneReady = false;
-        }
-        
-        
-
-        if (emerging)
-        {
-            t += Time.deltaTime / emergeTime;
-
-            pillar1.transform.position = Vector3.Lerp(startPos, endPos, t);
-        }
-
-        if (Vector3.Distance(pillar1.transform.position, endPos) < 0.1f)
-        {
-            Destroy(transform.gameObject);
         }
     }
 
@@ -83,7 +63,6 @@ public class LoomTrigger : MonoBehaviour
         if (coll.CompareTag("Player") && fullyLit)
         {
             OceanSplashEvent.Post(gameObject);
-            emerging = true;
             for (int i = 0; i < path.Length; i++)
             {
                 path[i].readyToEmerge = true;
@@ -91,11 +70,7 @@ public class LoomTrigger : MonoBehaviour
             }
             pillar1.SetActive(true);
             nextLoom.SetActive(true);
-
-            for (int i = 0; i < fireflies.Length; i++)
-            {
-                fireflies[i].SetActive(true);
-            }
+            StartCoroutine(pillar1.GetComponent<PathPillar>().PillarEmerge(pillar1.transform, startPos, endPos));
         }
 
     }

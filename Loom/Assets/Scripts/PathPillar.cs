@@ -9,15 +9,13 @@ public class PathPillar : MonoBehaviour
     public bool loomPillar;
 
     public GameObject[] fireflies;
+    public Texture[] blueprints;
     public GameObject riseObject;
    
     private Vector3 startPos;
     private Vector3 endPos;
-    private float t;
 
     private bool imageFlashed;
-    
-    
 
     public float emergeTime;
     private bool emerging;
@@ -27,6 +25,11 @@ public class PathPillar : MonoBehaviour
 
     public AK.Wwise.Event PillarAudioEvent;
     public AK.Wwise.Event Loom2RiseEvent;
+
+    public Transform imageObj;
+    public Material uiImage;
+    public float imgFreq;
+    private bool fading;
     
     void Start()
     {
@@ -39,38 +42,13 @@ public class PathPillar : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-        if (emerging)
-        {
-            t += Time.deltaTime / emergeTime;
-
-            nextPillar.transform.position = Vector3.Lerp(startPos, endPos, t);
-        }
-        
-        if (Vector3.Distance(nextPillar.transform.position, endPos) < 0.1f)
-        {
-            emerging = false;
-            for (int i = 0; i < fireflies.Length; i++)
-            {
-                fireflies[i].SetActive(true);
-            }
-
-            if (loomPillar)
-            {
-                emergingParticles.Stop();
-            }
-        }
-    }
+    
     
     void OnTriggerEnter(Collider coll)
     {
+        
         if (coll.CompareTag("Player") && readyToEmerge)
         {
-            emerging = true;
-
-
             if (loomPillar)
             {
                 emergingParticles.Play();
@@ -80,6 +58,66 @@ public class PathPillar : MonoBehaviour
             {
                 PillarAudioEvent.Post(gameObject);
             }
+
+            StartCoroutine(PillarEmerge(nextPillar.transform, startPos, endPos));
+
+            StartCoroutine(Fade(0, 0.8f));
+            StartCoroutine(FlashImages());
+            imageFlashed = true;
+            
         }
+    }
+
+    public IEnumerator PillarEmerge(Transform pillar, Vector3 start, Vector3 end)
+    {
+        float t = 0f;
+        
+        for (int i = 0; i < fireflies.Length; i++)
+        {
+            fireflies[i].SetActive(true);
+        }
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime / emergeTime;
+            pillar.transform.position = Vector3.Lerp(start, end, t);
+            yield return null;
+        }  
+        
+        if (loomPillar)
+        {
+            emergingParticles.Stop();
+        }
+    }
+
+    IEnumerator FlashImages()
+    {
+        for (int i = 0; i < blueprints.Length; i++)
+        {
+            uiImage.SetTexture("_MainTex", blueprints[i]);
+
+            float newX = Random.Range(-1f, 1f);
+            float newY = Random.Range(-0.3f, 0.3f);
+            imageObj.localPosition = new Vector3(newX, newY, 1f);
+            
+            yield return new WaitForSeconds(imgFreq);
+        }
+
+        StartCoroutine(Fade(0.8f, 0f));
+    }
+    
+    IEnumerator Fade(float start, float end)
+    {
+        fading = true;
+        float t = 0;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / 0.5f;
+            float newOpacity = Mathf.Lerp(start, end, t);
+            uiImage.SetFloat("_Opacity", newOpacity);
+            yield return null;
+        }
+
+        fading = false;
     }
 }
