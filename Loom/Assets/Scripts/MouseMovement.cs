@@ -11,25 +11,37 @@ public class MouseMovement : MonoBehaviour
     public AK.Wwise.Event Melody2StopEvent;
 
     public Vector2 melody2EmitterPos;
+    private Vector3 mousePos;
 
     public bool hasPlayed;
+
+    private Vector3 lastPos;
+
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
     {
         hasPlayed = false;
         OrganPlayEvent.Post(gameObject);
+        mousePos = new Vector3();
+        lastPos = new Vector3();
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = new Vector2(Input.GetAxis("Mouse X"), 
-            Input.GetAxis("Mouse Y"));
+
+        mousePos = Input.mousePosition;
+        Vector3 worldSpaceMousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane));
+        worldSpaceMousePos.z = 0f;
+        gameObject.transform.position = worldSpaceMousePos;
         
         melody2EmitterPos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
 
-        if (melody2EmitterPos != Vector2.zero)
+        speed = Vector3.Magnitude(mousePos - lastPos);
+
+        if (speed > 0.1)
         {
             if (!hasPlayed)
             {
@@ -39,10 +51,12 @@ public class MouseMovement : MonoBehaviour
 
         }
 
-        if (melody2EmitterPos == Vector2.zero)
+        if (speed < 0.1)
         {
             Melody2StopEvent.Post(gameObject);
             hasPlayed = false;
         }
+
+        lastPos = mousePos;
     }
 }
