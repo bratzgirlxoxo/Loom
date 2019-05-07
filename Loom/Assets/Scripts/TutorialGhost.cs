@@ -78,7 +78,7 @@ public class TutorialGhost : MonoBehaviour
                 StartCoroutine(JumpTutorial3());
             }
 
-            if (stageIdx == 5 && Vector3.Distance(transform.position, player.position) < 6f)
+            if (stageIdx == 4 && Vector3.Distance(transform.position, player.position) < 6f)
             {
                 StartCoroutine(JumpTutorial4());
             }
@@ -143,10 +143,10 @@ public class TutorialGhost : MonoBehaviour
     {
         myLight.enabled = false;
         myLight.transform.GetComponent<LightIntensityFlicker>().flame.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.2f);
         startPos = transform.position;
         coll.enabled = false;
-        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -10f, 0f), runTime));
+        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -40f, 0f), runTime));
         yield return new WaitForSeconds(runTime + 1f);
         Destroy(transform.gameObject);
     }

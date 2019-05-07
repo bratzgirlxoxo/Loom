@@ -8,7 +8,6 @@ public class RisingPlatform : MonoBehaviour
     public Vector3 endPos;
     public float riseTime;
 
-    private bool fullyLit = true;
     private bool rising;
     private bool up;
 
@@ -21,7 +20,6 @@ public class RisingPlatform : MonoBehaviour
     {
         startPos = transform.position;
         rbody = GetComponent<Rigidbody>();
-        fullyLit = true;
         rising = false;
     }
 
@@ -47,21 +45,11 @@ public class RisingPlatform : MonoBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
-        if (!rising && fullyLit && coll.CompareTag("Player"))
+        if (!rising && coll.CompareTag("Player"))
         {
             Debug.Log("Rising!");
             rising = true;
 
         }
-    }
-
-    void OnTriggerExit(Collider coll)
-    {
-        if (!rising && coll.CompareTag("Player"))
-        {
-            endPos = startPos;
-            startPos = transform.position;
-        }
-        
     }
 }
