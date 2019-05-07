@@ -54,6 +54,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MOUSEPOS = 2995755600U;
         static const AkUniqueID PLAYERHEIGHT = 2243460727U;
     } // namespace GAME_PARAMETERS
 
