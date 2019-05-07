@@ -11,6 +11,20 @@
 				<WorkUnit Name="Lantern" ID="{515F67A7-8700-4995-8B85-87F57AA0146C}" PersistMode="Reference"/>
 				<WorkUnit Name="MainMenu" ID="{9E114218-4C9E-4AD6-98B7-55475394826B}" PersistMode="Reference"/>
 				<WorkUnit Name="Transition" ID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" PersistMode="Reference"/>
+				<Event Name="MainMenu_Drums_Play" ID="{A5418A0B-8B94-4F75-A3FC-394D03308C09}">
+					<ChildrenList>
+						<Action Name="" ID="{031C410D-0718-403B-A8EE-19804153B1DA}" ShortID="416104701">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mainmenu drums" ID="{7E29B1A8-DC8D-4FE7-8ED6-8CA4AF4796AC}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

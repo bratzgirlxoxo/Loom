@@ -1,8 +1,9 @@
 ﻿using System.Collections;
  using System.Collections.Generic;
  using UnityEngine;
- 
- public class TextHover : MonoBehaviour
+using UnityEngine.Serialization;
+
+public class TextHover : MonoBehaviour
  {
      private Vector2 startScale;
      private Vector2 targetScale;
@@ -13,14 +14,19 @@
      public AK.Wwise.Event Melody1Stop;
      
 
-     public float InflateScale;
-     public float DeflateScale;
+     public float InflateTime;
+     public float DeflateTime;
+
+     public float jitterScale;
+
+     public AnimationCurve textTweenCurve;
 
      private void Start()
      {
          //defining our start scale
          startScale = new Vector2(gameObject.transform.localScale.x, 
              gameObject.transform.localScale.y);
+         StartCoroutine(Jitter());
      }
 
      private void OnMouseEnter()
@@ -29,7 +35,8 @@
          Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
              gameObject.transform.localScale.y);
          targetScale = new Vector2(1.5f, 1.5f);
-         StartCoroutine(TextScaleLerp(currentScale, targetScale, InflateScale));
+         StopAllCoroutines();
+         StartCoroutine(TextScaleLerp(currentScale, targetScale, InflateTime));
 
          Melody1Start.Post(gameObject);
      }
@@ -39,9 +46,9 @@
          StopAllCoroutines();
          Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
              gameObject.transform.localScale.y);
-         StartCoroutine(TextScaleLerp(currentScale, startScale, DeflateScale));
-         
-         Melody1Stop.Post(gameObject);
+         StartCoroutine(TextScaleLerp(currentScale, startScale, DeflateTime));
+
+         StartCoroutine(WaitBeforeStop());
 
      }
      
@@ -50,9 +57,33 @@
          
          float progress = 0;
          while(progress <= 1){
-             transform.localScale = Vector2.Lerp(start, goal, progress);
-             progress += Time.deltaTime * TimeScale;
+             transform.localScale = Vector2.Lerp(start, goal, textTweenCurve.Evaluate(progress));
+             progress += Time.deltaTime / TimeScale;
              yield return null;
-         }     
-     } 
+         }
+
+         if (start.x > goal.x)
+         {
+             StartCoroutine(Jitter());
+         }
+     }
+
+     IEnumerator WaitBeforeStop()
+     {
+         yield return new WaitForSeconds(0.5f);
+         Melody1Stop.Post(gameObject);
+     }
+
+     IEnumerator Jitter()
+     {
+         Vector3 startPos = transform.position;
+         while (true)
+         {
+             Vector3 pos = transform.position;
+             pos.x = startPos.x + (Mathf.PerlinNoise(Time.time, startPos.x) * jitterScale - jitterScale/2);
+             pos.y = startPos.y + (Mathf.PerlinNoise(Time.time * 0.85f, startPos.y) * jitterScale - jitterScale/2);
+
+             yield return null;
+         }
+     }
  }

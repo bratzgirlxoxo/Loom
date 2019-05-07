@@ -2838,7 +2838,7 @@
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.129665539102578"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.446625745797771"/>
-																<Property Name="TrimBegin" Type="Real64" Value="6.24315558642045E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0624315558642045"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Walking\Main\loom3_mainWalking_4.wav</AudioFile>
@@ -3393,7 +3393,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="Raven Hit" ID="{3167DAAD-5AF7-444A-9112-D338CE8DEB23}" ShortID="25090345">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.89657773098262E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0189657773098262"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Raven Hit.wav</AudioFile>
@@ -3551,6 +3551,34 @@
 								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{119775C0-342D-414C-8333-CA4DAC62F07F}" ShortID="68507164">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MousePosY" ID="{186D2C5A-C205-4E9B-A4C1-DCCC7041C094}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{823879CE-CA7C-4DB6-B945-5A0D30F09A55}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-3</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>5</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3827,7 +3855,7 @@
 										<RTPC Name="" ID="{21FB75EA-3ABF-48BA-8BC0-1EEB3B07BF4E}" ShortID="898152097">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="MousePos" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+													<ObjectRef Name="MousePosX" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{6D2EDC6F-BCCA-4606-B141-A351CA181F03}">
@@ -3906,7 +3934,7 @@
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.278265642151482"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="1.37705817782656"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.21075740944018E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0321075740944018"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Melody2\menu_melody2_2.wav</AudioFile>
@@ -3996,6 +4024,88 @@
 								<ItemRef Name="menu_melody2_5" ID="{EC3EE835-B48A-4AD5-AE8E-68432A54BC67}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<Sound Name="mainmenu drums" ID="{7E29B1A8-DC8D-4FE7-8ED6-8CA4AF4796AC}" ShortID="677198736">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{9FDCA117-71E9-44E8-A3D2-61B32358D7EC}" ShortID="857251802">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MousePosX" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7B81C446-6EB3-4C61-AFEB-048D6B4087AC}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-9</XPos>
+														<YPos>100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>9</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{18F4E040-4146-49C3-B46C-E9E626799417}" ShortID="506591917">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MousePosY" ID="{186D2C5A-C205-4E9B-A4C1-DCCC7041C094}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5D5B5EDE-C8D0-4C20-A4BF-DB740CD470E7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-3</XPos>
+														<YPos>-13.02556</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>5</XPos>
+														<YPos>-2.81466</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33A307D9-8563-4D49-A4E6-4FEBA11F7C89}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mainmenu drums" ID="{5E71582C-529C-433C-87C6-2CBEF578386F}" ShortID="881315603">
+									<Language>SFX</Language>
+									<AudioFile>mainmenu drums.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="mainmenu drums" ID="{5E71582C-529C-433C-87C6-2CBEF578386F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

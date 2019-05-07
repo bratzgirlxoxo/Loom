@@ -32,6 +32,7 @@
 						<ObjectRef Name="OceanSplash_Play_Event" ID="{AD6AF879-00AF-4E9E-92F2-6A16165D6000}" WorkUnitID="{A79C9633-D24D-4DFA-A860-8732207FAA72}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Lantern_Play_Event" ID="{5B179B1B-BBC3-4F1A-B9B6-CC5A006F725B}" WorkUnitID="{515F67A7-8700-4995-8B85-87F57AA0146C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Loom2_Play_Ascend_Event" ID="{C22939E3-2EFB-4F4B-9270-96ACCE35EB88}" WorkUnitID="{4980BD2A-9696-4985-BC9C-415981C24CB0}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MainMenu_Drums_Play" ID="{A5418A0B-8B94-4F75-A3FC-394D03308C09}" WorkUnitID="{65CBED2F-00B1-4084-A1A5-91015CE1173B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ocean_Play_Event" ID="{32044981-8FB7-4FE4-B487-5E2275374E17}" WorkUnitID="{D454797A-7B7E-423C-BEBF-50D618AD1887}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
