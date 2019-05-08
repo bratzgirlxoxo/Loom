@@ -6,6 +6,7 @@ public class MouseMovement : MonoBehaviour
 {
     public AK.Wwise.Event OrganPlayEvent;
     public AK.Wwise.Event DrumsPlayEvent;
+    public AK.Wwise.Event BassPlayEvent;
 
     [Header("Called on Mouse Movement")]
     public AK.Wwise.Event Melody2StartEvent;
@@ -28,6 +29,7 @@ public class MouseMovement : MonoBehaviour
         hasPlayed = false;
         OrganPlayEvent.Post(gameObject);
         DrumsPlayEvent.Post(gameObject);
+        BassPlayEvent.Post(gameObject);
         mousePos = new Vector3();
         lastPos = new Vector3();
     }
@@ -47,6 +49,7 @@ public class MouseMovement : MonoBehaviour
         AkSoundEngine.SetRTPCValue("MousePosY", melody2EmitterPos.y);
 
         speed = Vector3.Magnitude(mousePos - lastPos);
+        AkSoundEngine.SetRTPCValue("MouseSpeed", speed);
 
         if (speed > 1)
         {
