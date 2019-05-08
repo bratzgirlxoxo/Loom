@@ -5,8 +5,8 @@ using UnityEngine.Serialization;
 
 public class TextHover : MonoBehaviour
  {
-     private Vector2 startScale;
-     private Vector2 targetScale;
+     private Vector3 startScale;
+     private Vector3 targetScale;
 
      private Coroutine scaleRoutine = null;
 
@@ -24,17 +24,17 @@ public class TextHover : MonoBehaviour
      private void Start()
      {
          //defining our start scale
-         startScale = new Vector2(gameObject.transform.localScale.x, 
-             gameObject.transform.localScale.y);
+         startScale = new Vector3(gameObject.transform.localScale.x, 
+             gameObject.transform.localScale.y,1);
          StartCoroutine(Jitter());
      }
 
      private void OnMouseEnter()
      { 
          StopAllCoroutines();
-         Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
-             gameObject.transform.localScale.y);
-         targetScale = new Vector2(1.5f, 1.5f);
+         Vector3 currentScale = new Vector3(gameObject.transform.localScale.x, 
+             gameObject.transform.localScale.y, 1);
+         targetScale = new Vector3(1.5f, 1.5f, 1);
          StopAllCoroutines();
          StartCoroutine(TextScaleLerp(currentScale, targetScale, InflateTime));
 
@@ -44,8 +44,8 @@ public class TextHover : MonoBehaviour
      private void OnMouseExit()
      {
          StopAllCoroutines();
-         Vector2 currentScale = new Vector2(gameObject.transform.localScale.x, 
-             gameObject.transform.localScale.y);
+         Vector2 currentScale = new Vector3(gameObject.transform.localScale.x, 
+             gameObject.transform.localScale.y, 1);
          StartCoroutine(TextScaleLerp(currentScale, startScale, DeflateTime));
 
          StartCoroutine(WaitBeforeStop());
@@ -53,11 +53,11 @@ public class TextHover : MonoBehaviour
      }
      
      //this coroutine scale the object up at a certain time scale
-     IEnumerator TextScaleLerp(Vector2 start, Vector2 goal, float TimeScale){
+     IEnumerator TextScaleLerp(Vector3 start, Vector3 goal, float TimeScale){
          
          float progress = 0;
          while(progress <= 1){
-             transform.localScale = Vector2.Lerp(start, goal, textTweenCurve.Evaluate(progress));
+             transform.localScale = Vector3.Lerp(start, goal, textTweenCurve.Evaluate(progress));
              progress += Time.deltaTime / TimeScale;
              yield return null;
          }

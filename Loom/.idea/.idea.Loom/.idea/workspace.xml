@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+            <state relative-caret-position="528">
+              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding>
                 <marker date="1557334419154" expanded="false" signature="6:78" ph="..." />
                 <marker date="1557334419154" expanded="true" signature="122:2038" ph="{...}" />
@@ -67,6 +67,28 @@
                 <marker date="1557334419154" expanded="true" signature="1621:1735" ph="{...}" />
                 <marker date="1557334419154" expanded="true" signature="1770:1836" ph="{...}" />
                 <marker date="1557334419154" expanded="true" signature="1906:2036" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TextHover.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+              <folding>
+                <marker date="1557338327540" expanded="false" signature="6:113" ph="..." />
+                <marker date="1557338327540" expanded="true" signature="153:2569" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="522:728" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="762:1141" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="1179:1479" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="1628:1993" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="1698:1893" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="1925:1986" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="2028:2129" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="2156:2566" ph="{...}" />
+                <marker date="1557338327540" expanded="true" signature="2233:2559" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -190,6 +212,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>speed</find>
+      <find>vector2</find>
     </findStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -271,7 +294,6 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/Sean's Water.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightIntensityFlicker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loom1Completion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TextHover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParticleBells.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loom2Completion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TutorialGhost2.cs" />
@@ -286,6 +308,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Loom3Entrance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TutorialGhost.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TextHover.cs" />
       </list>
     </option>
   </component>
@@ -460,12 +483,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="1940" height="1100" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Capture Tool" />
       <window_info id="Image Layers" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2526596" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2531983" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Unity" />
@@ -687,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TextHover.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FireballMotion1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -902,8 +918,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        <state relative-caret-position="528">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
           <folding>
             <marker date="1557334419154" expanded="false" signature="6:78" ph="..." />
             <marker date="1557334419154" expanded="true" signature="122:2038" ph="{...}" />
@@ -913,6 +929,26 @@
             <marker date="1557334419154" expanded="true" signature="1621:1735" ph="{...}" />
             <marker date="1557334419154" expanded="true" signature="1770:1836" ph="{...}" />
             <marker date="1557334419154" expanded="true" signature="1906:2036" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TextHover.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <marker date="1557338327540" expanded="false" signature="6:113" ph="..." />
+            <marker date="1557338327540" expanded="true" signature="153:2569" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="522:728" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="762:1141" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="1179:1479" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="1628:1993" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="1698:1893" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="1925:1986" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="2028:2129" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="2156:2566" ph="{...}" />
+            <marker date="1557338327540" expanded="true" signature="2233:2559" ph="{...}" />
           </folding>
         </state>
       </provider>
