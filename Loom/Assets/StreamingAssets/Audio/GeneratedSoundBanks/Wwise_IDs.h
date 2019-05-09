@@ -38,6 +38,8 @@ namespace AK
         static const AkUniqueID LOOM3_STOP_MAINWALK_EVENT = 1155784786U;
         static const AkUniqueID MAINMENU_BASS_PLAY = 1693439084U;
         static const AkUniqueID MAINMENU_BASS_STOP = 3663223670U;
+        static const AkUniqueID MAINMENU_CANDLE_PLAY = 1838714422U;
+        static const AkUniqueID MAINMENU_DRUMS_PLAY = 2898847086U;
         static const AkUniqueID MAINMENU_MELODY1_PLAY = 206749876U;
         static const AkUniqueID MAINMENU_MELODY1_STOP = 1910755470U;
         static const AkUniqueID MAINMENU_MELODY2_PLAY = 2448971689U;
@@ -54,7 +56,10 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID MOUSEPOS = 2995755600U;
+        static const AkUniqueID MOUSEDISTANCE = 3580695643U;
+        static const AkUniqueID MOUSEPOSX = 1745873800U;
+        static const AkUniqueID MOUSEPOSY = 1745873801U;
+        static const AkUniqueID MOUSESPEED = 4038084591U;
         static const AkUniqueID PLAYERHEIGHT = 2243460727U;
     } // namespace GAME_PARAMETERS
 
