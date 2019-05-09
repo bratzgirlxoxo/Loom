@@ -17,14 +17,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	1793405145	Loom3_Stop_IntroWalk_Event			\Default Work Unit\Loom3\Loom3_Stop_IntroWalk_Event	
 	1838714422	MainMenu_Candle_Play			\Default Work Unit\MainMenu\MainMenu_Candle_Play	
 	1910755470	MainMenu_Melody1_Stop			\Default Work Unit\MainMenu\MainMenu_Melody1_Stop	
+	1957416569	Candle_Ambience_Stop_Event			\Default Work Unit\Candle_Ambience_Stop_Event	
 	1999607201	Transition_Play_Ambience_Event			\Default Work Unit\Transition\Transition_Play_Ambience_Event	
 	2448971689	MainMenu_Melody2_Play			\Default Work Unit\MainMenu\MainMenu_Melody2_Play	
+	2569251784	MainMenu_Candle_Stop			\Default Work Unit\MainMenu_Candle_Stop	
 	2621191726	MainMenu_Organ_Play			\Default Work Unit\MainMenu\MainMenu_Organ_Play	
 	2693566612	Loom2_Stop_Walk_Event			\Default Work Unit\Loom2\Loom2_Stop_Walk_Event	
 	2785362746	Loom2_Play_Walk_Event			\Default Work Unit\Loom2\Loom2_Play_Walk_Event	
 	2898847086	MainMenu_Drums_Play			\Default Work Unit\MainMenu\MainMenu_Drums_Play	
 	2993600909	Loom1_Play_Walk_Event			\Default Work Unit\Loom1\Loom1_Play_Walk_Event	
 	3272865395	Loom2_Play_Ascend_Event			\Default Work Unit\Loom2\Loom2_Play_Ascend_Event	
+	3275858311	MainMenu_CandleStrike			\Default Work Unit\MainMenu\MainMenu_CandleStrike	
 	3294845851	Ocean_Play_Event			\Default Work Unit\Environment\Ocean_Play_Event	
 	3328836542	Lantern_Jump_Play_Event			\Default Work Unit\Lantern\Lantern_Jump_Play_Event	
 	3348270690	Loom2_Play_Bell_Event			\Default Work Unit\Loom2\Loom2_Play_Bell_Event	
@@ -33,6 +36,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3663223670	MainMenu_Bass_Stop			\Default Work Unit\MainMenu\MainMenu_Bass_Stop	
 	3664307472	MainMenu_Organ_Stop			\Default Work Unit\MainMenu\MainMenu_Organ_Stop	
 	3726429074	Loom2_Play_Candle_Event_Sound			\Default Work Unit\Loom2\Loom2_Play_Candle_Event_Sound	
+	3791919171	MainMenu_StopAll			\Default Work Unit\MainMenu_StopAll	
 	3957531880	Loom1_Play_Candle_Strike_Event			\Default Work Unit\Loom1\Loom1_Play_Candle_Strike_Event	
 	3971388623	MainMenu_Melody2_Stop			\Default Work Unit\MainMenu\MainMenu_Melody2_Stop	
 	4096384826	Transition_Stop_Walking_Event			\Default Work Unit\Transition\Transition_Stop_Walking_Event	

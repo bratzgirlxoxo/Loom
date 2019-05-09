@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CANDLE_AMBIENCE_STOP_EVENT = 1957416569U;
         static const AkUniqueID LANTERN_JUMP_PLAY_EVENT = 3328836542U;
         static const AkUniqueID LANTERN_PLAY_EVENT = 4164020281U;
         static const AkUniqueID LANTERN_STOP_EVENT = 692121127U;
@@ -39,6 +40,8 @@ namespace AK
         static const AkUniqueID MAINMENU_BASS_PLAY = 1693439084U;
         static const AkUniqueID MAINMENU_BASS_STOP = 3663223670U;
         static const AkUniqueID MAINMENU_CANDLE_PLAY = 1838714422U;
+        static const AkUniqueID MAINMENU_CANDLE_STOP = 2569251784U;
+        static const AkUniqueID MAINMENU_CANDLESTRIKE = 3275858311U;
         static const AkUniqueID MAINMENU_DRUMS_PLAY = 2898847086U;
         static const AkUniqueID MAINMENU_MELODY1_PLAY = 206749876U;
         static const AkUniqueID MAINMENU_MELODY1_STOP = 1910755470U;
@@ -46,6 +49,7 @@ namespace AK
         static const AkUniqueID MAINMENU_MELODY2_STOP = 3971388623U;
         static const AkUniqueID MAINMENU_ORGAN_PLAY = 2621191726U;
         static const AkUniqueID MAINMENU_ORGAN_STOP = 3664307472U;
+        static const AkUniqueID MAINMENU_STOPALL = 3791919171U;
         static const AkUniqueID OCEAN_PLAY_EVENT = 3294845851U;
         static const AkUniqueID OCEANSPLASH_PLAY_EVENT = 3564306560U;
         static const AkUniqueID PILLAR_PLAY_EVENT = 416863711U;

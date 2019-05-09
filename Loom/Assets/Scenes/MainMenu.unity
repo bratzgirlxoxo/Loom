@@ -490,14 +490,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f13d6356036104271a5868c1658ddfda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  organEmitter: {fileID: 0}
-  distance: 0
   CandlePlayEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2a880b1aaecd94cd6802681731ca0d67,
       type: 2}
+  CandleStrikeEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa66c948cd4274880b507e9f56470007,
+      type: 2}
+  CandleStopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 53d69eff49f404c92864286ce59b02da,
+      type: 2}
+  MenuStopAll:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 22fbc3bbfd8734570baafde58daa777c,
+      type: 2}
   mousePos: {x: 0, y: 0, z: 0}
+  L: {fileID: 1398758358}
+  O: {fileID: 2024121054}
+  O2: {fileID: 1023642833}
+  M: {fileID: 410124523}
 --- !u!135 &589339137
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -564,7 +581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589339135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 5.02, z: 0}
+  m_LocalPosition: {x: 4.18, y: 3.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -750,7 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227017313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31, y: 0.57, z: 0}
+  m_LocalPosition: {x: -5.71, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1398758359}
@@ -785,7 +802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396422492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.69}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 48025353}
@@ -802,7 +819,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.59279907, b: 0, a: 1}
-  m_Intensity: 200
+  m_Intensity: 250
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1168,7 +1185,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  m_BackGroundColor: {r: 0.23852712, g: 0.23313455, b: 0.2924528, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
