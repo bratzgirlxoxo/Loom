@@ -2838,7 +2838,7 @@
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.129665539102578"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.446625745797771"/>
-																<Property Name="TrimBegin" Type="Real64" Value="6.24315558642045E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0624315558642045"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Walking\Main\loom3_mainWalking_4.wav</AudioFile>
@@ -3393,7 +3393,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="Raven Hit" ID="{3167DAAD-5AF7-444A-9112-D338CE8DEB23}" ShortID="25090345">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.89657773098262E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0189657773098262"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Raven Hit.wav</AudioFile>
@@ -3844,40 +3844,18 @@
 						<RandomSequenceContainer Name="Melody2" ID="{046C4D76-74A4-43CD-BB87-AA50A6C1FC12}" ShortID="890636790">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32">
-									<RTPCList>
-										<RTPC Name="" ID="{21FB75EA-3ABF-48BA-8BC0-1EEB3B07BF4E}" ShortID="898152097">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="MousePosX" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{6D2EDC6F-BCCA-4606-B141-A351CA181F03}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>-9</XPos>
-														<YPos>100</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>9</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -3934,7 +3912,7 @@
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.278265642151482"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="1.37705817782656"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.21075740944018E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0321075740944018"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Melody2\menu_melody2_2.wav</AudioFile>
@@ -4016,6 +3994,40 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{F0BD25A6-0375-4B20-9014-2F2D8946C853}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{320F22D3-11E0-405E-B47B-F6863E8B6744}" ShortID="318861861">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="MousePosX" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1899EE68-478F-4FBE-BF44-D99ECAC7C7AF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-9</XPos>
+																<YPos>-75</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>9</XPos>
+																<YPos>75</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<Playlist>
 								<ItemRef Name="menu_melody2_1" ID="{8BF08B26-1B1B-4580-B365-1DECB612B4B1}"/>
 								<ItemRef Name="menu_melody2_2" ID="{141911A9-D79D-4DB2-AD50-27D8CF160299}"/>
@@ -4027,38 +4039,16 @@
 						<Sound Name="mainmenu drums" ID="{7E29B1A8-DC8D-4FE7-8ED6-8CA4AF4796AC}" ShortID="677198736">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32">
-									<RTPCList>
-										<RTPC Name="" ID="{9FDCA117-71E9-44E8-A3D2-61B32358D7EC}" ShortID="857251802">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="MousePosX" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{7B81C446-6EB3-4C61-AFEB-048D6B4087AC}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>-9</XPos>
-														<YPos>100</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>9</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{18F4E040-4146-49C3-B46C-E9E626799417}" ShortID="506591917">
@@ -4108,6 +4098,41 @@
 									<AudioFile>mainmenu_drums.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{7AEBC8AC-90A8-4FAF-9514-CA6A5F13A229}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-93.576017130621">
+											<RTPCList>
+												<RTPC Name="" ID="{9FDCA117-71E9-44E8-A3D2-61B32358D7EC}" ShortID="857251802">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="MousePosX" ID="{D3528FB7-A245-4195-BE83-828168361E22}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{7B81C446-6EB3-4C61-AFEB-048D6B4087AC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-9</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>9</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PanY" Type="Real64" Value="-9.11161731207289"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="mainmenu_drums" ID="{4ADCF433-38D2-4F7E-A1EA-2F4ABC7D6B0A}" Platform="Linked"/>
 							</ActiveSourceList>
