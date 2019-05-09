@@ -30,16 +30,11 @@ public class RisingPlatform : MonoBehaviour
         {
             t += Time.fixedDeltaTime / riseTime;
             rbody.MovePosition(new Vector3(startPos.x, startPos.y + (endPos.y-startPos.y)*t, startPos.z));
-        } else if (rising && up && t < 1f)
-        {
-            t += Time.fixedDeltaTime / riseTime;
-            rbody.MovePosition(new Vector3(startPos.x, startPos.y - (startPos.y-endPos.y)*t, startPos.z));
-        }
+        } 
         else if (t >= 1f)
         {
             rising = false;
-            t = 0f;
-            up = !up;
+            rbody.useGravity = false;
         }
     }
 
