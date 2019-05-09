@@ -30,6 +30,7 @@ public class PathPillar : MonoBehaviour
     public Material uiImage;
     public float imgFreq;
     private bool fading;
+    private bool emerged;
     
     void Start()
     {
@@ -47,7 +48,7 @@ public class PathPillar : MonoBehaviour
     void OnTriggerEnter(Collider coll)
     {
         
-        if (coll.CompareTag("Player") && readyToEmerge)
+        if (!emerged && coll.CompareTag("Player") && readyToEmerge)
         {
             if (loomPillar)
             {
@@ -59,6 +60,7 @@ public class PathPillar : MonoBehaviour
                 PillarAudioEvent.Post(gameObject);
             }
 
+            emerged = true;
             StartCoroutine(PillarEmerge(nextPillar.transform, startPos, endPos));
 
             StartCoroutine(Fade(0, 0.8f));

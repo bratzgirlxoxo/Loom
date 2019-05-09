@@ -2925,6 +2925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6549467954997199059}
   - component: {fileID: 8975850505950829695}
+  - component: {fileID: 2185257069671453480}
   m_Layer: 0
   m_Name: Fbx-Pan_loom3Animation
   m_TagString: Untagged
@@ -3002,7 +3003,7 @@ Animator:
   m_GameObject: {fileID: 6558738305134859849}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 67462c4a26c13419caa0d3e06c5027ee, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f478f1a840e7564da28da7acdb8cf91, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3011,6 +3012,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2185257069671453480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558738305134859849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96be53ba6d8036489a1c01a8aee8287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabinetAnimator: {fileID: 8975850505950829695}
+  waitTime: 0.5
 --- !u!1 &6718004795524077992
 GameObject:
   m_ObjectHideFlags: 0

@@ -1473,6 +1473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879415002788558841}
   - component: {fileID: 1839705337065333329}
+  - component: {fileID: 5104239280783034998}
   m_Layer: 0
   m_Name: Fbx-BookShelf_loom3Animation
   m_TagString: Untagged
@@ -1549,7 +1550,7 @@ Animator:
   m_GameObject: {fileID: 5319675746595687877}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: af076a1361fc549b7962b0f160d43571, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f66ea920327cebd46a3e872956b5264f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1558,6 +1559,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5104239280783034998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5319675746595687877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96be53ba6d8036489a1c01a8aee8287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabinetAnimator: {fileID: 1839705337065333329}
+  waitTime: 0.5
 --- !u!1 &5587113944200990960
 GameObject:
   m_ObjectHideFlags: 0

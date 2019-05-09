@@ -59,6 +59,19 @@ public class TutorialGhost2 : MonoBehaviour
         moving = false;
         stageIdx++;
     }
+    
+    IEnumerator Death()
+    {
+        moving = true;
+        myLight.enabled = false;
+        myLight.transform.GetComponent<LightIntensityFlicker>().flame.SetActive(false);
+        yield return new WaitForSeconds(1.2f);
+        Vector3 startPos = transform.position;
+        GetComponent<Collider>().enabled = false;
+        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -40f, 0f), 6f));
+        yield return new WaitForSeconds(6f + 1f);
+        Destroy(transform.gameObject);
+    }
 
     void OnTriggerEnter(Collider coll)
     {
@@ -69,7 +82,12 @@ public class TutorialGhost2 : MonoBehaviour
             {
                 positions[0] = transform.position;
             }
-            StartCoroutine(LinearLerp(positions[stageIdx], positions[stageIdx + 1], lerpTimes[stageIdx]));
+            if (stageIdx < 2)
+                StartCoroutine(LinearLerp(positions[stageIdx], positions[stageIdx + 1], lerpTimes[stageIdx]));
+            else
+            {
+                StartCoroutine(Death());
+            }
         }
     }
 }

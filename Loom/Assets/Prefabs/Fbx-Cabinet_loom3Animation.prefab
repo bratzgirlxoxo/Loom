@@ -395,6 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2765915674208815489}
   - component: {fileID: 9042929963720259249}
+  - component: {fileID: 8998638937701210410}
   m_Layer: 0
   m_Name: Fbx-Cabinet_loom3Animation
   m_TagString: Untagged
@@ -445,7 +446,7 @@ Animator:
   m_GameObject: {fileID: 2413197004187845255}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: fb2c3b6ed86f245fda8c06a18415355a, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1e89d330d8dc324f8e601cc9dc3d4e6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -454,6 +455,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8998638937701210410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2413197004187845255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96be53ba6d8036489a1c01a8aee8287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabinetAnimator: {fileID: 9042929963720259249}
+  waitTime: 0.5
 --- !u!1 &3072515801478752419
 GameObject:
   m_ObjectHideFlags: 0

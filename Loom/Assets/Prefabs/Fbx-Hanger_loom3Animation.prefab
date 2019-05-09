@@ -1436,6 +1436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4654392421236117974}
   - component: {fileID: 1190096066689274779}
+  - component: {fileID: 4257426543011510443}
   m_Layer: 0
   m_Name: Fbx-Hanger_loom3Animation
   m_TagString: Untagged
@@ -1490,7 +1491,7 @@ Animator:
   m_GameObject: {fileID: 3912769032845572640}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ebbefd0aa0d3e46b9a92219d68a7e8aa, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f69c8788f7cd93341ab2ad7bb47a08a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1499,6 +1500,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4257426543011510443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912769032845572640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96be53ba6d8036489a1c01a8aee8287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabinetAnimator: {fileID: 1190096066689274779}
+  waitTime: 0.5
 --- !u!1 &4162425093156593730
 GameObject:
   m_ObjectHideFlags: 0

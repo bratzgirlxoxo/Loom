@@ -473,6 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2432254252424417407}
   - component: {fileID: 69033265152761734}
+  - component: {fileID: 1169585285025959084}
   m_Layer: 0
   m_Name: Fbx-TeaTable_loom3Animation
   m_TagString: Untagged
@@ -514,7 +515,7 @@ Animator:
   m_GameObject: {fileID: 5015699582888819154}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b7bbad20417ca4965bbc2c64aeb763e9, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 22703e1c917aafc408cf280518ce5bc0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -523,6 +524,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1169585285025959084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5015699582888819154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96be53ba6d8036489a1c01a8aee8287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabinetAnimator: {fileID: 69033265152761734}
+  waitTime: 0.5
 --- !u!1 &5439176838562149466
 GameObject:
   m_ObjectHideFlags: 0
