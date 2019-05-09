@@ -179,6 +179,7 @@
 										</RandomSequenceContainer>
 										<Sound Name="match_strike" ID="{2B1ED265-9FB5-445F-AA4D-7B1487A90576}" ShortID="494102261">
 											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -198,6 +199,9 @@
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MainMenu_Aux2" ID="{FC4CF7E3-3793-4D9E-B71B-3ED8340B6AFA}" WorkUnitID="{E4E136E9-A80A-4993-A910-CBFCEAFE52B4}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -4350,18 +4354,18 @@
 														<PointList>
 															<Point>
 																<XPos>-9</XPos>
-																<YPos>-150</YPos>
+																<YPos>150</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>5.02703</XPos>
-																<YPos>-150</YPos>
+																<XPos>1.47974</XPos>
+																<YPos>150</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>Exp1</SegmentShape>
+																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>9</XPos>
-																<YPos>85.71429</YPos>
+																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

@@ -11,6 +11,88 @@
 				<WorkUnit Name="Lantern" ID="{515F67A7-8700-4995-8B85-87F57AA0146C}" PersistMode="Reference"/>
 				<WorkUnit Name="MainMenu" ID="{9E114218-4C9E-4AD6-98B7-55475394826B}" PersistMode="Reference"/>
 				<WorkUnit Name="Transition" ID="{C288386E-316F-4D9B-9872-2000DDAAF8C2}" PersistMode="Reference"/>
+				<Event Name="Candle_Ambience_Stop_Event" ID="{88B326F1-4BFF-46D8-A9CA-F3C5905D1043}">
+					<ChildrenList>
+						<Action Name="" ID="{5B49E617-57DF-406D-9682-40DC3B509A6D}" ShortID="392756534">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Candle_Ambience" ID="{3DA19109-FBDD-4C19-B01B-49BE022465BA}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenu_StopAll" ID="{A716D8FF-02AE-4132-97AB-5E545D2E0683}">
+					<ChildrenList>
+						<Action Name="" ID="{F72B8E57-E65D-4354-A224-2A7AEE0601BA}" ShortID="919910346">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass" ID="{33FC12DA-3AB9-4BB8-AD50-2A7D315643F7}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2610ABF0-B533-407A-AFD8-2BC113FCACC1}" ShortID="309364360">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Melody1" ID="{1E076BFD-3153-4690-B0F3-D2669149F71D}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E574B5D3-B9D6-4CD6-A39E-C5FF380D0C3A}" ShortID="399097576">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Melody2" ID="{046C4D76-74A4-43CD-BB87-AA50A6C1FC12}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8750B567-87BF-47E4-A2F4-44BA7F847351}" ShortID="289695341">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Organ" ID="{34B294FA-D587-4447-A85D-5D29860E6CA9}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F6DD59CF-DCBB-430A-9D3C-8A0C707D1523}" ShortID="297952724">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mainmenu drums" ID="{7E29B1A8-DC8D-4FE7-8ED6-8CA4AF4796AC}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenu_Candle_Stop" ID="{4DD98308-23CA-4013-96E7-6833E510F15E}">
+					<ChildrenList>
+						<Action Name="" ID="{A1F846C9-41F7-40A4-81AB-BFF6365225B2}" ShortID="660500776">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuCandle" ID="{EDAFB189-77F1-497E-BFD6-662D3711491D}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

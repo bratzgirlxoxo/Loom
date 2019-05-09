@@ -143,6 +143,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MainMenu_CandleStrike" ID="{CC74586C-EA28-4ADB-ACAF-9CEB2289D239}">
+					<ChildrenList>
+						<Action Name="" ID="{E4BEE43E-1C1A-40EC-BB7E-26A53DA051F5}" ShortID="734581993">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="match_strike" ID="{2B1ED265-9FB5-445F-AA4D-7B1487A90576}" WorkUnitID="{A3D86DC8-BBB5-4C21-BCF1-AC18A0327DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

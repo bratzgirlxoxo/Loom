@@ -21,6 +21,7 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1957416569" Name="Candle_Ambience_Stop_Event" ObjectPath="\Events\Default Work Unit\Candle_Ambience_Stop_Event" MaxAttenuation="0.000000"/>
 				<Event Id="3328836542" Name="Lantern_Jump_Play_Event" ObjectPath="\Events\Default Work Unit\Lantern\Lantern_Jump_Play_Event" MaxAttenuation="15.000000"/>
 				<Event Id="4164020281" Name="Lantern_Play_Event" ObjectPath="\Events\Default Work Unit\Lantern\Lantern_Play_Event" MaxAttenuation="15.000000"/>
 				<Event Id="692121127" Name="Lantern_Stop_Event" ObjectPath="\Events\Default Work Unit\Lantern\Lantern_Stop_Event" MaxAttenuation="0.000000"/>
@@ -47,6 +48,8 @@
 				<Event Id="1693439084" Name="MainMenu_Bass_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Bass_Play"/>
 				<Event Id="3663223670" Name="MainMenu_Bass_Stop" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Bass_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="1838714422" Name="MainMenu_Candle_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Candle_Play" MaxAttenuation="20.000000"/>
+				<Event Id="2569251784" Name="MainMenu_Candle_Stop" ObjectPath="\Events\Default Work Unit\MainMenu_Candle_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="3275858311" Name="MainMenu_CandleStrike" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_CandleStrike" MaxAttenuation="20.000000"/>
 				<Event Id="2898847086" Name="MainMenu_Drums_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Drums_Play"/>
 				<Event Id="206749876" Name="MainMenu_Melody1_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Melody1_Play"/>
 				<Event Id="1910755470" Name="MainMenu_Melody1_Stop" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Melody1_Stop" MaxAttenuation="0.000000"/>
@@ -54,6 +57,7 @@
 				<Event Id="3971388623" Name="MainMenu_Melody2_Stop" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Melody2_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="2621191726" Name="MainMenu_Organ_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Organ_Play"/>
 				<Event Id="3664307472" Name="MainMenu_Organ_Stop" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Organ_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="3791919171" Name="MainMenu_StopAll" ObjectPath="\Events\Default Work Unit\MainMenu_StopAll" MaxAttenuation="0.000000"/>
 				<Event Id="3294845851" Name="Ocean_Play_Event" ObjectPath="\Events\Default Work Unit\Environment\Ocean_Play_Event"/>
 				<Event Id="3564306560" Name="OceanSplash_Play_Event" ObjectPath="\Events\Default Work Unit\Misc\OceanSplash_Play_Event"/>
 				<Event Id="416863711" Name="Pillar_Play_Event" ObjectPath="\Events\Default Work Unit\Transition\Pillar_Play_Event" MaxAttenuation="50.000000"/>
