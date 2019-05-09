@@ -15,13 +15,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	1693439084	MainMenu_Bass_Play			\Default Work Unit\MainMenu\MainMenu_Bass_Play	
 	1774379222	Loom1_Play_Candle_Ambience_Event			\Default Work Unit\Loom1\Loom1_Play_Candle_Ambience_Event	
 	1793405145	Loom3_Stop_IntroWalk_Event			\Default Work Unit\Loom3\Loom3_Stop_IntroWalk_Event	
+	1838714422	MainMenu_Candle_Play			\Default Work Unit\MainMenu\MainMenu_Candle_Play	
 	1910755470	MainMenu_Melody1_Stop			\Default Work Unit\MainMenu\MainMenu_Melody1_Stop	
 	1999607201	Transition_Play_Ambience_Event			\Default Work Unit\Transition\Transition_Play_Ambience_Event	
 	2448971689	MainMenu_Melody2_Play			\Default Work Unit\MainMenu\MainMenu_Melody2_Play	
 	2621191726	MainMenu_Organ_Play			\Default Work Unit\MainMenu\MainMenu_Organ_Play	
 	2693566612	Loom2_Stop_Walk_Event			\Default Work Unit\Loom2\Loom2_Stop_Walk_Event	
 	2785362746	Loom2_Play_Walk_Event			\Default Work Unit\Loom2\Loom2_Play_Walk_Event	
-	2898847086	MainMenu_Drums_Play			\Default Work Unit\MainMenu_Drums_Play	
+	2898847086	MainMenu_Drums_Play			\Default Work Unit\MainMenu\MainMenu_Drums_Play	
 	2993600909	Loom1_Play_Walk_Event			\Default Work Unit\Loom1\Loom1_Play_Walk_Event	
 	3272865395	Loom2_Play_Ascend_Event			\Default Work Unit\Loom2\Loom2_Play_Ascend_Event	
 	3294845851	Ocean_Play_Event			\Default Work Unit\Environment\Ocean_Play_Event	
@@ -42,6 +43,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1745873800	MousePosX			\Default Work Unit\MousePosX	
 	1745873801	MousePosY			\Default Work Unit\MousePosY	
 	2243460727	PlayerHeight			\Default Work Unit\PlayerHeight	
+	3580695643	MouseDistance			\Default Work Unit\MouseDistance	
 
 Effect plug-ins	ID	Name	Type				Notes
 	136714882	_500ms_Per_Hour	Wwise Stereo Delay			

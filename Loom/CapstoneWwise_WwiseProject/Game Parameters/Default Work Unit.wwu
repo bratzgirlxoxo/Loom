@@ -30,6 +30,12 @@
 						<Property Name="Max" Type="Real64" Value="20"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MouseDistance" ID="{34921033-017F-4F71-A292-A4C6B007A5EE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="7"/>
+						<Property Name="Max" Type="Real64" Value="7"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

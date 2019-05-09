@@ -46,7 +46,8 @@
 				<Event Id="1155784786" Name="Loom3_Stop_MainWalk_Event" ObjectPath="\Events\Default Work Unit\Loom3\Loom3_Stop_MainWalk_Event" MaxAttenuation="0.000000"/>
 				<Event Id="1693439084" Name="MainMenu_Bass_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Bass_Play"/>
 				<Event Id="3663223670" Name="MainMenu_Bass_Stop" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Bass_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="2898847086" Name="MainMenu_Drums_Play" ObjectPath="\Events\Default Work Unit\MainMenu_Drums_Play"/>
+				<Event Id="1838714422" Name="MainMenu_Candle_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Candle_Play" MaxAttenuation="20.000000"/>
+				<Event Id="2898847086" Name="MainMenu_Drums_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Drums_Play"/>
 				<Event Id="206749876" Name="MainMenu_Melody1_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Melody1_Play"/>
 				<Event Id="1910755470" Name="MainMenu_Melody1_Stop" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Melody1_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="2448971689" Name="MainMenu_Melody2_Play" ObjectPath="\Events\Default Work Unit\MainMenu\MainMenu_Melody2_Play"/>
