@@ -36,6 +36,12 @@
 						<Property Name="Max" Type="Real64" Value="7"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="FadeTime" ID="{D8429DE5-EC1A-4D81-BB30-21AF92D5267A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

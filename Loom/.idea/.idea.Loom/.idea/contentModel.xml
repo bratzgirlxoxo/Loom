@@ -367,6 +367,7 @@
             <e p="StylizedWater_Mobile.shader" t="Include" />
           </e>
         </e>
+        <e p="WaterFadeIn.cs" t="Include" />
         <e p="Wwise" t="Include">
           <e p="Deployment" t="Include">
             <e p="API" t="Include">
