@@ -11,25 +11,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RisingPlatform.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding>
-                <marker date="1557502331954" expanded="false" signature="6:78" ph="..." />
-                <marker date="1557502331954" expanded="true" signature="123:1051" ph="{...}" />
-                <marker date="1557502331954" expanded="true" signature="383:501" ph="{...}" />
-                <marker date="1557502331954" expanded="true" signature="525:865" ph="{...}" />
-                <marker date="1557502331954" expanded="true" signature="570:746" ph="{...}" />
-                <marker date="1557502331954" expanded="true" signature="773:859" ph="{...}" />
-                <marker date="1557502331954" expanded="true" signature="905:1049" ph="{...}" />
-                <marker date="1557502331954" expanded="true" signature="961:1043" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Shaders/RadialBackground.shader">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -60,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/MenuCandle.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="562">
@@ -77,6 +58,22 @@
                 <marker date="1557508296028" expanded="true" signature="1470:1614" ph="{...}" />
                 <marker date="1557508296028" expanded="true" signature="1650:1936" ph="{...}" />
                 <marker date="1557508296028" expanded="true" signature="1995:2141" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/WaterFadeIn.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+              <folding>
+                <marker date="1557508779053" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557508779053" expanded="true" signature="120:483" ph="{...}" />
+                <marker date="1557508779053" expanded="true" signature="220:254" ph="{...}" />
+                <marker date="1557508779053" expanded="true" signature="312:481" ph="{...}" />
+                <marker date="1557508779053" expanded="true" signature="344:466" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -225,6 +222,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FireballMotion1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loom3Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BlueprintShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WaterFadeIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PathPillar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlantController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextHover.cs" root0="FORCE_HIGHLIGHTING" />
@@ -296,6 +294,7 @@
         <option value="$PROJECT_DIR$/Assets/DontDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/TransitionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/MenuCandle.cs" />
+        <option value="$PROJECT_DIR$/Assets/WaterFadeIn.cs" />
       </list>
     </option>
   </component>
@@ -523,13 +522,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SkyBoxController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -995,6 +987,23 @@
             <marker date="1557508296028" expanded="true" signature="1470:1614" ph="{...}" />
             <marker date="1557508296028" expanded="true" signature="1650:1936" ph="{...}" />
             <marker date="1557508296028" expanded="true" signature="1995:2141" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/StylizedWater/Documentation.url">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WaterFadeIn.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <marker date="1557508779053" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557508779053" expanded="true" signature="120:483" ph="{...}" />
+            <marker date="1557508779053" expanded="true" signature="220:254" ph="{...}" />
+            <marker date="1557508779053" expanded="true" signature="312:481" ph="{...}" />
+            <marker date="1557508779053" expanded="true" signature="344:466" ph="{...}" />
           </folding>
         </state>
       </provider>
