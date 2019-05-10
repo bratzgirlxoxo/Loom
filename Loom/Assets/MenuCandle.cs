@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuCandle : MonoBehaviour
 {
@@ -52,6 +53,14 @@ public class MenuCandle : MonoBehaviour
         MenuStopAll.Post(organEmitter);
         CandleStopEvent.Post(gameObject);
         organEmitter.SetActive(false);
+
+        StartCoroutine(SceneSwap("Playtest"));
+    }
+
+    IEnumerator SceneSwap(string name)
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(name);
     }
 
 }
