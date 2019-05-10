@@ -890,6 +890,31 @@
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
+										<RTPC Name="" ID="{BADBA90F-0F65-4288-A9A2-F61559EAF0AC}" ShortID="988446318">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="FadeTime" ID="{D8429DE5-EC1A-4D81-BB30-21AF92D5267A}" WorkUnitID="{A982C533-93B7-4D4E-94C8-9506606C767F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FDCA1E70-D7B3-416B-A62E-DF428F0B58E1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>5</XPos>
+														<YPos>-2.41148</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
 										<RTPC Name="" ID="{D9110481-EB05-413A-ACCF-5C44691B1B29}" ShortID="777642224">
 											<ReferenceList>
 												<Reference Name="ControlInput">
@@ -1204,7 +1229,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2842,7 +2867,7 @@
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.129665539102578"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.446625745797771"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0624315558642045"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.24315558642045E-02"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Walking\Main\loom3_mainWalking_4.wav</AudioFile>
@@ -3397,7 +3422,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="Raven Hit" ID="{3167DAAD-5AF7-444A-9112-D338CE8DEB23}" ShortID="25090345">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0189657773098262"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.89657773098262E-02"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Raven Hit.wav</AudioFile>
@@ -3916,7 +3941,7 @@
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.278265642151482"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="1.37705817782656"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0321075740944018"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.21075740944018E-02"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Melody2\menu_melody2_2.wav</AudioFile>

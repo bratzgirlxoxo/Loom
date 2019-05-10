@@ -60,6 +60,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID FADETIME = 69675432U;
         static const AkUniqueID MOUSEDISTANCE = 3580695643U;
         static const AkUniqueID MOUSEPOSX = 1745873800U;
         static const AkUniqueID MOUSEPOSY = 1745873801U;
