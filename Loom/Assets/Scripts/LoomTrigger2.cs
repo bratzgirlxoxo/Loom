@@ -7,6 +7,7 @@ public class LoomTrigger2 : MonoBehaviour
     
     public GameObject pillar1;
     public GameObject nextLoom;
+    public ParticleSystem emergingParticles;
 
     public PathPillar[] path;
     public bool[] lights;
@@ -17,14 +18,21 @@ public class LoomTrigger2 : MonoBehaviour
     private Vector3 startPos;
     private Vector3 endPos;
     private float t;
+
+    private bool emerged;
     
     void Start()
     {
         startPos = pillar1.transform.position;
-        endPos = new Vector3(startPos.x, startPos.y + 6.25f, startPos.z);
+        endPos = new Vector3(startPos.x, startPos.y + 4f, startPos.z);
         pillar1.SetActive(false);
         nextLoom.SetActive(false);
         lights = new bool[numLights];
+
+        for (int i = 0; i < path.Length; i++)
+        {
+            path[i].gameObject.SetActive(false);
+        }
     }
 
     void Update()
@@ -38,12 +46,23 @@ public class LoomTrigger2 : MonoBehaviour
                 break;
             }
         }
+
+        if (emerged)
+        {
+            t += Time.deltaTime;
+            if (t > pillar1.GetComponent<PathPillar>().emergeTime)
+            {
+                emergingParticles.Stop();
+                Destroy(transform.gameObject);
+            }
+        }
     }
     
     void OnTriggerEnter(Collider coll)
     {
-        if (fullyLit && coll.CompareTag("Player"))
+        if (!emerged && fullyLit && coll.CompareTag("Player"))
         {
+            emerged = true;
             for (int i = 0; i < path.Length; i++)
             {
                 path[i].readyToEmerge = true;
@@ -52,6 +71,7 @@ public class LoomTrigger2 : MonoBehaviour
             pillar1.SetActive(true);
             nextLoom.SetActive(true);
 
+            emergingParticles.Play();
             StartCoroutine(pillar1.GetComponent<PathPillar>().PillarEmerge(pillar1.transform, startPos, endPos));
         }
     }

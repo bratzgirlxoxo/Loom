@@ -7,10 +7,12 @@ public class PathPillar : MonoBehaviour
 
     public GameObject nextPillar;
     public bool loomPillar;
+    public bool loom2;
 
     public GameObject[] fireflies;
     public Texture[] blueprints;
     public GameObject riseObject;
+   
    
     private Vector3 startPos;
     private Vector3 endPos;
@@ -35,12 +37,14 @@ public class PathPillar : MonoBehaviour
     void Start()
     {
         startPos = nextPillar.transform.position;
-        endPos = new Vector3(startPos.x, startPos.y + 6.25f, startPos.z);
+        if (!loom2)
+            endPos = new Vector3(startPos.x, startPos.y + 6.25f, startPos.z);
+        else
+            endPos = new Vector3(startPos.x, startPos.y + 4f, startPos.z);
 
         if (loomPillar)
-        {
             endPos = new Vector3(startPos.x, startPos.y + Mathf.Abs(startPos.y) + 0.75f, startPos.z);
-        }
+        
     }
 
     
@@ -51,14 +55,11 @@ public class PathPillar : MonoBehaviour
         if (!emerged && coll.CompareTag("Player") && readyToEmerge)
         {
             if (loomPillar)
-            {
-                emergingParticles.Play();
                 Loom2RiseEvent.Post(riseObject);
-            }
             else
-            {
                 PillarAudioEvent.Post(gameObject);
-            }
+            
+            emergingParticles.Play();
 
             emerged = true;
             StartCoroutine(PillarEmerge(nextPillar.transform, startPos, endPos));
@@ -66,13 +67,16 @@ public class PathPillar : MonoBehaviour
             StartCoroutine(Fade(0, 0.8f));
             StartCoroutine(FlashImages());
             imageFlashed = true;
-            
+
         }
     }
 
     public IEnumerator PillarEmerge(Transform pillar, Vector3 start, Vector3 end)
     {
+        
         float t = 0f;
+        
+        pillar.gameObject.SetActive(true);
         
         for (int i = 0; i < fireflies.Length; i++)
         {
@@ -86,10 +90,7 @@ public class PathPillar : MonoBehaviour
             yield return null;
         }  
         
-        if (loomPillar)
-        {
-            emergingParticles.Stop();
-        }
+        emergingParticles.Stop();
     }
 
     IEnumerator FlashImages()
