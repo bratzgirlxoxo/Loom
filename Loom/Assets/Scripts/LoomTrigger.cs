@@ -23,6 +23,7 @@ public class LoomTrigger : MonoBehaviour
 
     public bool[] lights;
     public PathPillar[] path;
+    public GameObject[] fireflies;
 
     public Loom1Completion cutScene;
 
@@ -88,6 +89,11 @@ public class LoomTrigger : MonoBehaviour
             pillar1.SetActive(true);
             nextLoom.SetActive(true);
             emergingParticles.Play();
+            
+            for (int i = 0; i < fireflies.Length; i++)
+            {
+                fireflies[i].SetActive(true);
+            }
             StartCoroutine(pillar1.GetComponent<PathPillar>().PillarEmerge(pillar1.transform, startPos, endPos));
         }
 
