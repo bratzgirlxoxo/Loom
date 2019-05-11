@@ -4186,9 +4186,6 @@
 								</Property>
 								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{9564CC5D-9166-4E40-B3CD-C3CF84DAD5BC}" ShortID="648726416">
 											<ReferenceList>
