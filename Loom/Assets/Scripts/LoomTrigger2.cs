@@ -10,6 +10,7 @@ public class LoomTrigger2 : MonoBehaviour
     public ParticleSystem emergingParticles;
 
     public PathPillar[] path;
+    public GameObject[] fireflies;
     public bool[] lights;
     public int numLights;
     private bool fullyLit;
@@ -72,6 +73,12 @@ public class LoomTrigger2 : MonoBehaviour
             nextLoom.SetActive(true);
 
             emergingParticles.Play();
+
+            for (int i = 0; i < fireflies.Length; i++)
+            {
+                fireflies[i].SetActive(true);
+            }
+            
             StartCoroutine(pillar1.GetComponent<PathPillar>().PillarEmerge(pillar1.transform, startPos, endPos));
         }
     }
