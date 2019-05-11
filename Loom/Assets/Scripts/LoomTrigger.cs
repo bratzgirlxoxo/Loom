@@ -8,13 +8,14 @@ public class LoomTrigger : MonoBehaviour
 
     public GameObject pillar1;
     public GameObject nextLoom;
+    public ParticleSystem emergingParticles;
 
     private Vector3 startPos;
     private Vector3 endPos;
 
     private float t;
     public float emergeTime;
-
+    private bool emerged;
 
     private bool fullyLit;
     private bool cutSceneReady;
@@ -35,7 +36,12 @@ public class LoomTrigger : MonoBehaviour
         lights = new bool[numLights];
         cutSceneReady = true;
         pillar1.SetActive(false);
-        //loom.SetActive(false);
+        nextLoom.SetActive(false);
+        
+        for (int i = 0; i < path.Length; i++)
+        {
+            path[i].gameObject.SetActive(false);                
+        }
     }
 
     // Update is called once per frame
@@ -56,20 +62,32 @@ public class LoomTrigger : MonoBehaviour
             cutScene.ready = true;
             cutSceneReady = false;
         }
+
+        if (emerged)
+        {
+            t += Time.deltaTime;
+
+            if (t > pillar1.GetComponent<PathPillar>().emergeTime)
+            {
+                emergingParticles.Stop();
+                Destroy(transform.gameObject);
+            }
+        }
     }
 
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.CompareTag("Player") && fullyLit)
+        if (!emerged && coll.CompareTag("Player") && fullyLit)
         {
+            emerged = true;
             OceanSplashEvent.Post(gameObject);
             for (int i = 0; i < path.Length; i++)
             {
                 path[i].readyToEmerge = true;
-                
             }
             pillar1.SetActive(true);
             nextLoom.SetActive(true);
+            emergingParticles.Play();
             StartCoroutine(pillar1.GetComponent<PathPillar>().PillarEmerge(pillar1.transform, startPos, endPos));
         }
 
