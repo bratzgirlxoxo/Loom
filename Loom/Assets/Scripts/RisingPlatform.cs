@@ -11,6 +11,7 @@ public class RisingPlatform : MonoBehaviour
     private bool rising;
     private bool up;
 
+    public TestAnimation topBookshelf;
 
     private float t;
     private Rigidbody rbody;
@@ -18,7 +19,6 @@ public class RisingPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
         rbody = GetComponent<Rigidbody>();
         rising = false;
     }
@@ -42,9 +42,10 @@ public class RisingPlatform : MonoBehaviour
     {
         if (!rising && coll.CompareTag("Player"))
         {
+            startPos = transform.position;
             Debug.Log("Rising!");
             rising = true;
-
+            topBookshelf.startAnimation();
         }
     }
 }

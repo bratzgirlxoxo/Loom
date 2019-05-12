@@ -60,6 +60,11 @@ public class PathPillar : MonoBehaviour
                 PillarAudioEvent.Post(gameObject);
             
             emergingParticles.Play();
+            
+            for (int i = 0; i < fireflies.Length; i++)
+            {
+                fireflies[i].SetActive(true);
+            }
 
             emerged = true;
             StartCoroutine(PillarEmerge(nextPillar.transform, startPos, endPos));
@@ -73,16 +78,10 @@ public class PathPillar : MonoBehaviour
 
     public IEnumerator PillarEmerge(Transform pillar, Vector3 start, Vector3 end)
     {
-        
         float t = 0f;
         
         pillar.gameObject.SetActive(true);
         
-        for (int i = 0; i < fireflies.Length; i++)
-        {
-            fireflies[i].SetActive(true);
-        }
-
         while (t < 1f)
         {
             t += Time.deltaTime / emergeTime;
