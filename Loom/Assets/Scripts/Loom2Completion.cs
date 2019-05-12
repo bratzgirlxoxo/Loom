@@ -11,6 +11,7 @@ public class Loom2Completion : MonoBehaviour
     public ParticleBells bells;
 
     public TutorialGhost2 lantern2;
+    public Transform lanternTrans;
 
     private Vector3 endPos;
 
@@ -79,16 +80,21 @@ public class Loom2Completion : MonoBehaviour
             }
             yield return null;
         }
+
+        bells.transform.position = lanternTrans.position;
+        bells.fireballParticles.Play();
         
+        transform.localScale = Vector3.one;
+
+        faded = true;
+        
+        StartCoroutine(lantern2.Birth(endPos));
+        yield return new WaitForSeconds(2f);
+        bells.fireballParticles.Stop();
         for (int i = 0; i < particleObjects.Length; i++)
         {
             Destroy(particleObjects[i]);
         }
-
-        transform.localScale = Vector3.one;
-
-        faded = true;
-        StartCoroutine(lantern2.Birth(endPos));
     }
     
 }
