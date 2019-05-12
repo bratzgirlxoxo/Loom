@@ -35,6 +35,7 @@ public class RisingPlatform : MonoBehaviour
         {
             rising = false;
             rbody.useGravity = false;
+            rbody.isKinematic = false;
         }
     }
 

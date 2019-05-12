@@ -7,11 +7,15 @@ public class TestAnimation : MonoBehaviour
 
     public Animator cabinetAnimator;
     public float waitTime;
+    public bool loom3;
 
 
     void Start()
     {
-        cabinetAnimator.gameObject.SetActive(false);
+        if (!loom3)
+            cabinetAnimator.gameObject.SetActive(false);
+        else
+            cabinetAnimator.SetBool("constructing", true);
     }
 
     public IEnumerator startAnimation()
