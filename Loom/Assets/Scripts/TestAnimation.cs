@@ -5,7 +5,6 @@ using UnityEngine;
 public class TestAnimation : MonoBehaviour
 {
 
-
     public Animator cabinetAnimator;
     public float waitTime;
 
@@ -14,8 +13,6 @@ public class TestAnimation : MonoBehaviour
     {
         cabinetAnimator.gameObject.SetActive(false);
     }
-
-    
 
     public IEnumerator startAnimation()
     {
