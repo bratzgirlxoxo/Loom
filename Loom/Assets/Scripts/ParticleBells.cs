@@ -17,7 +17,7 @@ public class ParticleBells : MonoBehaviour
     public Transform player;
     public GameObject fireBall;
 
-    private ParticleSystem fireballParticles;
+    [HideInInspector] public ParticleSystem fireballParticles;
 
     public float distanceThreshold;
 

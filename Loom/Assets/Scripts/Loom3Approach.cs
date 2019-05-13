@@ -10,33 +10,38 @@ public class Loom3Approach : MonoBehaviour
 
     public TestAnimation[] myAnims;
 
-    private bool hasHit;
+    [HideInInspector] public bool hasHit;
     
 
     void OnTriggerEnter(Collider coll)
     {
         if (!hasHit && coll.CompareTag("Player"))
         {
-            hasHit = true;
-            for (int i = 0; i < lights.Length; i++)
-            {
-                GameObject lightObj = lights[i].myLight;
-                LightIntensityFlicker lightController = lightObj.GetComponent<LightIntensityFlicker>();
-                lightObj.SetActive(true);
-                lightController.StartCoroutine(lights[i].myLight.GetComponent<LightIntensityFlicker>().DieDown());
-            }
-
-            for (int i = 0; i < fireballs.Length; i++)
-            {
-                fireballs[i].Play();
-            }
-
-            for (int i = 0; i < myAnims.Length; i++)
-            {
-                StartCoroutine(myAnims[i].startAnimation());
-            }
-            
-            //Destroy(transform.gameObject);
+            Activate();
         }
+    }
+
+    public void Activate()
+    {
+        hasHit = true;
+        for (int i = 0; i < lights.Length; i++)
+        {
+            GameObject lightObj = lights[i].myLight;
+            LightIntensityFlicker lightController = lightObj.GetComponent<LightIntensityFlicker>();
+            lightObj.SetActive(true);
+            lightController.StartCoroutine(lights[i].myLight.GetComponent<LightIntensityFlicker>().DieDown());
+        }
+
+        for (int i = 0; i < fireballs.Length; i++)
+        {
+            fireballs[i].Play();
+        }
+
+        for (int i = 0; i < myAnims.Length; i++)
+        {
+            StartCoroutine(myAnims[i].startAnimation());
+        }
+            
+        //Destroy(transform.gameObject);
     }
 }
