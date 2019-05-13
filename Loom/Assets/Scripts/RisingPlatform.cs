@@ -12,6 +12,7 @@ public class RisingPlatform : MonoBehaviour
     private bool up;
 
     public TestAnimation topBookshelf;
+    public Loom3Lantern endLantern;
 
     private float t;
     private Rigidbody rbody;
@@ -33,9 +34,11 @@ public class RisingPlatform : MonoBehaviour
         } 
         else if (t >= 1f)
         {
+            rbody.velocity = Vector3.zero;
             rising = false;
             rbody.useGravity = false;
             rbody.isKinematic = false;
+            endLantern.endRoom = true;
         }
     }
 
