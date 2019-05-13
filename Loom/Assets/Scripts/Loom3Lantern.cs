@@ -21,7 +21,6 @@ public class Loom3Lantern : MonoBehaviour
     
     void Start()
     {
-        endPos = endPosTrans.position;
         walkingAnim = GetComponent<Animator>();
     }
 
@@ -44,6 +43,7 @@ public class Loom3Lantern : MonoBehaviour
 
     IEnumerator endLerp()
     {
+        endPos = endPosTrans.position;
         Vector3 startPos = transform.position;
         GetComponent<Collider>().enabled = false;
         GetComponent<Rigidbody>().useGravity = false;
