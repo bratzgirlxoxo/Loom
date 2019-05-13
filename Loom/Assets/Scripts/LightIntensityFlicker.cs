@@ -10,6 +10,8 @@ public class LightIntensityFlicker : MonoBehaviour
     public Color offColor;
     public Color onColor;
 
+    public bool bigFlame;
+
     private Light myLight;
     private float t = 0f;
 
@@ -53,6 +55,8 @@ public class LightIntensityFlicker : MonoBehaviour
             t += Time.deltaTime * timeScale;
 
             myLight.intensity = Mathf.PerlinNoise(t, transform.position.y);
+            if (bigFlame)
+                myLight.intensity += 0.5f;
         } 
         
     }

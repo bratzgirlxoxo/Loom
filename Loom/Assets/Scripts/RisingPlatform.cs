@@ -12,6 +12,9 @@ public class RisingPlatform : MonoBehaviour
     private bool up;
 
     public TestAnimation topBookshelf;
+    public TestAnimation topHanger;
+    public Loom3Lantern endLantern;
+    public ReflectionProbe refProbe;
 
     private float t;
     private Rigidbody rbody;
@@ -21,6 +24,7 @@ public class RisingPlatform : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody>();
         rising = false;
+        refProbe.enabled = false;
     }
 
     void FixedUpdate()
@@ -33,8 +37,11 @@ public class RisingPlatform : MonoBehaviour
         } 
         else if (t >= 1f)
         {
+            rbody.velocity = Vector3.zero;
             rising = false;
             rbody.useGravity = false;
+            rbody.isKinematic = false;
+            endLantern.endRoom = true;
         }
     }
 
@@ -46,6 +53,8 @@ public class RisingPlatform : MonoBehaviour
             Debug.Log("Rising!");
             rising = true;
             topBookshelf.startAnimation();
+            topHanger.startAnimation();
+            refProbe.enabled = true;
         }
     }
 }
