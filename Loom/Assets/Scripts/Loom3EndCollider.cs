@@ -7,13 +7,17 @@ public class Loom3EndCollider : MonoBehaviour
 
     public Material lanternBase;
     public Material lanternGlass;
+    public Material[] replacementMats;
     public float fadeTime;
     public Loom3Lantern endLantern;
 
     private bool hasHit;
 
+    public MeshRenderer lanternRend;
+    public AK.Wwise.Event lanternSound;
+
     void Start()
-    {
+    {   
         lanternBase.SetFloat("_Opacity", 0f);
         lanternGlass.SetFloat("_Opacity", 0f);
     }
@@ -24,6 +28,7 @@ public class Loom3EndCollider : MonoBehaviour
         if (!hasHit && coll.CompareTag("Player"))
         {
             StartCoroutine(LanternFadeIn());
+            lanternSound.Post(lanternRend.gameObject);
         }
     }
     
@@ -39,6 +44,8 @@ public class Loom3EndCollider : MonoBehaviour
             lanternGlass.SetFloat("_Opacity", lerpVal/2f);
             yield return null;
         }
+
+        lanternRend.materials = replacementMats;
         
         endLantern.Birth();
     }

@@ -17,38 +17,42 @@ public class TextHover : MonoBehaviour
      public float InflateTime;
      public float DeflateTime;
 
-     public float jitterScale;
+
 
      public AnimationCurve textTweenCurve;
+
+
 
      private void Start()
      {
          //defining our start scale
          startScale = new Vector3(gameObject.transform.localScale.x, 
              gameObject.transform.localScale.y,1);
-         StartCoroutine(Jitter());
      }
 
-     private void OnMouseEnter()
-     { 
-         StopAllCoroutines();
-         Vector3 currentScale = new Vector3(gameObject.transform.localScale.x, 
-             gameObject.transform.localScale.y, 1);
-         targetScale = new Vector3(1.5f, 1.5f, 1);
-         StopAllCoroutines();
-         StartCoroutine(TextScaleLerp(currentScale, targetScale, InflateTime));
+     
 
-         Melody1Start.Post(gameObject);
+     private void OnMouseEnter()
+     {
+             StopAllCoroutines();
+             Vector3 currentScale = new Vector3(gameObject.transform.localScale.x, 
+                 gameObject.transform.localScale.y, 1);
+             targetScale = new Vector3(1.5f, 1.5f, 1);
+             StopAllCoroutines();
+             StartCoroutine(TextScaleLerp(currentScale, targetScale, InflateTime));
+
+             Melody1Start.Post(gameObject);
+
      }
      
      private void OnMouseExit()
      {
-         StopAllCoroutines();
-         Vector2 currentScale = new Vector3(gameObject.transform.localScale.x, 
-             gameObject.transform.localScale.y, 1);
-         StartCoroutine(TextScaleLerp(currentScale, startScale, DeflateTime));
+             StopAllCoroutines();
+             Vector2 currentScale = new Vector3(gameObject.transform.localScale.x, 
+                 gameObject.transform.localScale.y, 1);
+             StartCoroutine(TextScaleLerp(currentScale, startScale, DeflateTime));
 
-         StartCoroutine(WaitBeforeStop());
+             StartCoroutine(WaitBeforeStop());
 
      }
      
@@ -61,11 +65,6 @@ public class TextHover : MonoBehaviour
              progress += Time.deltaTime / TimeScale;
              yield return null;
          }
-
-         if (start.x > goal.x)
-         {
-             StartCoroutine(Jitter());
-         }
      }
 
      IEnumerator WaitBeforeStop()
@@ -74,16 +73,4 @@ public class TextHover : MonoBehaviour
          Melody1Stop.Post(gameObject);
      }
 
-     IEnumerator Jitter()
-     {
-         Vector3 startPos = transform.position;
-         while (true)
-         {
-             Vector3 pos = transform.position;
-             pos.x = startPos.x + (Mathf.PerlinNoise(Time.time, startPos.x) * jitterScale - jitterScale/2);
-             pos.y = startPos.y + (Mathf.PerlinNoise(Time.time * 0.85f, startPos.y) * jitterScale - jitterScale/2);
-
-             yield return null;
-         }
-     }
  }

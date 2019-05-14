@@ -6,7 +6,6 @@ public class Loom3Approach : MonoBehaviour
 {
 
     public LightStand[] lights;
-    public ParticleSystem[] fireballs;
 
     public TestAnimation[] myAnims;
 
@@ -30,11 +29,6 @@ public class Loom3Approach : MonoBehaviour
             LightIntensityFlicker lightController = lightObj.GetComponent<LightIntensityFlicker>();
             lightObj.SetActive(true);
             lightController.StartCoroutine(lights[i].myLight.GetComponent<LightIntensityFlicker>().DieDown());
-        }
-
-        for (int i = 0; i < fireballs.Length; i++)
-        {
-            fireballs[i].Play();
         }
 
         for (int i = 0; i < myAnims.Length; i++)

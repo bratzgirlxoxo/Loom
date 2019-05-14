@@ -5,6 +5,8 @@ using UnityEngine;
 public class Loom3EntranceChecker : MonoBehaviour
 {
     public Loom3Approach[] approachColls;
+    public GameObject roundTableNew;
+    public GameObject roundTableOld;
 
     void OnTriggerEnter(Collider coll)
     {
@@ -17,6 +19,8 @@ public class Loom3EntranceChecker : MonoBehaviour
                     approachColls[i].Activate();
                 }
             }
+            roundTableNew.SetActive(true);
+            Destroy(roundTableOld);
             Destroy(transform.gameObject);
         }
     }

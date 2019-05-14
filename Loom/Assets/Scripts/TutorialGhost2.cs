@@ -68,7 +68,7 @@ public class TutorialGhost2 : MonoBehaviour
         yield return new WaitForSeconds(1.2f);
         Vector3 startPos = transform.position;
         GetComponent<Collider>().enabled = false;
-        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -40f, 0f), 6f));
+        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -80f, 0f), 10f));
         yield return new WaitForSeconds(6f + 1f);
         Destroy(transform.gameObject);
     }

@@ -19,6 +19,7 @@ public class Loom2Completion : MonoBehaviour
     private bool faded;
     
     public AK.Wwise.Event Loom2RiseEvent;
+    public AK.Wwise.Event lanternSound;
     
     void Update()
     {
@@ -83,6 +84,7 @@ public class Loom2Completion : MonoBehaviour
 
         bells.transform.position = lanternTrans.position;
         bells.fireballParticles.Play();
+        lanternSound.Post(lantern2.gameObject);
         
         transform.localScale = Vector3.one;
 
