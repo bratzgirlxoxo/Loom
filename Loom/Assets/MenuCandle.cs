@@ -24,6 +24,7 @@ public class MenuCandle : MonoBehaviour
     public GameObject O;
     public GameObject O2;
     public GameObject M;
+    public GameObject flame;
 
     public bool lit;
     
@@ -64,6 +65,7 @@ public class MenuCandle : MonoBehaviour
         {
             CandleStrikeEvent.Post(gameObject);
             lit = true;
+            flame.SetActive(true);
 
             StartCoroutine(SceneSwap("Playtest"));
         }
@@ -88,3 +90,4 @@ public class MenuCandle : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 }
+    

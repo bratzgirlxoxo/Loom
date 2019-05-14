@@ -3028,18 +3028,18 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>10.05953</XPos>
-																<YPos>-24.58442</YPos>
+																<XPos>9.9891</XPos>
+																<YPos>-26.21576</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>22.50233</XPos>
-																<YPos>-1.28761</YPos>
+																<XPos>30</XPos>
+																<YPos>-0</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>40</XPos>
-																<YPos>-1.22273</YPos>
+																<YPos>0</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -3066,6 +3066,11 @@
 										<Sound Name="loom3_wind" ID="{7780DFE6-57CB-44CC-9F0E-9D58A216C1CB}" ShortID="515099241">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -3095,11 +3100,6 @@
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -3139,7 +3139,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -4186,9 +4186,6 @@
 								</Property>
 								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{9564CC5D-9166-4E40-B3CD-C3CF84DAD5BC}" ShortID="648726416">
 											<ReferenceList>
