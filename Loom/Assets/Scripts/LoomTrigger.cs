@@ -37,7 +37,6 @@ public class LoomTrigger : MonoBehaviour
         lights = new bool[numLights];
         cutSceneReady = true;
         pillar1.SetActive(false);
-        nextLoom.SetActive(false);
         
         for (int i = 0; i < path.Length; i++)
         {

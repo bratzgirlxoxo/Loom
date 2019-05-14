@@ -33,7 +33,7 @@ public class MenuCandle : MonoBehaviour
 
     private void Awake()
     {        
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         scene = SceneManager.GetActiveScene();
     }
 

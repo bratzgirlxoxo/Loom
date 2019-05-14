@@ -4,6 +4,7 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Opacity ("Opacity", Float) = 0
+        _LineColor ("LineColor", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -38,6 +39,7 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
             float _Opacity;
+            float4 _LineColor;
 
             v2f vert (appdata v)
             {
@@ -51,7 +53,7 @@
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
                 float stepVal = step(0.5, col.r);
-                col.rgb = (1 - stepVal).xxx;
+                col.rgb = _LineColor;
                 col.a = (1 - stepVal) * _Opacity;
 
                 return col;

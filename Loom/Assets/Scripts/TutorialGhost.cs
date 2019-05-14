@@ -29,6 +29,7 @@ public class TutorialGhost : MonoBehaviour
     private Collider coll;
 
     public AK.Wwise.Event Loom1LanternJumpEvent;
+    public AK.Wwise.Event LanternSound;
     
     private bool moving;
 
@@ -96,6 +97,7 @@ public class TutorialGhost : MonoBehaviour
         burstParticles.Play();
 
         lantern.enabled = true;
+        LanternSound.Post(gameObject);
         myLight.transform.GetComponent<LightIntensityFlicker>().flame.SetActive(true);
 
         
@@ -146,8 +148,8 @@ public class TutorialGhost : MonoBehaviour
         yield return new WaitForSeconds(1.2f);
         startPos = transform.position;
         coll.enabled = false;
-        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -40f, 0f), runTime));
-        yield return new WaitForSeconds(runTime + 1f);
+        StartCoroutine(LinearLerp(startPos, startPos + new Vector3(0f, -80f, 0f), runTime*1.5f));
+        yield return new WaitForSeconds(runTime*1.5f + 1f);
         Destroy(transform.gameObject);
     }
     

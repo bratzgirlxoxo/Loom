@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PathPillar : MonoBehaviour
 {
@@ -24,6 +26,7 @@ public class PathPillar : MonoBehaviour
     public bool readyToEmerge;
 
     public ParticleSystem emergingParticles;
+    public GameObject refProbe;
 
     public AK.Wwise.Event PillarAudioEvent;
     public AK.Wwise.Event Loom2RiseEvent;
@@ -90,6 +93,11 @@ public class PathPillar : MonoBehaviour
         }  
         
         emergingParticles.Stop();
+        if (loomPillar && refProbe != null)
+        {
+            //refProbe.SetActive(true);
+        }
+        
     }
 
     IEnumerator FlashImages()

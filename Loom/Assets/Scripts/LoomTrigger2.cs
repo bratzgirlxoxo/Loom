@@ -27,7 +27,6 @@ public class LoomTrigger2 : MonoBehaviour
         startPos = pillar1.transform.position;
         endPos = new Vector3(startPos.x, startPos.y + 4f, startPos.z);
         pillar1.SetActive(false);
-        nextLoom.SetActive(false);
         lights = new bool[numLights];
 
         for (int i = 0; i < path.Length; i++)
